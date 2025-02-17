@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import IndexHome from "./pages/home/IndexHome";
+import IndexGallery from "./pages/gallery/IndexGallery";
+import IndexContact from "./pages/contact/IndexContact";
+import IndexProduct from "./pages/product/IndexProduct";
+import IndexNews from "./pages/news/IndexNews";
+import IndexAbout from "./pages/about_us/IndexAbout";
+import Navbar from "./component/header/navbar";
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <Navbar/>
+        <Routes>
+          <Route path="/" element={<IndexHome />} />
+          <Route path="/gallery" element={<IndexGallery />} />
+          <Route path="/product" element={<IndexProduct />} />
+          <Route path="/contact" element={<IndexContact />} />
+          <Route path="/news" element={<IndexNews />} />
+          <Route path="/about-us" element={<IndexAbout />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
