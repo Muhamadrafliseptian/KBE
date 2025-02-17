@@ -366,6 +366,107 @@ export class IndexHome extends Component {
             </div>
           </div>
         </div>
+
+        <div className="container col-xxl-10 px-4 py-1">
+          <div className="row flex-lg-row-reverse align-items-center g-3 py-5">
+            <div className="col-6 col-sm-4 col-lg-2">
+              <button
+                type="button"
+                className="btn btn-lg px-5 text-light"
+                style={{ backgroundColor: "#003D92" }}
+              >
+                <a>
+                  <small>Selengkapnya</small>
+                </a>
+              </button>
+            </div>
+            <div className="col-lg-10 text-start">
+              <p style={{ color: "#003D92" }}>Blog perusahaan</p>
+              <h1 className="display-5 fw-bold lh-1 mb-3">
+              Berita & Artikel Terbaru
+              </h1>
+              <p>
+                <small>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                </small>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="container col-xxl-10 px-4 py-1">
+          <div className="row row-cols-1 row-cols-md-3 g-4">
+            <div className="col">
+              <div
+                className="card border-0"
+                style={{ boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)" }}
+              >
+                <img src={image4} className="card-img-top" alt="..." />
+                <div className="card-body text-start">
+                  <h5 className="card-title">Bus Services</h5>
+                  <p className="card-text">
+                    <small>
+                      This is a wider card with supporting text below as a
+                      natural
+                    </small>
+                  </p>
+                  <p>
+                    <small style={{ color: "#003D92" }}>
+                      <b>Detail</b>
+                    </small>{" "}
+                    <FaArrowRight size={14} color="blue" />
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="col">
+              <div
+                className="card border-0"
+                style={{ boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)" }}
+              >
+                <img src={image4} className="card-img-top" alt="..." />
+                <div className="card-body text-start">
+                  <h5 className="card-title">Custom Services</h5>
+                  <p className="card-text">
+                    <small>
+                      This is a wider card with supporting text below as a
+                      natural
+                    </small>
+                  </p>
+                  <p>
+                    <small style={{ color: "#003D92" }}>
+                      <b>Detail</b>
+                    </small>{" "}
+                    <FaArrowRight size={14} color="blue" />
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="col">
+              <div
+                className="card border-0"
+                style={{ boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)" }}
+              >
+                <img src={image4} className="card-img-top" alt="..." />
+                <div className="card-body text-start">
+                  <h5 className="card-title">Electircal Services</h5>
+                  <p className="card-text">
+                    <small>
+                      This is a wider card with supporting text below as a
+                      natural
+                    </small>
+                  </p>
+                  <p>
+                    <small style={{ color: "#003D92" }}>
+                      <b>Detail</b>
+                    </small>{" "}
+                    <FaArrowRight size={14} color="#003D92" />
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     );
   }

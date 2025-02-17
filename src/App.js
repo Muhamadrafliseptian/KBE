@@ -6,6 +6,7 @@ import IndexProduct from "./pages/product/IndexProduct";
 import IndexNews from "./pages/news/IndexNews";
 import IndexAbout from "./pages/about_us/IndexAbout";
 import Navbar from "./component/header/navbar";
+import Footer from "./component/footer/footer";
 import "./App.css";
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
           <Route path="/news" element={<IndexNews />} />
           <Route path="/about-us" element={<IndexAbout />} />
         </Routes>
+        <Footer/>
       </div>
     </Router>
   );
