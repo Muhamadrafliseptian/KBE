@@ -17,28 +17,50 @@ export class IndexHome extends Component {
     return (
       <div>
         <div
-          id="carouselExampleRide"
+          id="carouselExampleIndicators"
           className="carousel slide"
           data-bs-ride="true"
         >
-          <div className="carousel-indicators">
+          <div class="carousel-indicators">
             <button
               type="button"
-              data-bs-target="#carouselExampleRide"
+              data-bs-target="#carouselExampleIndicators"
               data-bs-slide-to="0"
-              className="active"
+              class="active"
               aria-current="true"
               aria-label="Slide 1"
             ></button>
             <button
               type="button"
-              data-bs-target="#carouselExampleRide"
+              data-bs-target="#carouselExampleIndicators"
               data-bs-slide-to="1"
               aria-label="Slide 2"
             ></button>
             <button
               type="button"
-              data-bs-target="#carouselExampleRide"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
               data-bs-slide-to="2"
               aria-label="Slide 3"
             ></button>
@@ -47,57 +69,100 @@ export class IndexHome extends Component {
             <div className="carousel-item active">
               <div className="overlay"></div>
               <img src={imageSlider} className="d-block w-100" alt="..." />
-            </div>
-            <div className="carousel-item">
-              <div className="overlay"></div>
-              <img src={imageSlider} className="d-block w-100" alt="..." />
-            </div>
-            <div className="carousel-item">
-              <div className="overlay"></div>
-              <img src={imageSlider} className="d-block w-100" alt="..." />
-            </div>
-            {/* 
-            <div className="col-lg-6">
-              <h1 className="mb-3 text-light text-start">Micro, Medium Bus</h1>
-              <p className="text-light text-start">
-                Nec duis placerat sit id porta nunc amet consectetur aliquam
-                magna donec ut tellus nisi justo semper vulputate nec enim odio
-                donec.
-              </p>
-              <div className="d-grid gap-2 d-md-flex justify-content-md-start">
-                <button
-                  type="button"
-                  className="btn btn-outline-secondary btn-sm px-4"
-                >
-                  Selengkapnya
-                </button>
+              <div class="carousel-caption col-xxl-8 px-1 py-5">
+                <div class="row my-5 p-5 g-5">
+                  <div class="col-lg-8 text-start">
+                    <h1 class="display-5 fw-bold text-light lh-1 mb-3">
+                      Micro, Medium Bus
+                    </h1>
+                    <p class="ext-light">
+                      Nec duis placerat sit id porta nunc amet consectetur
+                      aliquam magna donec ut tellus nisi justo semper vulputate
+                      nec enim odio donec.
+                    </p>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                      <button
+                        type="button"
+                        class="btn btn-outline-light btn-sm px-4"
+                      >
+                        Selengkapnya
+                      </button>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div> */}
+            </div>
+            <div className="carousel-item">
+              <div className="overlay"></div>
+              <img src={imageSlider} className="d-block w-100" alt="..." />
+              <div class="carousel-caption col-xxl-8 px-1 py-5">
+                <div class="row my-5 p-5 g-5">
+                  <div class="col-lg-8 text-start">
+                    <h1 class="display-5 fw-bold text-light lh-1 mb-3">
+                      Micro, Medium Bus
+                    </h1>
+                    <p class="ext-light">
+                      Nec duis placerat sit id porta nunc amet consectetur
+                      aliquam magna donec ut tellus nisi justo semper vulputate
+                      nec enim odio donec.
+                    </p>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                      <button
+                        type="button"
+                        class="btn btn-outline-light btn-sm px-4"
+                      >
+                        Selengkapnya
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="carousel-item">
+              <div className="overlay"></div>
+              <img src={imageSlider} className="d-block w-100" alt="..." />
+              <div class="carousel-caption col-xxl-8 px-1 py-5">
+                <div class="row my-5 p-5 g-5">
+                  <div class="col-lg-8 text-start">
+                    <h1 class="display-5 fw-bold text-light lh-1 mb-3">
+                      Micro, Medium Bus
+                    </h1>
+                    <p class="ext-light">
+                      Nec duis placerat sit id porta nunc amet consectetur
+                      aliquam magna donec ut tellus nisi justo semper vulputate
+                      nec enim odio donec.
+                    </p>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                      <button
+                        type="button"
+                        class="btn btn-outline-light btn-sm px-4"
+                      >
+                        Selengkapnya
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
           <button
-            className="carousel-control-prev"
+            class="carousel-control-prev"
             type="button"
-            data-bs-target="#carouselExampleRide"
+            data-bs-target="#carouselExampleIndicators"
             data-bs-slide="prev"
           >
-            <span
-              className="carousel-control-prev-icon"
-              aria-hidden="true"
-            ></span>
-            <span className="visually-hidden">Previous</span>
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
           </button>
           <button
-            className="carousel-control-next"
+            class="carousel-control-next"
             type="button"
-            data-bs-target="#carouselExampleRide"
+            data-bs-target="#carouselExampleIndicators"
             data-bs-slide="next"
           >
-            <span
-              className="carousel-control-next-icon"
-              aria-hidden="true"
-            ></span>
-            <span className="visually-hidden">Next</span>
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
           </button>
         </div>
 
@@ -340,7 +405,7 @@ export class IndexHome extends Component {
         <div className="my-1">
           <div className="row p-0 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3">
             <div className="col-lg-6 overflow-hidden">
-              <img className="rounded-lg-5" src={image5} alt=""  />
+              <img className="rounded-lg-5" src={image5} alt="" />
             </div>
 
             <div className="col-lg-6 p-3 p-lg-5 pt-lg-3 text-start">
@@ -383,7 +448,7 @@ export class IndexHome extends Component {
             <div className="col-lg-10 text-start">
               <p style={{ color: "#003D92" }}>Blog perusahaan</p>
               <h1 className="display-5 fw-bold lh-1 mb-3">
-              Berita & Artikel Terbaru
+                Berita & Artikel Terbaru
               </h1>
               <p>
                 <small>

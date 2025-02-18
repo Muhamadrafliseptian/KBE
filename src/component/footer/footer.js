@@ -11,11 +11,15 @@ export class Footer extends Component {
               <div class="col-8 col-md-4 mb-3 text-start text-light">
                 <img src={LogoKbe} width="180" />
 
-                <p className="mt-5"><small>Jl. Aria Wiratanudatar No.25 Cianjur, Jawa Barat - 43215</small></p>
+                <p className="mt-5">
+                  <small>
+                    Jl. Aria Wiratanudatar No.25 Cianjur, Jawa Barat - 43215
+                  </small>
+                </p>
               </div>
 
               <div class="col-2 col-md-2 mb-3 text-start text-light">
-                <h5>Section</h5>
+                <h5>Perusahaan</h5>
                 <ul class="nav flex-column">
                   <li class="nav-item mb-2">
                     <a href="#" class="nav-link p-0 text-light">
@@ -46,7 +50,7 @@ export class Footer extends Component {
               </div>
 
               <div class="col-2 col-md-2 mb-3 text-start text-light">
-                <h5>Section</h5>
+                <h5>Bantuan</h5>
                 <ul class="nav flex-column">
                   <li class="nav-item mb-2">
                     <a href="#" class="nav-link p-0 text-light">
@@ -76,10 +80,12 @@ export class Footer extends Component {
                 </ul>
               </div>
 
-              <div class="col-md-3 offset-md-1 mb-3 text-start text-light">
+              <div class="col-md-3 offset-md-1 mb-3 text-light">
                 <form>
-                  <h5>Subscribe to our newsletter</h5>
-                  <p>Monthly digest of what's new and exciting from us.</p>
+                  <h5 className="text-start">Berlangganan buletin bulanan</h5>
+                  <p className="text-start">
+                    <small>Nibh venenatis donec tellus</small>
+                  </p>
                   <div class="d-flex flex-column flex-sm-row w-100 gap-2">
                     <label for="newsletter1" class="visually-hidden">
                       Email address
@@ -90,10 +96,13 @@ export class Footer extends Component {
                       class="form-control"
                       placeholder="Email address"
                     />
-                    <button class="btn btn-primary" type="button">
-                      Subscribe
-                    </button>
                   </div>
+                  <button
+                    class="mt-3 w-100 gap-2 btn btn-warning"
+                    type="button"
+                  >
+                    <a className="text-center text-dark" href="">Subscribe</a>
+                  </button>
                 </form>
               </div>
             </div>

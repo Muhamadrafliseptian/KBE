@@ -21,11 +21,19 @@
   height: 100%;
   background: rgba(9, 32, 67, 0.5); /* Warna dengan transparansi */
   z-index: 1;
+  color: 'white'
 }
 
 .carousel-item img {
   position: relative;
   z-index: 0; /* Pastikan gambar tetap di belakang overlay */
+}
+
+.carousel-caption {
+  position: relative;
+  z-index: 2; /* Teks di atas overlay */
+  color: white; /* Pastikan teks terlihat */
+  /* background-color: red; */
 }
 
 
