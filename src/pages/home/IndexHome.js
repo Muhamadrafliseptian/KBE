@@ -184,13 +184,11 @@ export class IndexHome extends Component {
                 Karya Baja Estetika
               </h1>
               <p className="">
-                Quickly design and customize responsive mobile-first sites with
-                Bootstrap, the world’s most popular front-end open source
-              </p>
-
-              <p className="">
-                Quickly design and customize responsive mobile-first sites with
-                Bootstrap, the world’s most popular front-end open source
+                CV. KARYA BAJA ESTETIKA adalah Perusahaan swasta yang bergerak
+                dibidang industri karoseri modifikasi kendaraan roda empat atau
+                lebih, yang memiliki kemampuan untuk memenuhi kebutuhan
+                perusahaan-perusahaan swasta dan pemerintahan dalam pengadaan
+                kendaraan yang membutuhkan perhatian dengan spesifikasi khusus.
               </p>
               <div className="d-grid gap-2 d-md-flex justify-content-md-start">
                 <button
@@ -218,13 +216,19 @@ export class IndexHome extends Component {
                 Karoseri Terbaik
               </h1>
               <p className="">
-                Quickly design and customize responsive mobile-first sites with
-                Bootstrap, the world’s most popular front-end open source
+                CV. KARYA BAJA ESTETIKA adalah badan usaha bentuk baru dari
+                tenaga profesional dibidang modifikasi karoseri kendaraan roda
+                empat atau lebih dengan tata kelola manajemen yang kuat dan
+                solid serta sudah berpengalaman baik dibidang produksi maupun
+                pemasaran.
               </p>
 
               <p className="">
-                Quickly design and customize responsive mobile-first sites with
-                Bootstrap, the world’s most popular front-end open source
+                <b>
+                  Saat ini dengan dukungan peralatan yang memadai dan tenaga
+                  ahli yang berpengalaman, kami membangun autobody dengan
+                  kualitas terbaik dan standar yang tinggi.
+                </b>
               </p>
             </div>
             <div className="col-10 col-sm-8 col-lg-6">
@@ -249,9 +253,9 @@ export class IndexHome extends Component {
               >
                 <div className="card-body">
                   <FaBox size={30} color="#003D92" className="mb-3" />
-                  <h5 className="card-title">FREE CONSULTATION</h5>
+                  <h5 className="card-title">Konsultasi</h5>
                   <p className="card-text" style={{ color: "#5C6776" }}>
-                    <small>This is a wider card with supporting</small>
+                    <small>Troubleshoot & Solution</small>
                   </p>
                 </div>
               </div>
@@ -263,9 +267,9 @@ export class IndexHome extends Component {
               >
                 <div className="card-body">
                   <FaHeadphones size={30} color="#003D92" className="mb-3" />
-                  <h5 className="card-title">CUSTOMER SUPPORT</h5>
+                  <h5 className="card-title">Ontime Schedule</h5>
                   <p className="card-text" style={{ color: "#5C6776" }}>
-                    <small>This is a wider card with supporting</small>
+                    <small>Perancangan tepat waktu</small>
                   </p>
                 </div>
               </div>
@@ -277,9 +281,9 @@ export class IndexHome extends Component {
               >
                 <div className="card-body">
                   <FaCalendar size={30} color="#003D92" className="mb-3" />
-                  <h5 className="card-title">SCHEDULE ANYTIME</h5>
+                  <h5 className="card-title">Harga & Kualitas</h5>
                   <p className="card-text" style={{ color: "#5C6776" }}>
-                    <small>This is a wider card with supporting</small>
+                    <small>Kualitas dengan harga terbaik</small>
                   </p>
                 </div>
               </div>
@@ -293,7 +297,7 @@ export class IndexHome extends Component {
                   <FaCommentDollar size={30} color="#003D92" className="mb-3" />
                   <h5 className="card-title">PRICE GUARANTEE</h5>
                   <p className="card-text" style={{ color: "#5C6776" }}>
-                    <small>This is a wider card with supporting</small>
+                    <small>Layanan Customer 1x24 Jam</small>
                   </p>
                 </div>
               </div>
@@ -321,7 +325,10 @@ export class IndexHome extends Component {
               </h1>
               <p>
                 <small>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                  Dengan Kapabilitas tenaga ahli dan peralatan yang memadai
+                  untuk menjawab <br></br>
+                  segala tantangan dan memberikan solusi bagi kebutuhan
+                  modifikasi karoseri. 
                 </small>
               </p>
             </div>
@@ -416,16 +423,18 @@ export class IndexHome extends Component {
               </h1>
               <p>
                 <small>
-                  Quickly design and customize responsive mobile-first sites
-                  with Bootstrap, the world’s most popular front-end open source
+                  Kami senanasa mela ukan terobosan dan inovasi dalam menghadapi
+                  seeapantangan baru, mendengarkan keluhan dan memberikan solusi
+                  yang cepat dan tepat untuk menjaga standar pelayanan kami
+                  kepada pelanggan. Dengan demikian perusahaan akan selalu
+                  berada dihati pelanggan dan tumbuh berkembang dari dukungan
+                  pelanggan yang telah mempercayai kami.
                 </small>
               </p>
 
               <p>
                 <small>
-                  "Quickly design and customize responsive mobile-first sites
-                  with Bootstrap, the world’s most popular front-end open
-                  source"
+                  "Puas banget dengan pelayanan KBE, sekarang saya sudah ada 3 Unit mobil Food Truck dan awet serta jadi andalan sampai saat ini"
                 </small>
               </p>
             </div>
