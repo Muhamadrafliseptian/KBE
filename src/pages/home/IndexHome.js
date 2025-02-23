@@ -445,7 +445,7 @@ export class IndexHome extends Component {
                   <b>Niko</b>
                 </p>
 
-                <p className="mt-0" style={{color: '#003D92'}}>
+                <p className="mt-0" style={{ color: "#003D92" }}>
                   Owner | Food Truck
                 </p>
               </div>
@@ -458,13 +458,12 @@ export class IndexHome extends Component {
                 </small>
               </p>
 
-
               <div className="">
                 <p className="mb-0">
                   <b>Niko</b>
                 </p>
 
-                <p className="mt-0" style={{color: '#003D92'}}>
+                <p className="mt-0" style={{ color: "#003D92" }}>
                   Owner | Food Truck
                 </p>
               </div>
