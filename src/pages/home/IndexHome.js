@@ -434,9 +434,40 @@ export class IndexHome extends Component {
 
               <p>
                 <small>
-                  "Puas banget dengan pelayanan KBE, sekarang saya sudah ada 3 Unit mobil Food Truck dan awet serta jadi andalan sampai saat ini"
+                  "Puas banget dengan pelayanan KBE, sekarang saya sudah ada 3
+                  Unit mobil Food Truck dan awet serta jadi andalan sampai saat
+                  ini"
                 </small>
               </p>
+
+              <div className="">
+                <p className="mb-0">
+                  <b>Niko</b>
+                </p>
+
+                <p className="mt-0" style={{color: '#003D92'}}>
+                  Owner | Food Truck
+                </p>
+              </div>
+
+              <p className="pt-5">
+                <small>
+                  "Gak diraguin untul hasil kerja tim KBE, konsultasi, diskusi
+                  menjadi hal yang asyik sampai pada akhirnya mobil caravan ku
+                  jadi sesuai ekspektasi. thanks KBE"
+                </small>
+              </p>
+
+
+              <div className="">
+                <p className="mb-0">
+                  <b>Niko</b>
+                </p>
+
+                <p className="mt-0" style={{color: '#003D92'}}>
+                  Owner | Food Truck
+                </p>
+              </div>
             </div>
           </div>
         </div>
