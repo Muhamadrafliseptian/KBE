@@ -44,50 +44,30 @@ export class IndexGallery extends Component {
           </h1>
         </div>
 
-        <div className="container">
-          <div className="p-4">
-          <h1 className="text-center">Karya Baja Estetika Gallery</h1>
-          <p>
-            lorem ipsum dolor sit amet
-          </p>
-
+        <div className="container-fluid px-4 py-5">
+          {/* Judul */}
+          <div className="text-center mb-4">
+            <h1 className="fw-bold" style={{ color: "#092043" }}>
+              Karya Baja Estetika Gallery
+            </h1>
+            <p className="text-muted">
+              Koleksi karya terbaik kami dalam modifikasi kendaraan
+            </p>
           </div>
-          <div class="row row-cols-1 row-cols-md-3 g-4">
-            <div class="col">
-              <div class="card border-0">
-                <img src={image2} class="card-img-top" alt="..." />
-                
+
+          {/* Grid Gallery */}
+          <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 g-4">
+            {[...Array(6)].map((_, index) => (
+              <div className="col" key={index}>
+                <div className="card border-0 overflow-hidden shadow-sm rounded-3">
+                  <img
+                    src={image2}
+                    className="card-img-top img-fluid"
+                    alt={`Gallery Image ${index + 1}`}
+                  />
+                </div>
               </div>
-            </div>
-            <div class="col">
-              <div class="card border-0">
-              <img src={image2} class="card-img-top" alt="..." />
-                
-              </div>
-            </div>
-            <div class="col">
-              <div class="card border-0">
-                <img src={image2} class="card-img-top" alt="..." />
-                
-              </div>
-            </div>
-            <div class="col">
-              <div class="card border-0">
-              <img src={image2} class="card-img-top" alt="..." />
-                
-              </div>
-            </div>
-            <div class="col">
-              <div class="card border-0">
-              <img src={image2} class="card-img-top" alt="..." />
-              </div>
-            </div>
-            <div class="col">
-              <div class="card border-0">
-              <img src={image2} class="card-img-top" alt="..." />
-                
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>

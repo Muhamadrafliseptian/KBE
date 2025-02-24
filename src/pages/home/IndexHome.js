@@ -166,36 +166,32 @@ export class IndexHome extends Component {
           </button>
         </div>
 
-        <div className="container col-xxl-10 px-4 py-1">
-          <div className="row flex-lg-row-reverse align-items-center g-5 py-5">
-            <div className="col-10 col-sm-8 col-lg-6">
+        <div class="container col-xxl-10 px-4 py-1">
+          <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-12 col-sm-10 col-md-8 col-lg-6 text-center">
               <img
                 src={image2}
-                className="d-block mx-lg-auto img-fluid"
+                class="img-fluid"
                 alt="Bootstrap Themes"
                 width="700"
                 height="500"
                 loading="lazy"
               />
             </div>
-            <div className="col-lg-6 text-start">
-              <p style={{ color: "#003D92" }}>Tentang Kami</p>
-              <h1 className="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+            <div class="col-lg-6 text-center text-lg-start">
+              <p class="text-primary fw-bold">Tentang Kami</p>
+              <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
                 Karya Baja Estetika
               </h1>
-              <p className="">
+              <p>
                 CV. KARYA BAJA ESTETIKA adalah Perusahaan swasta yang bergerak
-                dibidang industri karoseri modifikasi kendaraan roda empat atau
+                di bidang industri karoseri modifikasi kendaraan roda empat atau
                 lebih, yang memiliki kemampuan untuk memenuhi kebutuhan
                 perusahaan-perusahaan swasta dan pemerintahan dalam pengadaan
                 kendaraan yang membutuhkan perhatian dengan spesifikasi khusus.
               </p>
-              <div className="d-grid gap-2 d-md-flex justify-content-md-start">
-                <button
-                  type="button"
-                  className="btn btn-sm px-4 me-md-2"
-                  style={{ backgroundColor: "#003D92", color: "white" }}
-                >
+              <div class="d-grid gap-2 d-md-flex justify-content-center justify-content-lg-start">
+                <button type="button" class="btn btn-primary btn-sm px-4">
                   Selengkapnya
                 </button>
               </div>
@@ -203,27 +199,22 @@ export class IndexHome extends Component {
           </div>
         </div>
 
-        <div className="container col-xxl-10 px-4 py-1">
-          <div className="row flex-lg-row-reverse align-items-center g-5 py-5">
-            <div className="col-lg-6 text-start">
-              <p style={{ color: "#003D92" }}>kenapa memilih kami</p>
-              <h1
-                className="display-5 fw-bold lh-1 mb-3"
-                style={{ color: "#003D92" }}
-              >
-                Karya Baja Estetika
-                <br />
+        <div class="container col-xxl-10 px-4 py-1">
+          <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-lg-6 text-start">
+              <p class="text-primary fw-bold">Kenapa Memilih Kami</p>
+              <h1 class="display-5 fw-bold lh-1 mb-3 text-primary">
+                Karya Baja Estetika<br></br>
                 Karoseri Terbaik
               </h1>
-              <p className="">
+              <p>
                 CV. KARYA BAJA ESTETIKA adalah badan usaha bentuk baru dari
-                tenaga profesional dibidang modifikasi karoseri kendaraan roda
+                tenaga profesional di bidang modifikasi karoseri kendaraan roda
                 empat atau lebih dengan tata kelola manajemen yang kuat dan
-                solid serta sudah berpengalaman baik dibidang produksi maupun
+                solid serta sudah berpengalaman baik di bidang produksi maupun
                 pemasaran.
               </p>
-
-              <p className="">
+              <p>
                 <b>
                   Saat ini dengan dukungan peralatan yang memadai dan tenaga
                   ahli yang berpengalaman, kami membangun autobody dengan
@@ -231,10 +222,10 @@ export class IndexHome extends Component {
                 </b>
               </p>
             </div>
-            <div className="col-10 col-sm-8 col-lg-6">
+            <div class="col-12 col-sm-10 col-md-8 col-lg-6 text-center">
               <img
                 src={image3}
-                className="d-block mx-lg-auto img-fluid"
+                class="img-fluid"
                 alt="Bootstrap Themes"
                 width="700"
                 height="500"
@@ -245,13 +236,13 @@ export class IndexHome extends Component {
         </div>
 
         <div className="container col-xxl-10 px-4 py-1">
-          <div className="row row-cols-1 row-cols-md-4 g-4">
+          <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
             <div className="col">
               <div
-                className="card border-0"
+                className="card border-0 h-100"
                 style={{ backgroundColor: "#F2F7FA" }}
               >
-                <div className="card-body">
+                <div className="card-body text-center">
                   <FaBox size={30} color="#003D92" className="mb-3" />
                   <h5 className="card-title">Konsultasi</h5>
                   <p className="card-text" style={{ color: "#5C6776" }}>
@@ -262,10 +253,10 @@ export class IndexHome extends Component {
             </div>
             <div className="col">
               <div
-                className="card border-0"
+                className="card border-0 h-100"
                 style={{ backgroundColor: "#F2F7FA" }}
               >
-                <div className="card-body">
+                <div className="card-body text-center">
                   <FaHeadphones size={30} color="#003D92" className="mb-3" />
                   <h5 className="card-title">Ontime Schedule</h5>
                   <p className="card-text" style={{ color: "#5C6776" }}>
@@ -276,10 +267,10 @@ export class IndexHome extends Component {
             </div>
             <div className="col">
               <div
-                className="card border-0"
+                className="card border-0 h-100"
                 style={{ backgroundColor: "#F2F7FA" }}
               >
-                <div className="card-body">
+                <div className="card-body text-center">
                   <FaCalendar size={30} color="#003D92" className="mb-3" />
                   <h5 className="card-title">Harga & Kualitas</h5>
                   <p className="card-text" style={{ color: "#5C6776" }}>
@@ -290,10 +281,10 @@ export class IndexHome extends Component {
             </div>
             <div className="col">
               <div
-                className="card border-0"
+                className="card border-0 h-100"
                 style={{ backgroundColor: "#F2F7FA" }}
               >
-                <div className="card-body">
+                <div className="card-body text-center">
                   <FaCommentDollar size={30} color="#003D92" className="mb-3" />
                   <h5 className="card-title">PRICE GUARANTEE</h5>
                   <p className="card-text" style={{ color: "#5C6776" }}>
@@ -307,18 +298,18 @@ export class IndexHome extends Component {
 
         <div className="container col-xxl-10 px-4 py-1">
           <div className="row flex-lg-row-reverse align-items-center g-3 py-5">
-            <div className="col-6 col-sm-4 col-lg-2">
+            <div className="col-12 col-sm-6 col-lg-2 text-center">
               <button
                 type="button"
                 className="btn btn-lg px-5 text-light"
                 style={{ backgroundColor: "#003D92" }}
               >
-                <a>
+                <div className="text-center">
                   <small>Selengkapnya</small>
-                </a>
+                </div>
               </button>
             </div>
-            <div className="col-lg-10 text-start">
+            <div className="col-lg-10 text-center text-lg-start">
               <p style={{ color: "#003D92" }}>kenapa memilih kami</p>
               <h1 className="display-5 fw-bold lh-1 mb-3">
                 Satu solusi untuk Karoseri
@@ -326,9 +317,9 @@ export class IndexHome extends Component {
               <p>
                 <small>
                   Dengan Kapabilitas tenaga ahli dan peralatan yang memadai
-                  untuk menjawab <br></br>
+                  untuk menjawab <br className="d-none d-sm-block" />
                   segala tantangan dan memberikan solusi bagi kebutuhan
-                  modifikasi karoseri. 
+                  modifikasi karoseri.
                 </small>
               </p>
             </div>
@@ -336,16 +327,16 @@ export class IndexHome extends Component {
         </div>
 
         <div className="container col-xxl-10 px-4 py-1">
-          <div className="row row-cols-1 row-cols-md-3 g-4">
+          <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
             <div className="col">
               <div
-                className="card border-0"
+                className="card border-0 h-100"
                 style={{ boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)" }}
               >
                 <img src={image4} className="card-img-top" alt="..." />
-                <div className="card-body text-start">
+                <div className="card-body text-start d-flex flex-column">
                   <h5 className="card-title">Bus Services</h5>
-                  <p className="card-text">
+                  <p className="card-text flex-grow-1">
                     <small>
                       This is a wider card with supporting text below as a
                       natural
@@ -355,20 +346,20 @@ export class IndexHome extends Component {
                     <small style={{ color: "#003D92" }}>
                       <b>Detail</b>
                     </small>{" "}
-                    <FaArrowRight size={14} color="blue" />
+                    <FaArrowRight size={14} color="#003D92" />
                   </p>
                 </div>
               </div>
             </div>
             <div className="col">
               <div
-                className="card border-0"
+                className="card border-0 h-100"
                 style={{ boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)" }}
               >
                 <img src={image4} className="card-img-top" alt="..." />
-                <div className="card-body text-start">
+                <div className="card-body text-start d-flex flex-column">
                   <h5 className="card-title">Custom Services</h5>
-                  <p className="card-text">
+                  <p className="card-text flex-grow-1">
                     <small>
                       This is a wider card with supporting text below as a
                       natural
@@ -378,20 +369,20 @@ export class IndexHome extends Component {
                     <small style={{ color: "#003D92" }}>
                       <b>Detail</b>
                     </small>{" "}
-                    <FaArrowRight size={14} color="blue" />
+                    <FaArrowRight size={14} color="#003D92" />
                   </p>
                 </div>
               </div>
             </div>
             <div className="col">
               <div
-                className="card border-0"
+                className="card border-0 h-100"
                 style={{ boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)" }}
               >
                 <img src={image4} className="card-img-top" alt="..." />
-                <div className="card-body text-start">
-                  <h5 className="card-title">Electircal Services</h5>
-                  <p className="card-text">
+                <div className="card-body text-start d-flex flex-column">
+                  <h5 className="card-title">Electrical Services</h5>
+                  <p className="card-text flex-grow-1">
                     <small>
                       This is a wider card with supporting text below as a
                       natural
@@ -411,11 +402,11 @@ export class IndexHome extends Component {
 
         <div className="my-1">
           <div className="row p-0 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3">
-            <div className="col-lg-6 overflow-hidden">
-              <img className="rounded-lg-5" src={image5} alt="" />
+            <div className="col-12 col-lg-6 overflow-hidden text-center text-lg-start">
+              <img className="rounded-lg-5 img-fluid" src={image5} alt="" />
             </div>
 
-            <div className="col-lg-6 p-3 p-lg-5 pt-lg-3 text-start">
+            <div className="col-12 col-lg-6 p-3 p-lg-5 pt-lg-3 text-center text-lg-start">
               <p style={{ color: "#003D92" }}>Testimonials</p>
 
               <h1 className="display-4 fw-bold lh-1 text-body-emphasis">
@@ -440,29 +431,27 @@ export class IndexHome extends Component {
                 </small>
               </p>
 
-              <div className="">
+              <div>
                 <p className="mb-0">
                   <b>Niko</b>
                 </p>
-
                 <p className="mt-0" style={{ color: "#003D92" }}>
                   Owner | Food Truck
                 </p>
               </div>
 
-              <p className="pt-5">
+              <p className="pt-4">
                 <small>
-                  "Gak diraguin untul hasil kerja tim KBE, konsultasi, diskusi
+                  "Gak diraguin untuk hasil kerja tim KBE, konsultasi, diskusi
                   menjadi hal yang asyik sampai pada akhirnya mobil caravan ku
                   jadi sesuai ekspektasi. thanks KBE"
                 </small>
               </p>
 
-              <div className="">
+              <div>
                 <p className="mb-0">
                   <b>Niko</b>
                 </p>
-
                 <p className="mt-0" style={{ color: "#003D92" }}>
                   Owner | Food Truck
                 </p>
@@ -472,8 +461,8 @@ export class IndexHome extends Component {
         </div>
 
         <div className="container col-xxl-10 px-4 py-1">
-          <div className="row flex-lg-row-reverse align-items-center g-3 py-5">
-            <div className="col-6 col-sm-4 col-lg-2">
+          <div className="row flex-lg-row-reverse align-items-center g-3 py-5 text-center text-lg-start">
+            <div className="col-12 col-sm-6 col-lg-2 d-flex justify-content-center justify-content-lg-start">
               <button
                 type="button"
                 className="btn btn-lg px-5 text-light"
@@ -484,7 +473,7 @@ export class IndexHome extends Component {
                 </a>
               </button>
             </div>
-            <div className="col-lg-10 text-start">
+            <div className="col-12 col-lg-10">
               <p style={{ color: "#003D92" }}>Blog perusahaan</p>
               <h1 className="display-5 fw-bold lh-1 mb-3">
                 Berita & Artikel Terbaru
@@ -499,16 +488,16 @@ export class IndexHome extends Component {
         </div>
 
         <div className="container col-xxl-10 px-4 py-1">
-          <div className="row row-cols-1 row-cols-md-3 g-4">
+          <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
             <div className="col">
               <div
-                className="card border-0"
+                className="card border-0 h-100"
                 style={{ boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)" }}
               >
                 <img src={image4} className="card-img-top" alt="..." />
-                <div className="card-body text-start">
+                <div className="card-body text-start d-flex flex-column">
                   <h5 className="card-title">Bus Services</h5>
-                  <p className="card-text">
+                  <p className="card-text flex-grow-1">
                     <small>
                       This is a wider card with supporting text below as a
                       natural
@@ -518,20 +507,20 @@ export class IndexHome extends Component {
                     <small style={{ color: "#003D92" }}>
                       <b>Detail</b>
                     </small>{" "}
-                    <FaArrowRight size={14} color="blue" />
+                    <FaArrowRight size={14} color="#003D92" />
                   </p>
                 </div>
               </div>
             </div>
             <div className="col">
               <div
-                className="card border-0"
+                className="card border-0 h-100"
                 style={{ boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)" }}
               >
                 <img src={image4} className="card-img-top" alt="..." />
-                <div className="card-body text-start">
+                <div className="card-body text-start d-flex flex-column">
                   <h5 className="card-title">Custom Services</h5>
-                  <p className="card-text">
+                  <p className="card-text flex-grow-1">
                     <small>
                       This is a wider card with supporting text below as a
                       natural
@@ -541,20 +530,20 @@ export class IndexHome extends Component {
                     <small style={{ color: "#003D92" }}>
                       <b>Detail</b>
                     </small>{" "}
-                    <FaArrowRight size={14} color="blue" />
+                    <FaArrowRight size={14} color="#003D92" />
                   </p>
                 </div>
               </div>
             </div>
             <div className="col">
               <div
-                className="card border-0"
+                className="card border-0 h-100"
                 style={{ boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)" }}
               >
                 <img src={image4} className="card-img-top" alt="..." />
-                <div className="card-body text-start">
-                  <h5 className="card-title">Electircal Services</h5>
-                  <p className="card-text">
+                <div className="card-body text-start d-flex flex-column">
+                  <h5 className="card-title">Electrical Services</h5>
+                  <p className="card-text flex-grow-1">
                     <small>
                       This is a wider card with supporting text below as a
                       natural

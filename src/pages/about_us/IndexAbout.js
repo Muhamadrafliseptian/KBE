@@ -44,68 +44,77 @@ export class IndexAbout extends Component {
           </h1>
         </div>
 
-        <div className="container col-xxl-10 px-4 py-1">
-          <div className="row flex-lg-row-reverse align-items-center g-5 py-5">
-            <div className="col-10 col-sm-8 col-lg-6">
+        <div className="container col-xxl-10 px-4 py-5">
+          <div className="row flex-lg-row-reverse align-items-center g-5">
+            {/* Gambar */}
+            <div className="col-12 col-sm-8 col-lg-6">
               <img
                 src={image2}
-                className="d-block mx-lg-auto img-fluid"
-                alt="Bootstrap Themes"
+                className="d-block mx-auto img-fluid rounded"
+                alt="Tentang Karya Baja Estetika"
                 width="700"
                 height="500"
                 loading="lazy"
               />
             </div>
+
+            {/* Konten */}
             <div className="col-lg-6 text-start">
-              <h1 className="display-5 fw-bold text-body-emphasis lh-1 mb-5">
-                Tentang <br></br>Karya Baja Estetika
+              <h1 className="display-5 fw-bold text-body-emphasis lh-1 mb-4">
+                Tentang <br /> Karya Baja Estetika
               </h1>
               <p>
                 CV. KARYA BAJA ESTETIKA adalah Perusahaan swasta yang bergerak
-                dibidang industri karoseri modifikasi kendaraan roda empat atau
+                di bidang industri karoseri modifikasi kendaraan roda empat atau
                 lebih, yang memiliki kemampuan untuk memenuhi kebutuhan
                 perusahaan-perusahaan swasta dan pemerintahan dalam pengadaan
                 kendaraan yang membutuhkan perhatian dengan spesifikasi khusus.
               </p>
-              <div className="row">
-                <div className="d-flex">
-                  <FaPhone color="#003D92" size={18} className="mt-1 me-3" />
-                  <h5 style={{ color: "#003D92" }}>202-555-0105</h5>
-                </div>
+
+              {/* Informasi Kontak */}
+              <div className="d-flex align-items-center mt-4">
+                <FaPhone color="#003D92" size={18} className="me-2" />
+                <h5 className="mb-0" style={{ color: "#003D92" }}>
+                  202-555-0105
+                </h5>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="container col-xxl-10 px-4 py-1">
-          <div className="row flex-lg-row-reverse align-items-center g-5 py-5">
-            <div className="col-lg-6 text-start">
+        <div className="container col-xxl-10 px-4 py-5">
+          <div className="row flex-lg-row-reverse align-items-center g-4">
+            {/* Konten */}
+            <div className="col-12 col-lg-6 text-start">
               <h4 className="fw-bold mb-3" style={{ color: "#003D92" }}>
                 Karoseri terbaik dengan tingkat detail tinggi
               </h4>
               <p>
                 CV. KARYA BAJA ESTETIKA adalah badan usaha bentuk baru dari
-                tenaga profesional dibidang modifikasi karoseri kendaraan roda
+                tenaga profesional di bidang modifikasi karoseri kendaraan roda
                 empat atau lebih dengan tata kelola manajemen yang kuat dan
-                solid serta sudah berpengalaman baik dibidang produksi maupun
+                solid serta sudah berpengalaman baik di bidang produksi maupun
                 pemasaran.
               </p>
 
-              <div className="d-grid gap-2 d-md-flex justify-content-md-start">
+              {/* Tombol */}
+              <div className="d-grid d-md-flex justify-content-md-start">
                 <button
                   type="button"
-                  className="btn btn-sm px-4 me-md-2"
+                  className="btn btn-sm px-4"
                   style={{ backgroundColor: "#003D92", color: "white" }}
                 >
                   Buat Temu Janji
                 </button>
               </div>
             </div>
-            <div className="col-10 col-sm-8 col-lg-6">
+
+            {/* Gambar */}
+            <div className="col-12 col-sm-8 col-lg-6">
               <img
                 src={image3}
-                className="d-block mx-lg-auto img-fluid"
-                alt="Bootstrap Themes"
+                className="d-block mx-auto img-fluid rounded"
+                alt="Karoseri Detail Tinggi"
                 width="700"
                 height="500"
                 loading="lazy"
@@ -114,40 +123,55 @@ export class IndexAbout extends Component {
           </div>
         </div>
 
-        <div className="row p-0 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3">
-          <div className="col-lg-4 overflow-hidden">
-            <img className="rounded-lg-5" src={image3} alt="" />
-          </div>
+        <div className="my-1">
+          <div className="row p-0 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3">
+            <div className="col-12 col-lg-6 overflow-hidden text-center text-lg-start">
+              <img
+                className="rounded-lg-5 img-fluid w-100 h-100"
+                src={image3}
+                alt=""
+              />
+            </div>
 
-          <div className="col-lg-8 p-3 p-lg-5 pt-lg-3 text-start">
-            <h1 className="fw-bold lh-1 mb-5" style={{ color: "#092043" }}>
-              5 Alasan Utama Kenapa <br /> Karya Baja Estetika menjadi <br />
-              Partner Karoseri Anda
-            </h1>
-            <ul>
-              <li className="mb-3">
-                Our cleaning team is not only trained properly, but the team is
-                also highly experienced and skilled in their jobs.
-              </li>
-              <li className="mb-3">
-                Customized solutions to make your workplace comfortable to work
-                in.
-              </li>
-              <li className="mb-3">
-                Hiring a professional office cleaning service is that it helps
-                to boost the morale of your employees by enabling them to work
-                in an eco-friendly environment.
-              </li>
-              <li className="mb-3">
-                Professional office cleaners can create a positive energy
-                throughout the office that translates into happier employees and
-                ultimately, happier customers.
-              </li>
-              <li className="mb-3">
-                We have 15 years of experience with money guarantee, no question
-                asked.
-              </li>
-            </ul>
+            <div className="col-12 col-lg-6 p-lg-5 pt-lg-3 text-center text-lg-start">
+              <h1 className="fw-bold lh-1 mb-3" style={{ color: "#092043" }}>
+                5 Alasan Utama Kenapa <br /> Karya Baja Estetika menjadi <br />
+                Partner Karoseri Anda
+              </h1>
+
+              <ul className="ps-2">
+                <li className="mb-2">
+                  Tim kami terlatih dengan baik dan memiliki pengalaman luas
+                  dalam bidangnya.
+                </li>
+                <li className="mb-2">
+                  Solusi yang disesuaikan untuk memastikan kenyamanan tempat
+                  kerja Anda.
+                </li>
+                <li className="mb-2">
+                  Meningkatkan semangat kerja dengan lingkungan yang lebih
+                  bersih dan ramah lingkungan.
+                </li>
+                <li className="mb-2">
+                  Energi positif di kantor menghasilkan karyawan yang lebih
+                  bahagia dan pelanggan yang puas.
+                </li>
+                <li className="mb-2">
+                  Pengalaman lebih dari 15 tahun dengan jaminan uang kembali
+                  tanpa syarat.
+                </li>
+              </ul>
+
+              <div className="d-grid d-md-flex justify-content-md-start">
+                <button
+                  type="button"
+                  className="btn btn-sm px-4"
+                  style={{ backgroundColor: "#003D92", color: "white" }}
+                >
+                  Hubungi Sekarang{" "}
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>

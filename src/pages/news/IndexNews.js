@@ -44,92 +44,33 @@ export class IndexNews extends Component {
           </h1>
         </div>
 
-        <div className="container">
-          <div className="p-4">
-          <h1 className="text-center">Karya Baja Estetika Berita & Update</h1>
-          <p>
-            lorem ipsum dolor sit amet
-          </p>
-
+        <div className="container-fluid px-4 py-5">
+          {/* Judul */}
+          <div className="text-center mb-4">
+            <h1 className="fw-bold" style={{ color: "#092043" }}>
+              Karya Baja Estetika Berita & Update
+            </h1>
+            <p className="text-muted">
+              Tetap up-to-date dengan berita terbaru kami
+            </p>
           </div>
-          <div class="row row-cols-1 row-cols-md-2 g-4">
-            <div class="col">
-              <div class="card border-0">
-                <img src={image2} class="card-img-top" alt="..." />
-                <div class="card-body text-start">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">
-                    This is a longer card with supporting text below as a
-                    natural lead-in to additional content. This content is a
-                    little bit longer.
-                  </p>
+
+          {/* Grid Berita */}
+          <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4">
+            {[...Array(6)].map((_, index) => (
+              <div className="col" key={index}>
+                <div className="card border-0 shadow-sm h-100">
+                  <img src={image2} className="card-img-top" alt="Berita" />
+                  <div className="card-body text-start">
+                    <h5 className="card-title">Judul Berita {index + 1}</h5>
+                    <p className="card-text text-muted">
+                      Ini adalah deskripsi singkat dari berita terbaru kami.
+                      Klik untuk membaca lebih lanjut.
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col">
-              <div class="card border-0">
-              <img src={image2} class="card-img-top" alt="..." />
-                <div class="card-body text-start">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">
-                    This is a longer card with supporting text below as a
-                    natural lead-in to additional content. This content is a
-                    little bit longer.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card border-0">
-                <img src={image2} class="card-img-top" alt="..." />
-                <div class="card-body text-start">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">
-                    This is a longer card with supporting text below as a
-                    natural lead-in to additional content. This content is a
-                    little bit longer.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card border-0">
-              <img src={image2} class="card-img-top" alt="..." />
-                <div class="card-body text-start">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">
-                    This is a longer card with supporting text below as a
-                    natural lead-in to additional content. This content is a
-                    little bit longer.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card border-0">
-              <img src={image2} class="card-img-top" alt="..." />
-                <div class="card-body text-start">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">
-                    This is a longer card with supporting text below as a
-                    natural lead-in to additional content.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card border-0">
-              <img src={image2} class="card-img-top" alt="..." />
-                <div class="card-body text-start">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">
-                    This is a longer card with supporting text below as a
-                    natural lead-in to additional content. This content is a
-                    little bit longer.
-                  </p>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>
