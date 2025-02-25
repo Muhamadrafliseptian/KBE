@@ -176,19 +176,7 @@ export class IndexHome extends Component {
           <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 g-4 ">
             <div className="col">
               <div className="card border-0 overflow-hidden ">
-                <img src={brand1} className="card-img-top img-fluid" />
-              </div>
-            </div>
-
-            <div className="col">
-              <div className="card border-0 overflow-hidden ">
-                <img src={brand2} className="card-img-top img-fluid" />
-              </div>
-            </div>
-
-            <div className="col">
-              <div className="card border-0 overflow-hidden ">
-                <img src={brand3} className="card-img-top img-fluid" />
+                <img src={brand5} className="card-img-top img-fluid" />
               </div>
             </div>
 
@@ -200,7 +188,19 @@ export class IndexHome extends Component {
 
             <div className="col">
               <div className="card border-0 overflow-hidden ">
-                <img src={brand5} className="card-img-top img-fluid" />
+                <img src={brand3} className="card-img-top img-fluid" />
+              </div>
+            </div>
+
+            <div className="col">
+              <div className="card border-0 overflow-hidden ">
+                <img src={brand2} className="card-img-top img-fluid" />
+              </div>
+            </div>
+
+            <div className="col">
+              <div className="card border-0 overflow-hidden ">
+                <img src={brand1} className="card-img-top img-fluid" />
               </div>
             </div>
           </div>
@@ -367,14 +367,14 @@ export class IndexHome extends Component {
           </div>
         </div>
 
-        <div className="container col-xxl-10 px-4 py-1">
+        <div className="container px-4">
           <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
             <div className="col">
               <div
                 className="card border-0 h-100"
                 style={{ boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)" }}
               >
-                <img src={image4} className="card-img-top" alt="..." />
+                <img src={image2} className="card-img-top" alt="..." />
                 <div className="card-body text-start d-flex flex-column">
                   <h5 className="card-title">Bus Services</h5>
                   <p className="card-text flex-grow-1">
@@ -397,7 +397,7 @@ export class IndexHome extends Component {
                 className="card border-0 h-100"
                 style={{ boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)" }}
               >
-                <img src={image4} className="card-img-top" alt="..." />
+                <img src={image2} className="card-img-top" alt="..." />
                 <div className="card-body text-start d-flex flex-column">
                   <h5 className="card-title">Custom Services</h5>
                   <p className="card-text flex-grow-1">
@@ -420,9 +420,79 @@ export class IndexHome extends Component {
                 className="card border-0 h-100"
                 style={{ boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)" }}
               >
-                <img src={image4} className="card-img-top" alt="..." />
+                <img src={image2} className="card-img-top" alt="..." />
                 <div className="card-body text-start d-flex flex-column">
                   <h5 className="card-title">Electrical Services</h5>
+                  <p className="card-text flex-grow-1">
+                    <small>
+                      This is a wider card with supporting text below as a
+                      natural
+                    </small>
+                  </p>
+                  <p>
+                    <small style={{ color: "#003D92" }}>
+                      <b>Detail</b>
+                    </small>{" "}
+                    <FaArrowRight size={14} color="#003D92" />
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="col">
+              <div
+                className="card border-0 h-100"
+                style={{ boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)" }}
+              >
+                <img src={image2} className="card-img-top" alt="..." />
+                <div className="card-body text-start d-flex flex-column">
+                  <h5 className="card-title">Caravan Services</h5>
+                  <p className="card-text flex-grow-1">
+                    <small>
+                      This is a wider card with supporting text below as a
+                      natural
+                    </small>
+                  </p>
+                  <p>
+                    <small style={{ color: "#003D92" }}>
+                      <b>Detail</b>
+                    </small>{" "}
+                    <FaArrowRight size={14} color="#003D92" />
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="col">
+              <div
+                className="card border-0 h-100"
+                style={{ boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)" }}
+              >
+                <img src={image2} className="card-img-top" alt="..." />
+                <div className="card-body text-start d-flex flex-column">
+                  <h5 className="card-title">Car Services</h5>
+                  <p className="card-text flex-grow-1">
+                    <small>
+                      This is a wider card with supporting text below as a
+                      natural
+                    </small>
+                  </p>
+                  <p>
+                    <small style={{ color: "#003D92" }}>
+                      <b>Detail</b>
+                    </small>{" "}
+                    <FaArrowRight size={14} color="#003D92" />
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="col">
+              <div
+                className="card border-0 h-100"
+                style={{ boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)" }}
+              >
+                <img src={image2} className="card-img-top" alt="..." />
+                <div className="card-body text-start d-flex flex-column">
+                  <h5 className="card-title">Lub Services</h5>
                   <p className="card-text flex-grow-1">
                     <small>
                       This is a wider card with supporting text below as a
