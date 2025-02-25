@@ -36,14 +36,15 @@ export class IndexHome extends Component {
         <div
           id="carouselExampleIndicators"
           className="carousel slide"
-          data-bs-ride="true"
+          data-bs-ride="carousel"
         >
-          <div class="carousel-indicators">
+          {/* Indikator Carousel */}
+          <div className="carousel-indicators">
             <button
               type="button"
               data-bs-target="#carouselExampleIndicators"
               data-bs-slide-to="0"
-              class="active"
+              className="active"
               aria-current="true"
               aria-label="Slide 1"
             ></button>
@@ -59,127 +60,72 @@ export class IndexHome extends Component {
               data-bs-slide-to="2"
               aria-label="Slide 3"
             ></button>
-          </div>
-          <div class="carousel-indicators">
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="0"
-              class="active"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="1"
-              aria-label="Slide 2"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="2"
-              aria-label="Slide 3"
-            ></button>
-          </div>
-          <div className="carousel-inner">
-            <div className="carousel-item active">
-              <div className="overlay"></div>
-              <img src={imageSlider} className="d-block w-100" alt="..." />
-              <div class="carousel-caption col-xxl-8 px-1 py-5">
-                <div class="row my-5 p-5 g-5">
-                  <div class="col-lg-8 text-start">
-                    <h1 class="display-5 fw-bold text-light lh-1 mb-3">
-                      Micro, Medium Bus
-                    </h1>
-                    <p class="ext-light">
-                      Nec duis placerat sit id porta nunc amet consectetur
-                      aliquam magna donec ut tellus nisi justo semper vulputate
-                      nec enim odio donec.
-                    </p>
-                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                      <button
-                        type="button"
-                        class="btn btn-outline-light btn-sm px-4"
-                      >
-                        Selengkapnya
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="carousel-item">
-              <div className="overlay"></div>
-              <img src={imageSlider} className="d-block w-100" alt="..." />
-              <div class="carousel-caption col-xxl-8 px-1 py-5">
-                <div class="row my-5 p-5 g-5">
-                  <div class="col-lg-8 text-start">
-                    <h1 class="display-5 fw-bold text-light lh-1 mb-3">
-                      Micro, Medium Bus
-                    </h1>
-                    <p class="ext-light">
-                      Nec duis placerat sit id porta nunc amet consectetur
-                      aliquam magna donec ut tellus nisi justo semper vulputate
-                      nec enim odio donec.
-                    </p>
-                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                      <button
-                        type="button"
-                        class="btn btn-outline-light btn-sm px-4"
-                      >
-                        Selengkapnya
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="carousel-item">
-              <div className="overlay"></div>
-              <img src={imageSlider} className="d-block w-100" alt="..." />
-              <div class="carousel-caption col-xxl-8 px-1 py-5">
-                <div class="row my-5 p-5 g-5">
-                  <div class="col-lg-8 text-start">
-                    <h1 class="display-5 fw-bold text-light lh-1 mb-3">
-                      Micro, Medium Bus
-                    </h1>
-                    <p class="ext-light">
-                      Nec duis placerat sit id porta nunc amet consectetur
-                      aliquam magna donec ut tellus nisi justo semper vulputate
-                      nec enim odio donec.
-                    </p>
-                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                      <button
-                        type="button"
-                        class="btn btn-outline-light btn-sm px-4"
-                      >
-                        Selengkapnya
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
 
+          {/* Isi Carousel */}
+          <div className="carousel-inner">
+            {[imageSlider, imageSlider, imageSlider].map((image, index) => (
+              <div
+                key={index}
+                className={`carousel-item ${index === 0 ? "active" : ""}`}
+              >
+                {/* Overlay Transparan */}
+                <div className="overlay"></div>
+                <img
+                  src={image}
+                  className="d-block w-100"
+                  alt={`Slide ${index + 1}`}
+                />
+                <div className="carousel-caption col-xxl-8 px-1 py-5">
+                  <div className="row my-5 p-5 g-5">
+                    <div className="col-lg-8 text-start">
+                      <h1 className="display-5 fw-bold text-light lh-1 mb-3">
+                        Micro, Medium Bus
+                      </h1>
+                      <p className="text-light">
+                        Nec duis placerat sit id porta nunc amet consectetur
+                        aliquam magna donec ut tellus nisi justo semper
+                        vulputate nec enim odio donec.
+                      </p>
+                      <div className="d-grid gap-2 d-md-flex justify-content-md-start">
+                        <button
+                          type="button"
+                          className="btn btn-outline-light btn-sm px-4"
+                        >
+                          Selengkapnya
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Tombol Prev & Next */}
           <button
-            class="carousel-control-prev"
+            className="carousel-control-prev"
             type="button"
             data-bs-target="#carouselExampleIndicators"
             data-bs-slide="prev"
           >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
+            <span
+              className="carousel-control-prev-icon"
+              aria-hidden="true"
+            ></span>
+            <span className="visually-hidden">Previous</span>
           </button>
           <button
-            class="carousel-control-next"
+            className="carousel-control-next"
             type="button"
             data-bs-target="#carouselExampleIndicators"
             data-bs-slide="next"
           >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
+            <span
+              className="carousel-control-next-icon"
+              aria-hidden="true"
+            ></span>
+            <span className="visually-hidden">Next</span>
           </button>
         </div>
 
@@ -188,24 +134,19 @@ export class IndexHome extends Component {
             PARTNER VENDOR:
           </h5>
           <div className="row row-cols-2 row-cols-sm-3 row-cols-md-4 align-items-center row-cols-lg-6 row-cols-xl-8 g-3">
-            {[
-              brand1,
-              brand2,
-              brand3,
-              brand4,
-              brand5,
-              brand6,
-            ].map((brand, index) => (
-              <div className="col" key={index}>
-                <div className="card border-0 overflow-hidden">
-                  <img
-                    src={brand}
-                    className="card-img-top img-fluid w-75 h-75"
-                    alt={`brand-${index}`}
-                  />
+            {[brand1, brand2, brand3, brand4, brand5, brand6].map(
+              (brand, index) => (
+                <div className="col" key={index}>
+                  <div className="card border-0 overflow-hidden">
+                    <img
+                      src={brand}
+                      className="card-img-top img-fluid w-75 h-75"
+                      alt={`brand-${index}`}
+                    />
+                  </div>
                 </div>
-              </div>
-            ))}
+              )
+            )}
           </div>
         </div>
 

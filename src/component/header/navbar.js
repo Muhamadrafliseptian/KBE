@@ -4,10 +4,10 @@ export class Navbar extends Component {
   render() {
     return (
       <div>
-        <nav className="navbar navbar-expand-lg bg-body-tertiary">
+        <nav className="navbar navbar-expand-lg">
           <div className="container-fluid">
-            {/* Logo */}
-            <a className="navbar-brand" href="#">
+            {/* Logo di sebelah kiri */}
+            <a className="navbar-brand me-auto" href="#">
               <img
                 src={LogoKbe}
                 alt="Logo"
@@ -17,7 +17,7 @@ export class Navbar extends Component {
               />
             </a>
 
-            {/* Toggler Button (For Mobile View) */}
+            {/* Button Toggle untuk mode mobile */}
             <button
               className="navbar-toggler"
               type="button"
@@ -30,18 +30,14 @@ export class Navbar extends Component {
               <span className="navbar-toggler-icon"></span>
             </button>
 
-            {/* Navbar Items - Digeser ke Kanan dengan ms-auto */}
+            {/* Menu di sebelah kanan */}
             <div
-              className="collapse navbar-collapse ms-5"
+              className="collapse navbar-collapse justify-content-end"
               id="navbarScroll"
             >
-              <ul className="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
+              <ul className="navbar-nav my-2 my-lg-0 navbar-nav-scroll">
                 <li className="nav-item">
-                  <a
-                    className="nav-link text-dark"
-                    aria-current="page"
-                    href="/"
-                  >
+                  <a className="nav-link text-dark" href="/">
                     Beranda
                   </a>
                 </li>
@@ -60,86 +56,18 @@ export class Navbar extends Component {
                     Produk
                   </a>
                 </li>
-                {/* <li className="nav-item dropdown">
-                  <a
-                    className="nav-link dropdown-toggle text-dark"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Berita & Update
-                  </a>
-                  <ul className="dropdown-menu">
-                    <li>
-                      <a className="dropdown-item" href="#">
-                        Action
-                      </a>
-                    </li>
-                    <li>
-                      <a className="dropdown-item" href="#">
-                        Another action
-                      </a>
-                    </li>
-                    <li>
-                      <a className="dropdown-item" href="#">
-                        Something else here
-                      </a>
-                    </li>
-                  </ul>
-                </li> */}
-                {/* <li className="nav-item dropdown">
-                  <a
-                    className="nav-link dropdown-toggle text-dark"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Produk
-                  </a>
-                  <ul className="dropdown-menu">
-                    <li>
-                      <a className="dropdown-item" href="#">
-                        Action
-                      </a>
-                    </li>
-                    <li>
-                      <a className="dropdown-item" href="#">
-                        Another action
-                      </a>
-                    </li>
-                    <li>
-                      <a className="dropdown-item" href="#">
-                        Something else here
-                      </a>
-                    </li>
-                  </ul>
-                </li> */}
                 <li className="nav-item">
-                  <a
-                    className="nav-link text-dark"
-                    aria-current="page"
-                    href="#"
-                  >
+                  <a className="nav-link text-dark" href="#">
                     Unduh
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a
-                    className="nav-link text-dark"
-                    aria-current="page"
-                    href="/gallery"
-                  >
+                  <a className="nav-link text-dark" href="/gallery">
                     Galeri
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a
-                    className="nav-link text-dark"
-                    aria-current="page"
-                    href="/contact"
-                  >
+                  <a className="nav-link text-dark" href="/contact">
                     Kontak
                   </a>
                 </li>

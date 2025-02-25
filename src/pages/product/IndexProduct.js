@@ -13,7 +13,14 @@ import product2 from "../../assets/images/product-2.png";
 import product3 from "../../assets/images/product-3.png";
 import product4 from "../../assets/images/product-4.png";
 import product5 from "../../assets/images/product-5.png";
-import { FaPhone, FaArrowRight, FaCheck } from "react-icons/fa";
+import {
+  FaPhone,
+  FaArrowRight,
+  FaCheck,
+  FaCalendarAlt,
+  FaHome,
+  FaLayerGroup
+} from "react-icons/fa";
 export class IndexProduct extends Component {
   constructor(props) {
     super(props);
@@ -283,6 +290,99 @@ export class IndexProduct extends Component {
             )}
           </div>
         </div>
+
+        <div
+          className="container-fluid px-4 py-5"
+          style={{ backgroundColor: "#003f98" }}
+        >
+          <div className="text-center mb-4">
+            <h1 className="fw-bold" style={{ color: "white" }}>
+              Kerjasama mudah dalam 3 Langkah{" "}
+            </h1>
+            <p className="text-light">
+              Pellentesque nec nam aliquam sem et tortor consequat. Amet
+              venenatis urna cursus eget nunc scelerisque viverra mauris. Tellus
+              in hac habitasse platea dictumst.
+            </p>
+          </div>
+
+          <div className="container px-4">
+            <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+              <div className="col">
+                <div className="border-0 text-center d-flex flex-column align-items-center">
+                  <div
+                    className="d-flex align-items-center justify-content-center mb-3"
+                    style={{
+                      backgroundColor: "#E1C010",
+                      width: "60px",
+                      height: "60px",
+                      borderRadius: "50%",
+                    }}
+                  >
+                    <FaLayerGroup size={28} color="#003F98" />
+                  </div>
+
+                  <h5 className="text-light">Choose Our Service</h5>
+                  <p className="text-light flex-grow-1">
+                    <small>
+                      Liquam ultrices sagittis orci a scelerisque purus semper
+                      eget duis. Augue ut lectus arcu.
+                    </small>
+                  </p>
+                </div>
+              </div>
+
+              <div className="col">
+                <div className="border-0 text-center d-flex flex-column align-items-center">
+                  <div
+                    className="d-flex align-items-center justify-content-center mb-3"
+                    style={{
+                      backgroundColor: "#E1C010",
+                      width: "60px",
+                      height: "60px",
+                      borderRadius: "50%",
+                    }}
+                  >
+                    <FaCalendarAlt size={28} color="#003F98" />
+                  </div>
+
+                  <h5 className="text-light">Schedule Date & Time</h5>
+                  <p className="text-light flex-grow-1">
+                    <small>
+                      Liquam ultrices sagittis orci a scelerisque purus semper
+                      eget duis. Augue ut lectus arcu.
+                    </small>
+                  </p>
+                </div>
+              </div>
+
+              <div className="col">
+                <div className="border-0 text-center d-flex flex-column align-items-center">
+                  <div
+                    className="d-flex align-items-center justify-content-center mb-3"
+                    style={{
+                      backgroundColor: "#E1C010",
+                      width: "60px",
+                      height: "60px",
+                      borderRadius: "50%",
+                    }}
+                  >
+                    <FaHome size={28} color="#003F98" />
+                  </div>
+
+                  <h5 className="text-light">Sit Back & Wait for Us</h5>
+                  <p className="text-light flex-grow-1">
+                    <small>
+                      Liquam ultrices sagittis orci a scelerisque purus semper
+                      eget duis. Augue ut lectus arcu.
+                    </small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div className="container col-xxl-10">
           <div className="row flex-lg-row-reverse align-items-center g-5">
             {/* Gambar */}
