@@ -183,40 +183,29 @@ export class IndexHome extends Component {
           </button>
         </div>
 
-        <div className="container col-xxl-10 px-4 py-5 mt-4 shadow-sm rounded-3">
-          <h5 className="fw-bold" style={{ color: "#003F98" }}>
+        <div className="container col-xxl-10 py-1 mt-4 shadow-sm rounded-5">
+          <h5 className="fw-bold mb-4" style={{ color: "#003F98" }}>
             PARTNER VENDOR:
           </h5>
-          <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 g-4 ">
-            <div className="col">
-              <div className="card border-0 overflow-hidden ">
-                <img src={brand5} className="card-img-top img-fluid" />
+          <div className="row row-cols-2 row-cols-sm-3 row-cols-md-4 align-items-center row-cols-lg-6 row-cols-xl-8 g-3">
+            {[
+              brand1,
+              brand2,
+              brand3,
+              brand4,
+              brand5,
+              brand6,
+            ].map((brand, index) => (
+              <div className="col" key={index}>
+                <div className="card border-0 overflow-hidden">
+                  <img
+                    src={brand}
+                    className="card-img-top img-fluid w-75 h-75"
+                    alt={`brand-${index}`}
+                  />
+                </div>
               </div>
-            </div>
-
-            <div className="col">
-              <div className="card border-0 overflow-hidden ">
-                <img src={brand4} className="card-img-top img-fluid" />
-              </div>
-            </div>
-
-            <div className="col">
-              <div className="card border-0 overflow-hidden ">
-                <img src={brand3} className="card-img-top img-fluid" />
-              </div>
-            </div>
-
-            <div className="col">
-              <div className="card border-0 overflow-hidden ">
-                <img src={brand2} className="card-img-top img-fluid" />
-              </div>
-            </div>
-
-            <div className="col">
-              <div className="card border-0 overflow-hidden ">
-                <img src={brand1} className="card-img-top img-fluid" />
-              </div>
-            </div>
+            ))}
           </div>
         </div>
 

@@ -44,7 +44,7 @@ export class IndexGallery extends Component {
           </h1>
         </div>
 
-        <div className="container-fluid px-4 py-5">
+        <div className="container col-xxl-10 px-4 py-5">
           {/* Judul */}
           <div className="text-center mb-4">
             <h1 className="fw-bold" style={{ color: "#092043" }}>

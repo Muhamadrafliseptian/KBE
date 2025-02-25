@@ -7,12 +7,13 @@ import brand2 from "../../assets/images/brand-2.png";
 import brand3 from "../../assets/images/brand-3.png";
 import brand4 from "../../assets/images/brand-4.png";
 import brand5 from "../../assets/images/brand-5.png";
+import brand6 from "../../assets/images/brand-6.png";
 import product1 from "../../assets/images/product-1.png";
 import product2 from "../../assets/images/product-2.png";
 import product3 from "../../assets/images/product-3.png";
 import product4 from "../../assets/images/product-4.png";
 import product5 from "../../assets/images/product-5.png";
-import { FaPhone, FaArrowRight } from "react-icons/fa";
+import { FaPhone, FaArrowRight, FaCheck } from "react-icons/fa";
 export class IndexProduct extends Component {
   constructor(props) {
     super(props);
@@ -266,39 +267,22 @@ export class IndexProduct extends Component {
         </div>
 
         <div className="container col-xxl-10 px-4 py-5">
-          <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 g-4">
-            <div className="col">
-              <div className="card border-0 overflow-hidden ">
-                <img src={brand1} className="card-img-top img-fluid" />
-              </div>
-            </div>
-
-            <div className="col">
-              <div className="card border-0 overflow-hidden ">
-                <img src={brand2} className="card-img-top img-fluid" />
-              </div>
-            </div>
-
-            <div className="col">
-              <div className="card border-0 overflow-hidden ">
-                <img src={brand3} className="card-img-top img-fluid" />
-              </div>
-            </div>
-
-            <div className="col">
-              <div className="card border-0 overflow-hidden ">
-                <img src={brand4} className="card-img-top img-fluid" />
-              </div>
-            </div>
-
-            <div className="col">
-              <div className="card border-0 overflow-hidden ">
-                <img src={brand5} className="card-img-top img-fluid" />
-              </div>
-            </div>
+          <div className="row row-cols-2 row-cols-sm-3 row-cols-md-4 align-items-center row-cols-lg-6 row-cols-xl-8 g-3">
+            {[brand1, brand2, brand3, brand4, brand5, brand6].map(
+              (brand, index) => (
+                <div className="col" key={index}>
+                  <div className="card border-0 overflow-hidden">
+                    <img
+                      src={brand}
+                      className="card-img-top img-fluid w-75 h-75"
+                      alt={`brand-${index}`}
+                    />
+                  </div>
+                </div>
+              )
+            )}
           </div>
         </div>
-
         <div className="container col-xxl-10">
           <div className="row flex-lg-row-reverse align-items-center g-5">
             {/* Gambar */}
@@ -383,22 +367,47 @@ export class IndexProduct extends Component {
                 Partner Karoseri Anda
               </h1>
 
-              <ul className="ps-2">
-                <li className="mb-2">
+              <ul className="list-unstyled ps-0">
+                <li className="mb-2 d-flex align-items-center">
+                  <FaCheck
+                    size={12}
+                    className="me-2"
+                    style={{ color: "#00D46E" }}
+                  />
                   Konsultasi terkait kebutuhan dan keinginan secara
                   komprehensif.
                 </li>
-                <li className="mb-2">
+                <li className="mb-2 d-flex align-items-center">
+                  <FaCheck
+                    size={12}
+                    className="me-2"
+                    style={{ color: "#00D46E" }}
+                  />
                   SDM dan Alat Produksi yang berkualitas dan berpengalaman.
                 </li>
-                <li className="mb-2">
+                <li className="mb-2 d-flex align-items-center">
+                  <FaCheck
+                    size={12}
+                    className="me-2"
+                    style={{ color: "#00D46E" }}
+                  />
                   Hasil dan Kualitas product yang sudah diakui oleh konsumen
                   baik luar dan dalam negeri.
                 </li>
-                <li className="mb-2">
+                <li className="mb-2 d-flex align-items-center">
+                  <FaCheck
+                    size={12}
+                    className="me-2"
+                    style={{ color: "#00D46E" }}
+                  />
                   Memliki lebih dari 10 Tahun Pengalaman di bidang karoseri.
                 </li>
-                <li className="mb-2">
+                <li className="mb-2 d-flex align-items-center">
+                  <FaCheck
+                    size={12}
+                    className="me-2"
+                    style={{ color: "#00D46E" }}
+                  />
                   Layanan service dan jaminan mutu yang terpercaya
                 </li>
               </ul>

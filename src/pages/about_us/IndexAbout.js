@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import image3 from "../../assets/images/image-3.png";
 import image5 from "../../assets/images/image-5.png";
-import { FaPhone, FaCalendar, FaCalendarAlt } from "react-icons/fa";
+import { FaPhone, FaCalendar, FaCalendarAlt, FaCheck } from "react-icons/fa";
 import product4 from "../../assets/images/product-4.png";
 import product5 from "../../assets/images/product-5.png";
 export class IndexAbout extends Component {
@@ -140,26 +140,51 @@ export class IndexAbout extends Component {
                 Partner Karoseri Anda
               </h1>
 
-              <ul className="ps-2">
-                <li className="mb-2">
+              <ul className="list-unstyled ps-0">
+                <li className="mb-2 d-flex align-items-center">
+                  <FaCheck
+                    size={12}
+                    className="me-2"
+                    style={{ color: "#00D46E" }}
+                  />
                   Tim kami terlatih dengan baik dan memiliki pengalaman luas
                   dalam bidangnya.
                 </li>
-                <li className="mb-2">
+                <li className="mb-2 d-flex align-items-center">
+                  <FaCheck
+                    size={12}
+                    className="me-2"
+                    style={{ color: "#00D46E" }}
+                  />
                   Solusi yang disesuaikan untuk memastikan kenyamanan tempat
-                  kerja Anda.
+                  kerja Anda.{" "}
                 </li>
-                <li className="mb-2">
+                <li className="mb-2 d-flex align-items-center">
+                  <FaCheck
+                    size={12}
+                    className="me-2"
+                    style={{ color: "#00D46E" }}
+                  />
                   Meningkatkan semangat kerja dengan lingkungan yang lebih
                   bersih dan ramah lingkungan.
                 </li>
-                <li className="mb-2">
+                <li className="mb-2 d-flex align-items-center">
+                  <FaCheck
+                    size={12}
+                    className="me-2"
+                    style={{ color: "#00D46E" }}
+                  />
                   Energi positif di kantor menghasilkan karyawan yang lebih
-                  bahagia dan pelanggan yang puas.
+                  bahagia dan pelanggan yang puas.{" "}
                 </li>
-                <li className="mb-2">
+                <li className="mb-2 d-flex align-items-center">
+                  <FaCheck
+                    size={12}
+                    className="me-2"
+                    style={{ color: "#00D46E" }}
+                  />
                   Pengalaman lebih dari 15 tahun dengan jaminan uang kembali
-                  tanpa syarat.
+                  tanpa syarat.{" "}
                 </li>
               </ul>
 
