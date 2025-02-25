@@ -1,11 +1,17 @@
 import React, { Component } from "react";
 import image2 from "../../assets/images/image-2.png";
 import image3 from "../../assets/images/image-3.png";
+import image4 from "../../assets/images/image-4.png";
 import brand1 from "../../assets/images/brand-1.png";
 import brand2 from "../../assets/images/brand-2.png";
 import brand3 from "../../assets/images/brand-3.png";
 import brand4 from "../../assets/images/brand-4.png";
 import brand5 from "../../assets/images/brand-5.png";
+import product1 from "../../assets/images/product-1.png";
+import product2 from "../../assets/images/product-2.png";
+import product3 from "../../assets/images/product-3.png";
+import product4 from "../../assets/images/product-4.png";
+import product5 from "../../assets/images/product-5.png";
 import { FaPhone, FaArrowRight } from "react-icons/fa";
 export class IndexProduct extends Component {
   constructor(props) {
@@ -62,143 +68,197 @@ export class IndexProduct extends Component {
               Tetap up-to-date dengan berita terbaru kami
             </p>
           </div>
-          <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
-            <div className="col">
-              <div
-                className="card border-0 h-100"
-                style={{ boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)" }}
-              >
-                <img src={image2} className="card-img-top" alt="..." />
-                <div className="card-body text-start d-flex flex-column">
-                  <h5 className="card-title">Bus Services</h5>
-                  <p className="card-text flex-grow-1">
-                    <small>
-                      This is a wider card with supporting text below as a
-                      natural
-                    </small>
-                  </p>
-                  <p>
-                    <small style={{ color: "#003D92" }}>
-                      <b>Detail</b>
-                    </small>{" "}
-                    <FaArrowRight size={14} color="#003D92" />
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="col">
-              <div
-                className="card border-0 h-100"
-                style={{ boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)" }}
-              >
-                <img src={image2} className="card-img-top" alt="..." />
-                <div className="card-body text-start d-flex flex-column">
-                  <h5 className="card-title">Custom Services</h5>
-                  <p className="card-text flex-grow-1">
-                    <small>
-                      This is a wider card with supporting text below as a
-                      natural
-                    </small>
-                  </p>
-                  <p>
-                    <small style={{ color: "#003D92" }}>
-                      <b>Detail</b>
-                    </small>{" "}
-                    <FaArrowRight size={14} color="#003D92" />
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="col">
-              <div
-                className="card border-0 h-100"
-                style={{ boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)" }}
-              >
-                <img src={image2} className="card-img-top" alt="..." />
-                <div className="card-body text-start d-flex flex-column">
-                  <h5 className="card-title">Electrical Services</h5>
-                  <p className="card-text flex-grow-1">
-                    <small>
-                      This is a wider card with supporting text below as a
-                      natural
-                    </small>
-                  </p>
-                  <p>
-                    <small style={{ color: "#003D92" }}>
-                      <b>Detail</b>
-                    </small>{" "}
-                    <FaArrowRight size={14} color="#003D92" />
-                  </p>
-                </div>
-              </div>
-            </div>
 
-            <div className="col">
-              <div
-                className="card border-0 h-100"
-                style={{ boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)" }}
-              >
-                <img src={image2} className="card-img-top" alt="..." />
-                <div className="card-body text-start d-flex flex-column">
-                  <h5 className="card-title">Caravan Services</h5>
-                  <p className="card-text flex-grow-1">
-                    <small>
-                      This is a wider card with supporting text below as a
-                      natural
-                    </small>
-                  </p>
-                  <p>
-                    <small style={{ color: "#003D92" }}>
-                      <b>Detail</b>
-                    </small>{" "}
-                    <FaArrowRight size={14} color="#003D92" />
-                  </p>
+          <div className="container px-4">
+            <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+              <div className="col">
+                <div
+                  className="card border-0 h-100"
+                  style={{ boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)" }}
+                >
+                  <img src={image4} className="card-img-top" alt="..." />
+                  <div className="card-body text-start d-flex flex-column">
+                    <h5 className="card-title text-color">Bus Services</h5>
+                    <p className="card-text flex-grow-1">
+                      <small>
+                        Kebutuhan aneka Bus yang dapat disesuaikan dengan
+                        kebutuhan, buat interior dan exterior anda lebih
+                        menawan.
+                      </small>
+                    </p>
+                    <div className="d-grid d-md-flex justify-content-md-center">
+                      <button
+                        type="button"
+                        className="btn btn-sm px-4 py-1 d-flex align-items-center"
+                        style={{ backgroundColor: "#E6F5FC", color: "#1756B5" }}
+                      >
+                        <b>Detail</b>
+                        <FaArrowRight
+                          size={16}
+                          color="#1756B5"
+                          className="ms-1"
+                        />
+                      </button>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="col">
-              <div
-                className="card border-0 h-100"
-                style={{ boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)" }}
-              >
-                <img src={image2} className="card-img-top" alt="..." />
-                <div className="card-body text-start d-flex flex-column">
-                  <h5 className="card-title">Car Services</h5>
-                  <p className="card-text flex-grow-1">
-                    <small>
-                      This is a wider card with supporting text below as a
-                      natural
-                    </small>
-                  </p>
-                  <p>
-                    <small style={{ color: "#003D92" }}>
-                      <b>Detail</b>
-                    </small>{" "}
-                    <FaArrowRight size={14} color="#003D92" />
-                  </p>
+              <div className="col">
+                <div
+                  className="card border-0 h-100"
+                  style={{ boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)" }}
+                >
+                  <img src={product1} className="card-img-top" alt="..." />
+                  <div className="card-body text-start d-flex flex-column">
+                    <h5 className="card-title text-color">Custom Services</h5>
+                    <p className="card-text flex-grow-1">
+                      <small>
+                        Buat kendaraan untuk segala kebutuhan dengan jaminan
+                        presisi serta fungsionalitas yang memadai.
+                      </small>
+                    </p>
+                    <div className="d-grid d-md-flex justify-content-md-center">
+                      <button
+                        type="button"
+                        className="btn btn-sm px-4 py-1 d-flex align-items-center"
+                        style={{ backgroundColor: "#E6F5FC", color: "#1756B5" }}
+                      >
+                        <b>Detail</b>
+                        <FaArrowRight
+                          size={16}
+                          color="#1756B5"
+                          className="ms-1"
+                        />
+                      </button>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="col">
-              <div
-                className="card border-0 h-100"
-                style={{ boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)" }}
-              >
-                <img src={image2} className="card-img-top" alt="..." />
-                <div className="card-body text-start d-flex flex-column">
-                  <h5 className="card-title">Lub Services</h5>
-                  <p className="card-text flex-grow-1">
-                    <small>
-                      This is a wider card with supporting text below as a
-                      natural
-                    </small>
-                  </p>
-                  <p>
-                    <small style={{ color: "#003D92" }}>
-                      <b>Detail</b>
-                    </small>{" "}
-                    <FaArrowRight size={14} color="#003D92" />
-                  </p>
+              <div className="col">
+                <div
+                  className="card border-0 h-100"
+                  style={{ boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)" }}
+                >
+                  <img src={product2} className="card-img-top" alt="..." />
+                  <div className="card-body text-start d-flex flex-column">
+                    <h5 className="card-title text-color">
+                      Electrical Services
+                    </h5>
+                    <p className="card-text flex-grow-1">
+                      <small>
+                        Modifikasi dan pembuatan kendaraan listrik yang dapat
+                        disesuaikan oleh pengguna untuk segala kebutuhan.
+                      </small>
+                    </p>
+                    <div className="d-grid d-md-flex justify-content-md-center">
+                      <button
+                        type="button"
+                        className="btn btn-sm px-4 py-1 d-flex align-items-center"
+                        style={{ backgroundColor: "#E6F5FC", color: "#1756B5" }}
+                      >
+                        <b>Detail</b>
+                        <FaArrowRight
+                          size={16}
+                          color="#1756B5"
+                          className="ms-1"
+                        />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col">
+                <div
+                  className="card border-0 h-100"
+                  style={{ boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)" }}
+                >
+                  <img src={product3} className="card-img-top" alt="..." />
+                  <div className="card-body text-start d-flex flex-column">
+                    <h5 className="card-title text-color">Caravan Services</h5>
+                    <p className="card-text flex-grow-1">
+                      <small>
+                        Buat atau Modifikasi model Caravan yang dapat
+                        disesuaikan dengan style dan kebutuhan.
+                      </small>
+                    </p>
+                    <div className="d-grid d-md-flex justify-content-md-center">
+                      <button
+                        type="button"
+                        className="btn btn-sm px-4 py-1 d-flex align-items-center"
+                        style={{ backgroundColor: "#E6F5FC", color: "#1756B5" }}
+                      >
+                        <b>Detail</b>
+                        <FaArrowRight
+                          size={16}
+                          color="#1756B5"
+                          className="ms-1"
+                        />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col">
+                <div
+                  className="card border-0 h-100"
+                  style={{ boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)" }}
+                >
+                  <img src={product4} className="card-img-top" alt="..." />
+                  <div className="card-body text-start d-flex flex-column">
+                    <h5 className="card-title text-color">Car Services</h5>
+                    <p className="card-text flex-grow-1">
+                      <small>
+                        Bentuk dan Modifikasi kendaraan untuk social atau
+                        pribadi yang dapat disesuaikan dengan kebutuhan.
+                      </small>
+                    </p>
+                    <div className="d-grid d-md-flex justify-content-md-center">
+                      <button
+                        type="button"
+                        className="btn btn-sm px-4 py-1 d-flex align-items-center"
+                        style={{ backgroundColor: "#E6F5FC", color: "#1756B5" }}
+                      >
+                        <b>Detail</b>
+                        <FaArrowRight
+                          size={16}
+                          color="#1756B5"
+                          className="ms-1"
+                        />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col">
+                <div
+                  className="card border-0 h-100"
+                  style={{ boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)" }}
+                >
+                  <img src={product5} className="card-img-top" alt="..." />
+                  <div className="card-body text-start d-flex flex-column">
+                    <h5 className="card-title text-color">Lub Services</h5>
+                    <p className="card-text flex-grow-1">
+                      <small>
+                        Modifikasi mobil niaga untuk kegiatan pameran, roadshow
+                        dengan build quality yang terjamin.
+                      </small>
+                    </p>
+                    <div className="d-grid d-md-flex justify-content-md-center">
+                      <button
+                        type="button"
+                        className="btn btn-sm px-4 py-1 d-flex align-items-center"
+                        style={{ backgroundColor: "#E6F5FC", color: "#1756B5" }}
+                      >
+                        <b>Detail</b>
+                        <FaArrowRight
+                          size={16}
+                          color="#1756B5"
+                          className="ms-1"
+                        />
+                      </button>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -346,8 +406,8 @@ export class IndexProduct extends Component {
               <div className="d-grid d-md-flex justify-content-md-start">
                 <button
                   type="button"
-                  className="btn btn-sm px-4"
-                  style={{ backgroundColor: "#003D92", color: "white" }}
+                  className="btn btn-sm px-4 py-2"
+                  style={{ backgroundColor: "#092043", color: "white" }}
                 >
                   Hubungi Sekarang{" "}
                 </button>

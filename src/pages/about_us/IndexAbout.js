@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import image2 from "../../assets/images/image-2.png";
 import image3 from "../../assets/images/image-3.png";
 import image5 from "../../assets/images/image-5.png";
-import { FaPhone } from "react-icons/fa";
-
+import { FaPhone, FaCalendar, FaCalendarAlt } from "react-icons/fa";
+import product4 from "../../assets/images/product-4.png";
+import product5 from "../../assets/images/product-5.png";
 export class IndexAbout extends Component {
   render() {
     return (
@@ -49,7 +49,7 @@ export class IndexAbout extends Component {
             {/* Gambar */}
             <div className="col-12 col-sm-8 col-lg-6">
               <img
-                src={image2}
+                src={product4}
                 className="d-block mx-auto img-fluid rounded"
                 alt="Tentang Karya Baja Estetika"
                 width="700"
@@ -101,9 +101,10 @@ export class IndexAbout extends Component {
               <div className="d-grid d-md-flex justify-content-md-start">
                 <button
                   type="button"
-                  className="btn btn-sm px-4"
+                  className="btn btn-sm px-4 py-2 d-flex align-items-center"
                   style={{ backgroundColor: "#003D92", color: "white" }}
                 >
+                  <FaCalendarAlt size={16} color="white" className="me-2" />
                   Buat Temu Janji
                 </button>
               </div>
@@ -112,7 +113,7 @@ export class IndexAbout extends Component {
             {/* Gambar */}
             <div className="col-12 col-sm-8 col-lg-6">
               <img
-                src={image3}
+                src={product5}
                 className="d-block mx-auto img-fluid rounded"
                 alt="Karoseri Detail Tinggi"
                 width="700"
@@ -165,10 +166,11 @@ export class IndexAbout extends Component {
               <div className="d-grid d-md-flex justify-content-md-start">
                 <button
                   type="button"
-                  className="btn btn-sm px-4"
+                  className="btn btn-sm px-4 py-2 d-flex align-items-center"
                   style={{ backgroundColor: "#003D92", color: "white" }}
                 >
-                  Hubungi Sekarang{" "}
+                  <FaPhone size={16} color="white" className="me-2" />
+                  Hubungi Sekarang
                 </button>
               </div>
             </div>

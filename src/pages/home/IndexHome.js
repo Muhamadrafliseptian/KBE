@@ -9,6 +9,18 @@ import brand2 from "../../assets/images/brand-2.png";
 import brand3 from "../../assets/images/brand-3.png";
 import brand4 from "../../assets/images/brand-4.png";
 import brand5 from "../../assets/images/brand-5.png";
+import brand6 from "../../assets/images/brand-6.png";
+import brand7 from "../../assets/images/brand-7.png";
+
+import news1 from "../../assets/images/news-1.png";
+import news2 from "../../assets/images/news-2.png";
+import news3 from "../../assets/images/news-3.png";
+
+import product1 from "../../assets/images/product-1.png";
+import product2 from "../../assets/images/product-2.png";
+import product3 from "../../assets/images/product-3.png";
+import product4 from "../../assets/images/product-4.png";
+import product5 from "../../assets/images/product-5.png";
 import {
   FaCalendar,
   FaCommentDollar,
@@ -172,7 +184,9 @@ export class IndexHome extends Component {
         </div>
 
         <div className="container col-xxl-10 px-4 py-5 mt-4 shadow-sm rounded-3">
-          <h5 className="fw-bold" style={{color: "#003F98"}}>PARTNER VENDOR:</h5>
+          <h5 className="fw-bold" style={{ color: "#003F98" }}>
+            PARTNER VENDOR:
+          </h5>
           <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 g-4 ">
             <div className="col">
               <div className="card border-0 overflow-hidden ">
@@ -205,7 +219,6 @@ export class IndexHome extends Component {
             </div>
           </div>
         </div>
-        
 
         <div class="container col-xxl-10 px-4 py-1">
           <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
@@ -220,7 +233,9 @@ export class IndexHome extends Component {
               />
             </div>
             <div class="col-lg-6 text-center text-lg-start">
-              <p class="fw-bold" style={{color: "#003D92"}}>Tentang Kami</p>
+              <p class="fw-bold" style={{ color: "#003D92" }}>
+                Tentang Kami
+              </p>
               <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
                 Karya Baja Estetika
               </h1>
@@ -232,7 +247,11 @@ export class IndexHome extends Component {
                 kendaraan yang membutuhkan perhatian dengan spesifikasi khusus.
               </p>
               <div class="d-grid gap-2 d-md-flex justify-content-center justify-content-lg-start">
-                <button type="button" class="btn btn-sm px-4" style={{backgroundColor: "#003D92", color: "white"}}>
+                <button
+                  type="button"
+                  class="btn btn-sm px-4"
+                  style={{ backgroundColor: "#003D92", color: "white" }}
+                >
                   Selengkapnya
                 </button>
               </div>
@@ -243,8 +262,13 @@ export class IndexHome extends Component {
         <div class="container col-xxl-10 px-4 py-1">
           <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
             <div class="col-lg-6 text-start">
-              <p class="fw-bold" style={{color: "#003D92"}}>Kenapa Memilih Kami</p>
-              <h1 class="display-5 fw-bold lh-1 mb-3" style={{color: "#092043"}}>
+              <p class="fw-bold" style={{ color: "#003D92" }}>
+                Kenapa Memilih Kami
+              </p>
+              <h1
+                class="display-5 fw-bold lh-1 mb-3"
+                style={{ color: "#092043" }}
+              >
                 Karya Baja Estetika<br></br>
                 Karoseri Terbaik
               </h1>
@@ -374,13 +398,13 @@ export class IndexHome extends Component {
                 className="card border-0 h-100"
                 style={{ boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)" }}
               >
-                <img src={image2} className="card-img-top" alt="..." />
+                <img src={image4} className="card-img-top" alt="..." />
                 <div className="card-body text-start d-flex flex-column">
-                  <h5 className="card-title">Bus Services</h5>
+                  <h5 className="card-title text-color">Bus Services</h5>
                   <p className="card-text flex-grow-1">
                     <small>
-                      This is a wider card with supporting text below as a
-                      natural
+                      Kebutuhan aneka Bus yang dapat disesuaikan dengan
+                      kebutuhan, buat interior dan exterior anda lebih menawan.
                     </small>
                   </p>
                   <p>
@@ -397,13 +421,13 @@ export class IndexHome extends Component {
                 className="card border-0 h-100"
                 style={{ boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)" }}
               >
-                <img src={image2} className="card-img-top" alt="..." />
+                <img src={product1} className="card-img-top" alt="..." />
                 <div className="card-body text-start d-flex flex-column">
-                  <h5 className="card-title">Custom Services</h5>
+                  <h5 className="card-title text-color">Custom Services</h5>
                   <p className="card-text flex-grow-1">
                     <small>
-                      This is a wider card with supporting text below as a
-                      natural
+                      Buat kendaraan untuk segala kebutuhan dengan jaminan
+                      presisi serta fungsionalitas yang memadai.
                     </small>
                   </p>
                   <p>
@@ -420,13 +444,13 @@ export class IndexHome extends Component {
                 className="card border-0 h-100"
                 style={{ boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)" }}
               >
-                <img src={image2} className="card-img-top" alt="..." />
+                <img src={product2} className="card-img-top" alt="..." />
                 <div className="card-body text-start d-flex flex-column">
-                  <h5 className="card-title">Electrical Services</h5>
+                  <h5 className="card-title text-color">Electrical Services</h5>
                   <p className="card-text flex-grow-1">
                     <small>
-                      This is a wider card with supporting text below as a
-                      natural
+                      Modifikasi dan pembuatan kendaraan listrik yang dapat
+                      disesuaikan oleh pengguna untuk segala kebutuhan.
                     </small>
                   </p>
                   <p>
@@ -444,13 +468,13 @@ export class IndexHome extends Component {
                 className="card border-0 h-100"
                 style={{ boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)" }}
               >
-                <img src={image2} className="card-img-top" alt="..." />
+                <img src={product3} className="card-img-top" alt="..." />
                 <div className="card-body text-start d-flex flex-column">
-                  <h5 className="card-title">Caravan Services</h5>
+                  <h5 className="card-title text-color">Caravan Services</h5>
                   <p className="card-text flex-grow-1">
                     <small>
-                      This is a wider card with supporting text below as a
-                      natural
+                      Buat atau Modifikasi model Caravan yang dapat disesuaikan
+                      dengan style dan kebutuhan.
                     </small>
                   </p>
                   <p>
@@ -467,13 +491,13 @@ export class IndexHome extends Component {
                 className="card border-0 h-100"
                 style={{ boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)" }}
               >
-                <img src={image2} className="card-img-top" alt="..." />
+                <img src={product4} className="card-img-top" alt="..." />
                 <div className="card-body text-start d-flex flex-column">
-                  <h5 className="card-title">Car Services</h5>
+                  <h5 className="card-title text-color">Car Services</h5>
                   <p className="card-text flex-grow-1">
                     <small>
-                      This is a wider card with supporting text below as a
-                      natural
+                      Bentuk dan Modifikasi kendaraan untuk social atau pribadi
+                      yang dapat disesuaikan dengan kebutuhan.
                     </small>
                   </p>
                   <p>
@@ -490,13 +514,13 @@ export class IndexHome extends Component {
                 className="card border-0 h-100"
                 style={{ boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)" }}
               >
-                <img src={image2} className="card-img-top" alt="..." />
+                <img src={product5} className="card-img-top" alt="..." />
                 <div className="card-body text-start d-flex flex-column">
-                  <h5 className="card-title">Lub Services</h5>
+                  <h5 className="card-title text-color">Lub Services</h5>
                   <p className="card-text flex-grow-1">
                     <small>
-                      This is a wider card with supporting text below as a
-                      natural
+                      Modifikasi mobil niaga untuk kegiatan pameran, roadshow
+                      dengan build quality yang terjamin.
                     </small>
                   </p>
                   <p>
@@ -605,20 +629,25 @@ export class IndexHome extends Component {
                 className="card border-0 h-100"
                 style={{ boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)" }}
               >
-                <img src={image4} className="card-img-top" alt="..." />
+                <img src={news1} className="card-img-top" alt="..." />
                 <div className="card-body text-start d-flex flex-column">
-                  <h5 className="card-title">Bus Services</h5>
+                  <h5 className="card-title fw-bold text-color">
+                    Van Day, Ajang Kumpul Modifikasi Mobil Keluarga di Indonesia
+                  </h5>
+                  <p className="flex-grow-1 text-secondary">
+                    <small>APRIL 15, 2021 NO COMMENTS</small>
+                  </p>
                   <p className="card-text flex-grow-1">
                     <small>
-                      This is a wider card with supporting text below as a
-                      natural
+                      Tak hanya mobil bergenre city car, sedan, hatchback, atau
+                      SUV, modifikasi di segmen mobil keluarga alias multi
+                      purpose vehicle.
                     </small>
                   </p>
                   <p>
                     <small style={{ color: "#003D92" }}>
-                      <b>Detail</b>
+                      <b>Read More →</b>
                     </small>{" "}
-                    <FaArrowRight size={14} color="#003D92" />
                   </p>
                 </div>
               </div>
@@ -628,20 +657,25 @@ export class IndexHome extends Component {
                 className="card border-0 h-100"
                 style={{ boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)" }}
               >
-                <img src={image4} className="card-img-top" alt="..." />
+                <img src={news2} className="card-img-top" alt="..." />
                 <div className="card-body text-start d-flex flex-column">
-                  <h5 className="card-title">Custom Services</h5>
+                  <h5 className="card-title fw-bold text-color">
+                    Zebra Espass Mahalan Biaya Modif daripada Harga Mobilnya{" "}
+                  </h5>
+                  <p className="flex-grow-1 text-secondary">
+                    <small>APRIL 15, 2021 NO COMMENTS</small>
+                  </p>
                   <p className="card-text flex-grow-1">
                     <small>
-                      This is a wider card with supporting text below as a
-                      natural
+                      Daihatsu Zebra Espass merupakan mobil pintu geser yang
+                      cukup legendaris di Indonesia. Seorang pensiunan Dinas
+                      Sosial.
                     </small>
                   </p>
                   <p>
                     <small style={{ color: "#003D92" }}>
-                      <b>Detail</b>
+                      <b>Read More →</b>
                     </small>{" "}
-                    <FaArrowRight size={14} color="#003D92" />
                   </p>
                 </div>
               </div>
@@ -651,20 +685,25 @@ export class IndexHome extends Component {
                 className="card border-0 h-100"
                 style={{ boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)" }}
               >
-                <img src={image4} className="card-img-top" alt="..." />
+                <img src={news3} className="card-img-top" alt="..." />
                 <div className="card-body text-start d-flex flex-column">
-                  <h5 className="card-title">Electrical Services</h5>
+                  <h5 className="card-title fw-bold text-color">
+                    Sebelum Memulai Bisnis Food Truck, Simak Estimasi Biayanya{" "}
+                  </h5>
+                  <p className="flex-grow-1 text-secondary">
+                    <small>APRIL 15, 2021 NO COMMENTS</small>
+                  </p>
                   <p className="card-text flex-grow-1">
                     <small>
-                      This is a wider card with supporting text below as a
-                      natural
+                      Bisnis berjualan makanan dengan desain food truck kini
+                      tengah menjangkit di sejumlah tempat. Bisnis ini disebut
+                      cukup.
                     </small>
                   </p>
                   <p>
                     <small style={{ color: "#003D92" }}>
-                      <b>Detail</b>
+                      <b>Read More →</b>
                     </small>{" "}
-                    <FaArrowRight size={14} color="#003D92" />
                   </p>
                 </div>
               </div>

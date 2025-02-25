@@ -44,7 +44,7 @@ export class IndexNews extends Component {
           </h1>
         </div>
 
-        <div className="container-fluid px-4 py-5">
+        <div className="container col-xxl-10 px-4 py-5">
           {/* Judul */}
           <div className="text-center mb-4">
             <h1 className="fw-bold" style={{ color: "#092043" }}>
@@ -56,16 +56,24 @@ export class IndexNews extends Component {
           </div>
 
           {/* Grid Berita */}
-          <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4">
+          <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-2 g-4">
             {[...Array(6)].map((_, index) => (
               <div className="col" key={index}>
                 <div className="card border-0 shadow-sm h-100">
                   <img src={image2} className="card-img-top" alt="Berita" />
                   <div className="card-body text-start">
-                    <h5 className="card-title">Judul Berita {index + 1}</h5>
+                    <h4 className="card-title text-color">Design is as much an act of spacing as an act of marking</h4>
+                    <p className="card-text" style={{color: '#5C6776'}}>
+                      <small>
+                    John Doe  -  January 15, 2021  -  0 Comments  -  Healthy
+
+                      </small>
+                    </p>
                     <p className="card-text text-muted">
+                      <small>
                       Ini adalah deskripsi singkat dari berita terbaru kami.
                       Klik untuk membaca lebih lanjut.
+                      </small>
                     </p>
                   </div>
                 </div>
