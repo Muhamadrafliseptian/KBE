@@ -55,6 +55,11 @@ export class Navbar extends Component {
                     Berita & Update
                   </a>
                 </li>
+                <li className="nav-item">
+                  <a className="nav-link text-dark" href="/product">
+                    Produk
+                  </a>
+                </li>
                 {/* <li className="nav-item dropdown">
                   <a
                     className="nav-link dropdown-toggle text-dark"
@@ -83,7 +88,7 @@ export class Navbar extends Component {
                     </li>
                   </ul>
                 </li> */}
-                <li className="nav-item dropdown">
+                {/* <li className="nav-item dropdown">
                   <a
                     className="nav-link dropdown-toggle text-dark"
                     href="#"
@@ -110,7 +115,7 @@ export class Navbar extends Component {
                       </a>
                     </li>
                   </ul>
-                </li>
+                </li> */}
                 <li className="nav-item">
                   <a
                     className="nav-link text-dark"

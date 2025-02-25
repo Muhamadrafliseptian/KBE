@@ -4,6 +4,11 @@ import image2 from "../../assets/images/image-2.png";
 import image3 from "../../assets/images/image-3.png";
 import image4 from "../../assets/images/image-4.png";
 import image5 from "../../assets/images/image-5.jpg";
+import brand1 from "../../assets/images/brand-1.png";
+import brand2 from "../../assets/images/brand-2.png";
+import brand3 from "../../assets/images/brand-3.png";
+import brand4 from "../../assets/images/brand-4.png";
+import brand5 from "../../assets/images/brand-5.png";
 import {
   FaCalendar,
   FaCommentDollar,
@@ -166,6 +171,42 @@ export class IndexHome extends Component {
           </button>
         </div>
 
+        <div className="container col-xxl-10 px-4 py-5 mt-4 shadow-sm rounded-3">
+          <h5 className="fw-bold" style={{color: "#003F98"}}>PARTNER VENDOR:</h5>
+          <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 g-4 ">
+            <div className="col">
+              <div className="card border-0 overflow-hidden ">
+                <img src={brand1} className="card-img-top img-fluid" />
+              </div>
+            </div>
+
+            <div className="col">
+              <div className="card border-0 overflow-hidden ">
+                <img src={brand2} className="card-img-top img-fluid" />
+              </div>
+            </div>
+
+            <div className="col">
+              <div className="card border-0 overflow-hidden ">
+                <img src={brand3} className="card-img-top img-fluid" />
+              </div>
+            </div>
+
+            <div className="col">
+              <div className="card border-0 overflow-hidden ">
+                <img src={brand4} className="card-img-top img-fluid" />
+              </div>
+            </div>
+
+            <div className="col">
+              <div className="card border-0 overflow-hidden ">
+                <img src={brand5} className="card-img-top img-fluid" />
+              </div>
+            </div>
+          </div>
+        </div>
+        
+
         <div class="container col-xxl-10 px-4 py-1">
           <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
             <div class="col-12 col-sm-10 col-md-8 col-lg-6 text-center">
@@ -179,7 +220,7 @@ export class IndexHome extends Component {
               />
             </div>
             <div class="col-lg-6 text-center text-lg-start">
-              <p class="text-primary fw-bold">Tentang Kami</p>
+              <p class="fw-bold" style={{color: "#003D92"}}>Tentang Kami</p>
               <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
                 Karya Baja Estetika
               </h1>
@@ -191,7 +232,7 @@ export class IndexHome extends Component {
                 kendaraan yang membutuhkan perhatian dengan spesifikasi khusus.
               </p>
               <div class="d-grid gap-2 d-md-flex justify-content-center justify-content-lg-start">
-                <button type="button" class="btn btn-primary btn-sm px-4">
+                <button type="button" class="btn btn-sm px-4" style={{backgroundColor: "#003D92", color: "white"}}>
                   Selengkapnya
                 </button>
               </div>
@@ -202,8 +243,8 @@ export class IndexHome extends Component {
         <div class="container col-xxl-10 px-4 py-1">
           <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
             <div class="col-lg-6 text-start">
-              <p class="text-primary fw-bold">Kenapa Memilih Kami</p>
-              <h1 class="display-5 fw-bold lh-1 mb-3 text-primary">
+              <p class="fw-bold" style={{color: "#003D92"}}>Kenapa Memilih Kami</p>
+              <h1 class="display-5 fw-bold lh-1 mb-3" style={{color: "#092043"}}>
                 Karya Baja Estetika<br></br>
                 Karoseri Terbaik
               </h1>
