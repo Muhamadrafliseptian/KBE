@@ -1,12 +1,51 @@
 import React, { Component } from "react";
 import LogoKbe from "../../assets/images/kbelogo.png";
+import {
+  FaMapPin,
+  FaPhone,
+  FaInbox,
+  FaFacebook,
+  FaLinkedin,
+  FaTwitter,
+  FaTiktok,
+  FaYoutube,
+} from "react-icons/fa";
 export class Navbar extends Component {
   render() {
     return (
       <div>
+        <div className="bg-dark py-2">
+          <div className="container-fluid d-flex justify-content-between align-items-center text-light">
+            <p className="mb-0 d-flex align-items-center">
+              <FaMapPin size={18} className="me-2" />
+              Selamat datang di Karya Baja Estetika
+            </p>
+
+            <p className="mb-0 d-flex align-items-center">
+              <span className="me-3">
+                <FaPhone size={18} className="me-2" />
+                (021) 1234-5678
+              </span>
+              <span className="me-5">
+                <FaInbox size={18} className="me-2" />
+                info@email.com
+              </span>
+              <span className="me-5">
+                <FaTwitter size={18} className="me-2" />
+                <FaFacebook size={18} className="me-2" />
+                <FaTiktok size={18} className="me-2" />
+                <FaYoutube size={18} className="me-2" />
+                <FaLinkedin size={18} className="me-2" />
+              </span>
+
+              <span className="me-3">
+                Login
+              </span>
+            </p>
+          </div>
+        </div>
         <nav className="navbar navbar-expand-lg">
           <div className="container-fluid">
-            {/* Logo di sebelah kiri */}
             <a className="navbar-brand me-auto" href="#">
               <img
                 src={LogoKbe}
@@ -17,7 +56,6 @@ export class Navbar extends Component {
               />
             </a>
 
-            {/* Button Toggle untuk mode mobile */}
             <button
               className="navbar-toggler"
               type="button"
@@ -29,8 +67,6 @@ export class Navbar extends Component {
             >
               <span className="navbar-toggler-icon"></span>
             </button>
-
-            {/* Menu di sebelah kanan */}
             <div
               className="collapse navbar-collapse justify-content-end"
               id="navbarScroll"
