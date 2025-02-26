@@ -15,35 +15,40 @@ export class Navbar extends Component {
     return (
       <div>
         <div className="bg-dark py-2">
-          <div className="container-fluid d-flex justify-content-between align-items-center text-light">
-            <p className="mb-0 d-flex align-items-center">
-              <FaMapPin size={18} className="me-2" />
-              Selamat datang di Karya Baja Estetika
-            </p>
+  <div className="container-fluid">
+    <div className="row justify-content-between align-items-center text-light">
+      {/* First Column: Welcome Message */}
+      <div className="col-12 col-md-auto mb-2 mb-md-0 d-flex align-items-center">
+        <FaMapPin size={18} className="me-2" />
+        Selamat datang di Karya Baja Estetika
+      </div>
 
-            <p className="mb-0 d-flex align-items-center">
-              <span className="me-3">
-                <FaPhone size={18} className="me-2" />
-                (021) 1234-5678
-              </span>
-              <span className="me-5">
-                <FaInbox size={18} className="me-2" />
-                info@email.com
-              </span>
-              <span className="me-5">
-                <FaTwitter size={18} className="me-2" />
-                <FaFacebook size={18} className="me-2" />
-                <FaTiktok size={18} className="me-2" />
-                <FaYoutube size={18} className="me-2" />
-                <FaLinkedin size={18} className="me-2" />
-              </span>
-
-              <span className="me-3">
-                Login
-              </span>
-            </p>
-          </div>
+      {/* Second Column: Contact Info & Social Icons */}
+      <div className="col-12 col-md-auto d-flex flex-wrap justify-content-center justify-content-md-end align-items-center">
+        <div className="d-flex align-items-center me-3 mb-2 mb-md-0">
+          <FaPhone size={18} className="me-2" />
+          (021) 1234-5678
         </div>
+        <div className="d-flex align-items-center me-5 mb-2 mb-md-0">
+          <FaInbox size={18} className="me-2" />
+          info@email.com
+        </div>
+        <div className="d-flex align-items-center mb-2 mb-md-0">
+          <FaTwitter size={18} className="me-2" />
+          <FaFacebook size={18} className="me-2" />
+          <FaTiktok size={18} className="me-2" />
+          <FaYoutube size={18} className="me-2" />
+          <FaLinkedin size={18} className="me-2" />
+        </div>
+      </div>
+
+      {/* Third Column: Login */}
+      <div className="col-12 col-md-auto d-flex justify-content-center justify-content-md-end mb-2 mb-md-0">
+        <span className="me-3">Login</span>
+      </div>
+    </div>
+  </div>
+</div>
         <nav className="navbar navbar-expand-lg">
           <div className="container-fluid">
             <a className="navbar-brand me-auto" href="#">
