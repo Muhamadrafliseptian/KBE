@@ -40,6 +40,12 @@
   color: "#003D92"
 }
 
+@media (max-width: 991px) {
+  .topbar {
+    display: none;
+  }
+}
+
 
 .App-header {
   background-color: #282c34;

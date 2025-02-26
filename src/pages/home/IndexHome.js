@@ -140,7 +140,7 @@ export class IndexHome extends Component {
                   <div className="card border-0 overflow-hidden">
                     <img
                       src={brand}
-                      className="card-img-top img-fluid w-75 h-75"
+                      className="card-img-top img-fluid w-50 h-50"
                       alt={`brand-${index}`}
                     />
                   </div>
@@ -183,6 +183,7 @@ export class IndexHome extends Component {
                   style={{ backgroundColor: "#003D92", color: "white" }}
                 >
                   Selengkapnya
+                  <FaArrowRight size={18} color="white" className="ms-2" />
                 </button>
               </div>
             </div>
@@ -300,7 +301,9 @@ export class IndexHome extends Component {
                 style={{ backgroundColor: "#003D92" }}
               >
                 <div className="text-center">
-                  <small>Selengkapnya</small>
+                  <small>
+                    Selengkapnya
+                  </small>
                 </div>
               </button>
             </div>

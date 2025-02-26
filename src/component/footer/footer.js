@@ -1,6 +1,15 @@
 import React, { Component } from "react";
 import LogoKbe from "../../assets/images/kbelogo.png";
-
+import {
+  FaMapPin,
+  FaPhone,
+  FaInbox,
+  FaFacebook,
+  FaLinkedin,
+  FaTwitter,
+  FaTiktok,
+  FaYoutube,
+} from "react-icons/fa";
 export class Footer extends Component {
   render() {
     return (
@@ -16,6 +25,12 @@ export class Footer extends Component {
                     Jl. Aria Wiratanudatar No.25 Cianjur, Jawa Barat - 43215
                   </small>
                 </p>
+
+                <FaTwitter size={18} className="me-2" />
+                <FaFacebook size={18} className="me-2" />
+                <FaTiktok size={18} className="me-2" />
+                <FaYoutube size={18} className="me-2" />
+                <FaLinkedin size={18} className="me-2" />
               </div>
 
               {/* Navigasi Perusahaan */}
@@ -24,27 +39,32 @@ export class Footer extends Component {
                 <ul className="nav flex-column">
                   <li className="nav-item mb-2">
                     <a href="#" className="nav-link p-0 text-light">
-                      Home
+                      Tentang kami
                     </a>
                   </li>
                   <li className="nav-item mb-2">
                     <a href="#" className="nav-link p-0 text-light">
-                      Features
+                      Berita & Update
                     </a>
                   </li>
                   <li className="nav-item mb-2">
                     <a href="#" className="nav-link p-0 text-light">
-                      Pricing
+                      Layanan
                     </a>
                   </li>
                   <li className="nav-item mb-2">
                     <a href="#" className="nav-link p-0 text-light">
-                      FAQs
+                      Unduh
                     </a>
                   </li>
                   <li className="nav-item mb-2">
                     <a href="#" className="nav-link p-0 text-light">
-                      About
+                      Galeri
+                    </a>
+                  </li>
+                  <li className="nav-item mb-2">
+                    <a href="#" className="nav-link p-0 text-light">
+                      Blog
                     </a>
                   </li>
                 </ul>
@@ -56,12 +76,12 @@ export class Footer extends Component {
                 <ul className="nav flex-column">
                   <li className="nav-item mb-2">
                     <a href="#" className="nav-link p-0 text-light">
-                      Home
+                      Email Us
                     </a>
                   </li>
                   <li className="nav-item mb-2">
                     <a href="#" className="nav-link p-0 text-light">
-                      Features
+                      Help & FAQ
                     </a>
                   </li>
                   <li className="nav-item mb-2">
@@ -76,7 +96,17 @@ export class Footer extends Component {
                   </li>
                   <li className="nav-item mb-2">
                     <a href="#" className="nav-link p-0 text-light">
-                      About
+                      Shipping & Policy
+                    </a>
+                  </li>
+                  <li className="nav-item mb-2">
+                    <a href="#" className="nav-link p-0 text-light">
+                      Privacy Policy
+                    </a>
+                  </li>
+                  <li className="nav-item mb-2">
+                    <a href="#" className="nav-link p-0 text-light">
+                      Term of Use
                     </a>
                   </li>
                 </ul>
@@ -87,7 +117,10 @@ export class Footer extends Component {
                 <form>
                   <h5 className="text-start">Berlangganan Buletin Bulanan</h5>
                   <p className="text-start">
-                    <small>Nibh venenatis donec tellus</small>
+                    <small>
+                      Daftar untuk mendapatkan informasi terbaru dan promo
+                      seasonal di Karya Baja Estetika.
+                    </small>
                   </p>
                   <div className="d-flex flex-column flex-sm-row w-100 gap-2">
                     <input
@@ -99,7 +132,7 @@ export class Footer extends Component {
                     />
                   </div>
                   <button className="mt-3 w-100 btn btn-warning" type="submit">
-                    <span className="text-dark">Subscribe</span>
+                    <span className="text-light fw-bold">Subscribe Now</span>
                   </button>
                 </form>
               </div>
@@ -108,7 +141,7 @@ export class Footer extends Component {
             {/* Footer Bawah */}
             <div className="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
               <p className="text-light">
-                &copy; 2024 Company, Inc. All rights reserved.
+                &copy; Copyright 2025 Karya Baja Estetika. All Rights Reserved.
               </p>
               <ul className="list-unstyled d-flex"></ul>
             </div>

@@ -1,11 +1,48 @@
 import React, { Component } from "react";
 import image3 from "../../assets/images/image-3.png";
 import image5 from "../../assets/images/image-5.png";
-import { FaPhone, FaCalendar, FaCalendarAlt, FaCheck } from "react-icons/fa";
+import image6 from "../../assets/images/image-5.jpg";
+import {
+  FaPhone,
+  FaCalendar,
+  FaCalendarAlt,
+  FaCheck,
+  FaQuoteLeft,
+} from "react-icons/fa";
 import product4 from "../../assets/images/product-4.png";
 import product5 from "../../assets/images/product-5.png";
+import ava1 from "../../assets/images/ava-1.png";
 export class IndexAbout extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      testimonials: [
+        {
+          name: "Budi Santoso",
+          company: "PT. Maju Jaya",
+          message:
+            "Puas banget dengan pelayanan KBE, sekarang saya sudah ada 3 Unit mobil Food Truck dan awet serta jadi andalan sampai saat ini",
+          image: ava1, // Ganti dengan foto asli
+        },
+        {
+          name: "Siti Aisyah",
+          company: "CV. Sentosa Abadi",
+          message:
+            "Sangat profesional dan tepat waktu. Pasti akan kembali untuk pesanan berikutnya!",
+          image: ava1, // Ganti dengan foto asli
+        },
+        {
+          name: "Ahmad Fauzi",
+          company: "UD. Sumber Makmur",
+          message:
+            "Hasil kerja rapi dan kuat. Sangat direkomendasikan untuk kebutuhan industri baja.",
+          image: ava1, // Ganti dengan foto asli
+        },
+      ],
+    };
+  }
   render() {
+    const { testimonials } = this.state;
     return (
       <div>
         <div
@@ -118,6 +155,101 @@ export class IndexAbout extends Component {
                 alt="Karoseri Detail Tinggi"
                 width="700"
                 height="500"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div
+          className="container-fluid px-4 py-5"
+          style={{ backgroundColor: "#F2F7FA" }}
+        >
+          <div className="row align-items-center g-4">
+            {/* Konten Testimoni */}
+            <div className="col-12 col-lg-6 text-start">
+              <h2 className="fw-bold mb-4" style={{ color: "#003D92" }}>
+                Apa Kata Client Kami
+              </h2>
+              <p className="text-muted">
+                CV. KARYA BAJA ESTETIKA telah memberikan layanan berkualitas
+                tinggi kepada berbagai pelanggan dengan kepuasan yang luar
+                biasa.
+              </p>
+
+              {/* Carousel Testimoni */}
+              <div
+                id="testimonialCarousel"
+                className="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div className="carousel-inner">
+                  {testimonials.map((testimonial, index) => (
+                    <div
+                      key={index}
+                      className={`carousel-item ${index === 0 ? "active" : ""}`}
+                    >
+                      <div className="card border-0 shadow-sm p-4">
+                        <FaQuoteLeft
+                          size={30}
+                          color="#003D92"
+                          className="mb-3"
+                        />
+                        <p className="card-text text-muted">
+                          {testimonial.message}
+                        </p>
+                        <div className="d-flex align-items-center mt-3">
+                          <img
+                            src={testimonial.image}
+                            alt={testimonial.name}
+                            className="rounded-circle me-3"
+                            width="50"
+                            height="50"
+                          />
+                          <div>
+                            <h6 className="mb-0 fw-bold">{testimonial.name}</h6>
+                            <small className="text-muted">
+                              {testimonial.company}
+                            </small>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+                <button
+                  className="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#testimonialCarousel"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    className="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                </button>
+                <button
+                  className="carousel-control-next"
+                  type="button"
+                  data-bs-target="#testimonialCarousel"
+                  data-bs-slide="next"
+                >
+                  <span
+                    className="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                </button>
+              </div>
+            </div>
+
+            {/* Gambar Samping */}
+            <div className="col-12 col-lg-6 text-center">
+              <img
+                src={image6}
+                className="img-fluid rounded shadow"
+                alt="Testimoni"
+                width="600"
+                height="400"
                 loading="lazy"
               />
             </div>
