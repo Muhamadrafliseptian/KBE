@@ -7,6 +7,7 @@ import IndexNews from "./pages/news/IndexNews";
 import IndexAbout from "./pages/about_us/IndexAbout";
 import Navbar from "./component/header/navbar";
 import Footer from "./component/footer/footer";
+import WhatsAppButton from "./component/partOf/whatsappButton";
 import "./App.css";
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
           <Route path="/news" element={<IndexNews />} />
           <Route path="/about-us" element={<IndexAbout />} />
         </Routes>
+        <WhatsAppButton /> {/* Tambahkan tombol WhatsApp */}
         <Footer/>
       </div>
     </Router>

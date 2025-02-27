@@ -1,5 +1,12 @@
 import React, { Component } from "react";
 import image5 from "../../assets/images/image-5.png";
+import {
+  FaFacebook,
+  FaLinkedin,
+  FaTwitter,
+  FaTiktok,
+  FaYoutube,
+} from "react-icons/fa";
 
 export class IndexContact extends Component {
   render() {
@@ -51,6 +58,13 @@ export class IndexContact extends Component {
                   Office Address
                 </h3>
                 <p>Jl. Aria Wiratanudatar No.25 Cianjur, Jawa Barat - 43215</p>
+                <div className="mb-3">
+                  <FaTwitter size={18} className="me-2" />
+                  <FaFacebook size={18} className="me-2" />
+                  <FaTiktok size={18} className="me-2" />
+                  <FaYoutube size={18} className="me-2" />
+                  <FaLinkedin size={18} className="me-2" />
+                </div>
                 <p className="mb-0" style={{ color: "#00AFFF" }}>
                   <b>Email</b>
                 </p>
