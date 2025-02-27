@@ -45,7 +45,7 @@ export class Navbar extends Component {
 
         <nav className="navbar navbar-expand-lg">
           <div className="container-fluid">
-            <a className="navbar-brand me-auto topbar" href="#">
+            <a className="navbar-brand me-auto topbar" href="/">
               <img
                 src={LogoKbe}
                 alt="Logo"

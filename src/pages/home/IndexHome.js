@@ -21,6 +21,14 @@ import product2 from "../../assets/images/product-2.png";
 import product3 from "../../assets/images/product-3.png";
 import product4 from "../../assets/images/product-4.png";
 import product5 from "../../assets/images/product-5.png";
+
+import icon1 from "../../assets/images/icon-1.png";
+import icon2 from "../../assets/images/icon-2.png";
+import icon3 from "../../assets/images/icon-3.png";
+import icon4 from "../../assets/images/icon-4.png";
+
+import ava1 from "../../assets/images/ava-1.png";
+
 import {
   FaCalendar,
   FaCommentDollar,
@@ -76,7 +84,7 @@ export class IndexHome extends Component {
                   className="d-block w-100"
                   alt={`Slide ${index + 1}`}
                 />
-                <div className="carousel-caption col-xxl-8 px-1 py-5">
+                <div className="carousel-caption col-xxl-8 px-1 py-5 topbar">
                   <div className="row my-5 p-5 g-5">
                     <div className="col-lg-8 text-start">
                       <h1 className="display-5 fw-bold text-light lh-1 mb-3">
@@ -239,7 +247,7 @@ export class IndexHome extends Component {
                 style={{ backgroundColor: "#F2F7FA" }}
               >
                 <div className="card-body text-center">
-                  <FaBox size={30} color="#003D92" className="mb-3" />
+                  <img src={icon1} className="mb-3" />
                   <h5 className="card-title">Konsultasi</h5>
                   <p className="card-text" style={{ color: "#5C6776" }}>
                     <small>Troubleshoot & Solution</small>
@@ -253,7 +261,7 @@ export class IndexHome extends Component {
                 style={{ backgroundColor: "#F2F7FA" }}
               >
                 <div className="card-body text-center">
-                  <FaHeadphones size={30} color="#003D92" className="mb-3" />
+                  <img src={icon2} className="mb-3" />
                   <h5 className="card-title">Ontime Schedule</h5>
                   <p className="card-text" style={{ color: "#5C6776" }}>
                     <small>Perancangan tepat waktu</small>
@@ -267,7 +275,7 @@ export class IndexHome extends Component {
                 style={{ backgroundColor: "#F2F7FA" }}
               >
                 <div className="card-body text-center">
-                  <FaCalendar size={30} color="#003D92" className="mb-3" />
+                  <img src={icon3} className="mb-3" />
                   <h5 className="card-title">Harga & Kualitas</h5>
                   <p className="card-text" style={{ color: "#5C6776" }}>
                     <small>Kualitas dengan harga terbaik</small>
@@ -281,7 +289,7 @@ export class IndexHome extends Component {
                 style={{ backgroundColor: "#F2F7FA" }}
               >
                 <div className="card-body text-center">
-                  <FaCommentDollar size={30} color="#003D92" className="mb-3" />
+                  <img src={icon4} className="mb-3" />
                   <h5 className="card-title">PRICE GUARANTEE</h5>
                   <p className="card-text" style={{ color: "#5C6776" }}>
                     <small>Layanan Customer 1x24 Jam</small>
@@ -301,9 +309,7 @@ export class IndexHome extends Component {
                 style={{ backgroundColor: "#003D92" }}
               >
                 <div className="text-center">
-                  <small>
-                    Selengkapnya
-                  </small>
+                  <small>Selengkapnya</small>
                 </div>
               </button>
             </div>
@@ -499,13 +505,19 @@ export class IndexHome extends Component {
                 </small>
               </p>
 
-              <div>
-                <p className="mb-0">
-                  <b>Niko</b>
-                </p>
-                <p className="mt-0" style={{ color: "#003D92" }}>
-                  Owner | Food Truck
-                </p>
+              <div className="d-flex align-items-start text-start">
+                <img
+                  src={ava1}
+                  className="rounded-circle me-3"
+                  width="50"
+                  height="50"
+                />
+                <div>
+                  <h6 className="fw-bold">Dian</h6>
+                  <p className="mt-0" style={{ color: "#003D92" }}>
+                    Owner | Food Truck
+                  </p>
+                </div>
               </div>
 
               <p className="pt-4">
@@ -516,13 +528,19 @@ export class IndexHome extends Component {
                 </small>
               </p>
 
-              <div>
-                <p className="mb-0">
-                  <b>Niko</b>
-                </p>
-                <p className="mt-0" style={{ color: "#003D92" }}>
-                  Owner | Food Truck
-                </p>
+              <div className="d-flex align-items-start text-start">
+                <img
+                  src={ava1}
+                  className="rounded-circle me-3"
+                  width="50"
+                  height="50"
+                />
+                <div>
+                  <h6 className="fw-bold">Ananda Lee</h6>
+                  <p className="mt-0" style={{ color: "#003D92" }}>
+                    Content Creater | Public Figure
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -548,7 +566,8 @@ export class IndexHome extends Component {
               </h1>
               <p>
                 <small>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                  Dapatkan informasi terkait aktifitas kami dan trend di dunia
+                  modifikasi, karoseri dan mobil secara up to date.{" "}
                 </small>
               </p>
             </div>

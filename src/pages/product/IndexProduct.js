@@ -2,8 +2,8 @@ import React, { Component } from "react";
 import image2 from "../../assets/images/image-2.png";
 import image3 from "../../assets/images/image-3.png";
 import image4 from "../../assets/images/image-4.png";
-import image6 from "../../assets/images/image-5.jpg"
-import ava1 from '../../assets/images/ava-1.png'
+import image6 from "../../assets/images/image-5.jpg";
+import ava1 from "../../assets/images/ava-1.png";
 import brand1 from "../../assets/images/brand-1.png";
 import brand2 from "../../assets/images/brand-2.png";
 import brand3 from "../../assets/images/brand-3.png";
@@ -22,7 +22,7 @@ import {
   FaCalendarAlt,
   FaHome,
   FaLayerGroup,
-  FaQuoteLeft
+  FaQuoteLeft,
 } from "react-icons/fa";
 export class IndexProduct extends Component {
   constructor(props) {
@@ -54,7 +54,7 @@ export class IndexProduct extends Component {
     };
   }
   render() {
-    const {testimonials} = this.state
+    const { testimonials } = this.state;
     return (
       <div>
         <div
@@ -96,10 +96,12 @@ export class IndexProduct extends Component {
         <div className="container px-4 py-5">
           <div className="text-center mb-4">
             <h1 className="fw-bold" style={{ color: "#092043" }}>
-              Karya Baja Estetika Berita & Update
+              Satu solusi untuk Karoseri{" "}
             </h1>
             <p className="text-muted">
-              Tetap up-to-date dengan berita terbaru kami
+              Id et diam diam sem donec duis id feugiat tempus leo ut ac amet
+              cras ac sapien enim platea mauris. Vel non aliquam mattis aliquet
+              fames mauris.{" "}
             </p>
           </div>
 

@@ -25,12 +25,18 @@ export class Footer extends Component {
                     Jl. Aria Wiratanudatar No.25 Cianjur, Jawa Barat - 43215
                   </small>
                 </p>
+                <p className="mt-4 mb-0 text-warning">Email</p>
+                <p className="mt-0">kbe@gmail.com</p>
+
+                <p className="mt-4 mb-0 text-warning">Phone</p>
+                <p className="mt-0 mb-4">(0263)270080</p>
 
                 <FaTwitter size={18} className="me-2" />
                 <FaFacebook size={18} className="me-2" />
                 <FaTiktok size={18} className="me-2" />
                 <FaYoutube size={18} className="me-2" />
                 <FaLinkedin size={18} className="me-2" />
+
               </div>
 
               {/* Navigasi Perusahaan */}

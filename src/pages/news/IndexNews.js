@@ -58,8 +58,7 @@ export class IndexNews extends Component {
               Karya Baja Estetika Berita & Update
             </h1>
             <p className="text-muted">
-              Tetap up-to-date dengan berita terbaru kami
-            </p>
+            Berita dan update informasi terkait layanan, promo dan informasi terbaru            </p>
           </div>
 
           {/* Grid Berita */}

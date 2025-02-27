@@ -27,8 +27,18 @@ export class IndexGallery extends Component {
     // Set gallery images in state dynamically
     this.setState({
       imageGallery: [
-        galery, galery1, galery2, galery3, galery4, galery5,
-        galery6, galery7, galery8, galery9, galery10, galery11
+        galery,
+        galery1,
+        galery2,
+        galery3,
+        galery4,
+        galery5,
+        galery6,
+        galery7,
+        galery8,
+        galery9,
+        galery10,
+        galery11,
       ],
     });
   }
@@ -81,7 +91,9 @@ export class IndexGallery extends Component {
               Karya Baja Estetika Gallery
             </h1>
             <p className="text-muted">
-              Koleksi karya terbaik kami dalam modifikasi kendaraan
+              Id et diam diam sem donec duis id feugiat tempus leo ut ac amet
+              cras ac sapien enim platea mauris. Vel non aliquam mattis aliquet
+              fames mauris.{" "}
             </p>
           </div>
 
