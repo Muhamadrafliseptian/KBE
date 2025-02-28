@@ -46,7 +46,6 @@ export class IndexHome extends Component {
           className="carousel slide"
           data-bs-ride="carousel"
         >
-          {/* Indikator Carousel */}
           <div className="carousel-indicators">
             <button
               type="button"
@@ -70,14 +69,12 @@ export class IndexHome extends Component {
             ></button>
           </div>
 
-          {/* Isi Carousel */}
           <div className="carousel-inner">
             {[imageSlider, imageSlider, imageSlider].map((image, index) => (
               <div
                 key={index}
                 className={`carousel-item ${index === 0 ? "active" : ""}`}
               >
-                {/* Overlay Transparan */}
                 <div className="overlay"></div>
                 <img
                   src={image}
@@ -110,7 +107,6 @@ export class IndexHome extends Component {
             ))}
           </div>
 
-          {/* Tombol Prev & Next */}
           <button
             className="carousel-control-prev"
             type="button"
@@ -137,18 +133,25 @@ export class IndexHome extends Component {
           </button>
         </div>
 
-        <div className="container col-xxl-10 py-1 mt-4 shadow-sm rounded-5">
-          <h5 className="fw-bold mb-4" style={{ color: "#003F98" }}>
+        <div className="container col-xxl-12 py-1 mt-4 shadow-sm rounded-5">
+          <h5 className="fw-bold mb-2" style={{ color: "#003F98" }}>
             PARTNER VENDOR:
           </h5>
-          <div className="row row-cols-2 row-cols-sm-3 row-cols-md-4 align-items-center row-cols-lg-6 row-cols-xl-8 g-3">
+          <div className="row justify-content-center g-3 px-5 py-1">
             {[brand1, brand2, brand3, brand4, brand5, brand6].map(
               (brand, index) => (
-                <div className="col" key={index}>
-                  <div className="card border-0 overflow-hidden">
+                <div
+                  className="col-4 col-md-4 col-lg-2 d-flex justify-content-center"
+                  key={index}
+                >
+                  <div
+                    className="card border-0 overflow-hidden d-flex align-items-center justify-content-center"
+                    style={{ width: "100px", height: "70px" }}
+                  >
                     <img
                       src={brand}
-                      className="card-img-top img-fluid w-50 h-50"
+                      className="card-img-top img-fluid"
+                      style={{ objectFit: "contain", maxHeight: "50px" }}
                       alt={`brand-${index}`}
                     />
                   </div>
@@ -474,72 +477,86 @@ export class IndexHome extends Component {
           </div>
         </div>
 
-        <div className="my-1">
+        <div className="container-fluid pt-4">
           <div className="row p-0 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3">
-            <div className="col-12 col-lg-6 overflow-hidden text-center text-lg-start">
-              <img className="rounded-lg-5 img-fluid" src={image5} alt="" />
+            {/* Image Section */}
+            <div className="col-12 col-lg-6 text-center text-lg-start mb-4 mb-lg-0 p-0">
+              <img
+                className="img-fluid w-100"
+                src={image5}
+                alt=""
+                style={{ height: "100%", objectFit: "cover", display: "block" }}
+              />
             </div>
 
-            <div className="col-12 col-lg-6 p-3 p-lg-5 pt-lg-3 text-center text-lg-start">
+            {/* Testimonial Section */}
+            <div className="col-12 col-lg-6 p-3 p-lg-5 pt-lg-3 text-start text-lg-start">
               <p style={{ color: "#003D92" }}>Testimonials</p>
 
-              <h1 className="display-4 fw-bold lh-1 text-body-emphasis">
+              <h1 className="display-5 fw-bold lh-1 text-body-emphasis">
                 Apa kata Client Kami
               </h1>
-              <p>
+
+              <p className="text-muted">
                 <small>
-                  Kami senanasa mela ukan terobosan dan inovasi dalam menghadapi
-                  seeapantangan baru, mendengarkan keluhan dan memberikan solusi
-                  yang cepat dan tepat untuk menjaga standar pelayanan kami
-                  kepada pelanggan. Dengan demikian perusahaan akan selalu
-                  berada dihati pelanggan dan tumbuh berkembang dari dukungan
-                  pelanggan yang telah mempercayai kami.
+                  Kami senantiasa melakukan terobosan dan inovasi dalam
+                  menghadapi setiap tantangan baru, mendengarkan keluhan dan
+                  memberikan solusi yang cepat dan tepat untuk menjaga standar
+                  pelayanan kami kepada pelanggan.
                 </small>
               </p>
 
-              <p>
-                <small>
-                  "Puas banget dengan pelayanan KBE, sekarang saya sudah ada 3
-                  Unit mobil Food Truck dan awet serta jadi andalan sampai saat
-                  ini"
-                </small>
-              </p>
+              {/* Testimonial 1 */}
+              <div className="bg-light p-3 rounded-4 shadow-sm mb-3">
+                <p className="text-muted mb-3">
+                  <small>
+                    "Puas banget dengan pelayanan KBE, sekarang saya sudah ada 3
+                    Unit mobil Food Truck dan awet serta jadi andalan sampai
+                    saat ini."
+                  </small>
+                </p>
 
-              <div className="d-flex align-items-start text-start">
-                <img
-                  src={ava1}
-                  className="rounded-circle me-3"
-                  width="50"
-                  height="50"
-                />
-                <div>
-                  <h6 className="fw-bold">Dian</h6>
-                  <p className="mt-0" style={{ color: "#003D92" }}>
-                    Owner | Food Truck
-                  </p>
+                <div className="d-flex align-items-center">
+                  <img
+                    src={ava1}
+                    className="rounded-circle me-3"
+                    width="50"
+                    height="50"
+                    alt="Dian"
+                  />
+                  <div>
+                    <h6 className="fw-bold mb-0">Dian</h6>
+                    <p className="mb-0" style={{ color: "#003D92" }}>
+                      <small>Owner | Food Truck</small>
+                    </p>
+                  </div>
                 </div>
               </div>
 
-              <p className="pt-4">
-                <small>
-                  "Gak diraguin untuk hasil kerja tim KBE, konsultasi, diskusi
-                  menjadi hal yang asyik sampai pada akhirnya mobil caravan ku
-                  jadi sesuai ekspektasi. thanks KBE"
-                </small>
-              </p>
+              {/* Testimonial 2 */}
+              <div className="bg-light p-3 rounded-4 shadow-sm">
+                <p className="text-muted mb-3">
+                  <small>
+                    "Gak diraguin untuk hasil kerja tim KBE, konsultasi, diskusi
+                    menjadi hal yang asyik sampai pada akhirnya mobil caravan ku
+                    jadi sesuai ekspektasi. Thanks KBE!"
+                  </small>
+                </p>
 
-              <div className="d-flex align-items-start text-start">
-                <img
-                  src={ava1}
-                  className="rounded-circle me-3"
-                  width="50"
-                  height="50"
-                />
-                <div>
-                  <h6 className="fw-bold">Ananda Lee</h6>
-                  <p className="mt-0" style={{ color: "#003D92" }}>
-                    Content Creater | Public Figure
-                  </p>
+                <div className="d-flex align-items-center">
+                  <img
+                    src={ava1}
+                    className="rounded-circle me-3"
+                    width="50"
+                    height="50"
+                    alt="Ananda Lee"
+                  />
+                  <div>
+                    <h6 className="fw-bold mb-0">Ananda Lee</h6>
+                    <p className="mb-0" style={{ color: "#003D92" }}>
+                      <small>Content Creator | Public Figure</small>
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>

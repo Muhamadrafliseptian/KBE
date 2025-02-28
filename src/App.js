@@ -23,7 +23,7 @@ function App() {
           <Route path="/news" element={<IndexNews />} />
           <Route path="/about-us" element={<IndexAbout />} />
         </Routes>
-        <WhatsAppButton /> {/* Tambahkan tombol WhatsApp */}
+        <WhatsAppButton /> 
         <Footer/>
       </div>
     </Router>

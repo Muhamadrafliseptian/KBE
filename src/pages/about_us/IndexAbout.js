@@ -256,13 +256,14 @@ export class IndexAbout extends Component {
           </div>
         </div>
 
-        <div className="my-1">
+        <div className="container-fluid pt-4">
           <div className="row p-0 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3">
-            <div className="col-12 col-lg-6 overflow-hidden text-center text-lg-start">
+            <div className="col-12 col-lg-6 text-center text-lg-start mb-4 mb-lg-0 p-0">
               <img
-                className="rounded-lg-5 img-fluid w-100 h-100"
+                className="img-fluid w-100"
                 src={image3}
                 alt=""
+                style={{ height: "100%", objectFit: "cover", display: "block" }}
               />
             </div>
 
@@ -272,7 +273,7 @@ export class IndexAbout extends Component {
                 Partner Karoseri Anda
               </h1>
 
-              <ul className="list-unstyled ps-0">
+              <ul className="list-unstyled ps-0 text-start">
                 <li className="mb-2 d-flex align-items-center">
                   <FaCheck
                     size={12}
@@ -323,7 +324,7 @@ export class IndexAbout extends Component {
               <div className="d-grid d-md-flex justify-content-md-start">
                 <button
                   type="button"
-                  className="btn btn-sm px-4 py-2 d-flex align-items-center"
+                  className="btn btn-sm px-4 py-2 d-flex align-items-center justify-content-center"
                   style={{ backgroundColor: "#003D92", color: "white" }}
                 >
                   <FaPhone size={16} color="white" className="me-2" />
