@@ -1,10 +1,11 @@
 import React, { Component } from "react";
 import image5 from "../../assets/images/image-5.png";
+import kontak from "../../assets/images/kontak.png";
 import {
   FaFacebook,
   FaLinkedin,
   FaTwitter,
-  FaTiktok,
+  FaInstagram,
   FaYoutube,
 } from "react-icons/fa";
 
@@ -15,7 +16,7 @@ export class IndexContact extends Component {
         {/* Breadcrumb Section */}
         <div
           style={{
-            backgroundImage: `url(${image5})`,
+            backgroundImage: `url(${kontak})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
             height: "300px",
@@ -61,7 +62,9 @@ export class IndexContact extends Component {
                 <div className="mb-3">
                   <FaTwitter size={18} className="me-2" />
                   <FaFacebook size={18} className="me-2" />
-                  <FaTiktok size={18} className="me-2" />
+                  <a href="https://www.instagram.com/karoserikaryabaja?igsh=MXMxcmpxaDVuZnd4cg==">
+                    <FaInstagram size={18} className="me-2" color="black" />
+                  </a>
                   <FaYoutube size={18} className="me-2" />
                   <FaLinkedin size={18} className="me-2" />
                 </div>
@@ -83,8 +86,7 @@ export class IndexContact extends Component {
                 {/* Google Maps */}
                 <div className="mb-4">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.6800712805275!2d107.14564537439736!3d-6.808715293188785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6852e27e5147d5%3A0xd352c0b63a13a623!2sRuko%20Jl.%20Aria%20Wiratanudatar%20No.25%2C%20Muka%2C%20Kec.%20Cianjur%2C%20Kabupaten%20Cianjur%2C%20Jawa%20Barat%2043215!5e0!3m2!1sen!2sid!4v1740594615840!5m2!1sen!2sid"
-                    // src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15865.581281847788!2d106.68808435!3d-6.2114790499999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f9de1abb9457%3A0xbf7f554e1417208d!2sKampung%20Kecil%20Cipondoh!5e0!3m2!1sen!2sid!4v1740335860944!5m2!1sen!2sid"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.675334768915!2d107.14838639999999!3d-6.809289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e685300414a79fd%3A0x7a09c9ab9a2d0f7f!2sKarya%20Baja%20Estetika%20Karoseri!5e0!3m2!1sen!2sid!4v1740727666435!5m2!1sen!2sid"
                     width="100%"
                     height="300"
                     style={{ border: 0, borderRadius: "8px" }}

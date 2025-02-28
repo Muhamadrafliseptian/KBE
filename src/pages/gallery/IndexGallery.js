@@ -14,6 +14,7 @@ import galery8 from "../../assets/images/galery-8.png";
 import galery9 from "../../assets/images/galery-9.png";
 import galery10 from "../../assets/images/galery-10.png";
 import galery11 from "../../assets/images/galery-11.png";
+import Galeri from "../../assets/images/galeri.png";
 
 export class IndexGallery extends Component {
   constructor(props) {
@@ -49,7 +50,7 @@ export class IndexGallery extends Component {
         {/* Hero Section */}
         <div
           style={{
-            backgroundImage: `url(${image5})`,
+            backgroundImage: `url(${Galeri})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
             height: "300px",

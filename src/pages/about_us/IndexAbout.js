@@ -12,6 +12,7 @@ import {
 import product4 from "../../assets/images/product-4.png";
 import product5 from "../../assets/images/product-5.png";
 import ava1 from "../../assets/images/ava-1.png";
+import Tentang from "../../assets/images/tentang-kami.png";
 export class IndexAbout extends Component {
   constructor(props) {
     super(props);
@@ -47,7 +48,7 @@ export class IndexAbout extends Component {
       <div>
         <div
           style={{
-            backgroundImage: `url(${image5})`,
+            backgroundImage: `url(${Tentang})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
             height: "300px",

@@ -9,6 +9,7 @@ import {
   FaTwitter,
   FaTiktok,
   FaYoutube,
+  FaInstagram,
 } from "react-icons/fa";
 export class Footer extends Component {
   render() {
@@ -33,10 +34,11 @@ export class Footer extends Component {
 
                 <FaTwitter size={18} className="me-2" />
                 <FaFacebook size={18} className="me-2" />
-                <FaTiktok size={18} className="me-2" />
+                <a href="https://www.instagram.com/karoserikaryabaja?igsh=MXMxcmpxaDVuZnd4cg==">
+                  <FaInstagram size={18} className="me-2" color="white" />
+                </a>
                 <FaYoutube size={18} className="me-2" />
                 <FaLinkedin size={18} className="me-2" />
-
               </div>
 
               {/* Navigasi Perusahaan */}

@@ -9,7 +9,10 @@ import {
   FaTwitter,
   FaTiktok,
   FaYoutube,
+  FaMailBulk
+
 } from "react-icons/fa";
+
 export class Navbar extends Component {
   render() {
     return (
@@ -27,7 +30,7 @@ export class Navbar extends Component {
                 0812-3456-7890
               </span>
               <span className="me-5">
-                <FaInbox size={18} className="me-2" />
+                <FaMailBulk size={18} className="me-2" />
                 kbe@gmail.com
               </span>
               <span className="me-5">

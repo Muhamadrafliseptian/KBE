@@ -15,6 +15,7 @@ import product2 from "../../assets/images/product-2.png";
 import product3 from "../../assets/images/product-3.png";
 import product4 from "../../assets/images/product-4.png";
 import product5 from "../../assets/images/product-5.png";
+import produk from '../../assets/images/layanan.png'
 import {
   FaPhone,
   FaArrowRight,
@@ -59,7 +60,7 @@ export class IndexProduct extends Component {
       <div>
         <div
           style={{
-            backgroundImage: `url(${image2})`,
+            backgroundImage: `url(${produk})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
             height: "300px",
