@@ -4,6 +4,8 @@ import image3 from "../../assets/images/image-3.png";
 import image4 from "../../assets/images/image-4.png";
 import image6 from "../../assets/images/image-5.jpg";
 import ava1 from "../../assets/images/ava-1.png";
+import ava2 from "../../assets/images/ava2.jpeg";
+import ava3 from "../../assets/images/ava4.jpeg";
 import brand1 from "../../assets/images/brand-1.png";
 import brand2 from "../../assets/images/brand-2.png";
 import brand3 from "../../assets/images/brand-3.png";
@@ -39,18 +41,18 @@ export class IndexProduct extends Component {
           image: ava1, // Ganti dengan foto asli
         },
         {
-          name: "Siti Aisyah",
+          name: "Devandra",
           company: "CV. Sentosa Abadi",
           message:
             "Sangat profesional dan tepat waktu. Pasti akan kembali untuk pesanan berikutnya!",
-          image: ava1, // Ganti dengan foto asli
+          image: ava2, // Ganti dengan foto asli
         },
         {
           name: "Ahmad Fauzi",
           company: "UD. Sumber Makmur",
           message:
             "Hasil kerja rapi dan kuat. Sangat direkomendasikan untuk kebutuhan industri baja.",
-          image: ava1, // Ganti dengan foto asli
+          image: ava3, // Ganti dengan foto asli
         },
       ],
     };

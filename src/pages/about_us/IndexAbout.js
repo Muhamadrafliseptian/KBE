@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import image3 from "../../assets/images/image-3.png";
 import image5 from "../../assets/images/image-5.png";
 import image6 from "../../assets/images/image-5.jpg";
+import ava2 from "../../assets/images/ava2.jpeg";
+import ava3 from "../../assets/images/ava4.jpeg";
 import {
   FaPhone,
   FaCalendar,
@@ -27,18 +29,18 @@ export class IndexAbout extends Component {
           image: ava1, // Ganti dengan foto asli
         },
         {
-          name: "Siti Aisyah",
+          name: "Devandra",
           company: "CV. Sentosa Abadi",
           message:
             "Sangat profesional dan tepat waktu. Pasti akan kembali untuk pesanan berikutnya!",
-          image: ava1, // Ganti dengan foto asli
+          image: ava2, // Ganti dengan foto asli
         },
         {
           name: "Ahmad Fauzi",
           company: "UD. Sumber Makmur",
           message:
             "Hasil kerja rapi dan kuat. Sangat direkomendasikan untuk kebutuhan industri baja.",
-          image: ava1, // Ganti dengan foto asli
+          image: ava3, // Ganti dengan foto asli
         },
       ],
     };
