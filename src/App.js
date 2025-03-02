@@ -7,6 +7,7 @@ import IndexNews from "./pages/news/IndexNews";
 import IndexAbout from "./pages/about_us/IndexAbout";
 import Navbar from "./component/header/navbar";
 import Footer from "./component/footer/footer";
+import DetailNews from "./pages/news/DetailNews";
 import WhatsAppButton from "./component/partOf/whatsappButton";
 import "./App.css";
 
@@ -14,7 +15,7 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Navbar/>
+        <Navbar />
         <Routes>
           <Route path="/" element={<IndexHome />} />
           <Route path="/gallery" element={<IndexGallery />} />
@@ -22,9 +23,10 @@ function App() {
           <Route path="/contact" element={<IndexContact />} />
           <Route path="/news" element={<IndexNews />} />
           <Route path="/about-us" element={<IndexAbout />} />
+          <Route path="/news/:id_berita/detail" element={<DetailNews />} />
         </Routes>
-        <WhatsAppButton /> 
-        <Footer/>
+        <WhatsAppButton />
+        <Footer />
       </div>
     </Router>
   );

@@ -1,13 +1,9 @@
 import React, { Component } from "react";
 import LogoKbe from "../../assets/images/kbelogo.png";
 import {
-  FaMapPin,
-  FaPhone,
-  FaInbox,
   FaFacebook,
   FaLinkedin,
   FaTwitter,
-  FaTiktok,
   FaYoutube,
   FaInstagram,
 } from "react-icons/fa";

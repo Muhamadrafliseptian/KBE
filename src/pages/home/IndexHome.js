@@ -11,6 +11,7 @@ import brand4 from "../../assets/images/brand-4.png";
 import brand5 from "../../assets/images/brand-5.png";
 import brand6 from "../../assets/images/brand-6.png";
 import brand7 from "../../assets/images/brand-7.png";
+import { Link } from "react-router-dom";
 
 import news1 from "../../assets/images/news-1.png";
 import news2 from "../../assets/images/news-2.png";
@@ -38,6 +39,34 @@ import {
 } from "react-icons/fa";
 
 export class IndexHome extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      newsData: [
+        {
+          id_berita: 1,
+          judul: "Van Day, Ajang Kumpul Modifikasi Mobil Keluarga di Indonesia",
+          isi_berita:
+            "Tak hanya mobil bergenre city car, sedan, hatchback, atau SUV, modifikasi di segmen mobil keluarga alias multi purpose vehicle.",
+          image_berita: news1,
+        },
+        {
+          id_berita: 2,
+          judul: "Zebra Espass  Mahalan Biaya Modif daripada Harga Mobilnya",
+          isi_berita:
+            "Daihatsu Zebra Espass merupakan mobil pintu geser yang cukup legendaris di Indonesia. Seorang pensiunan Dinas Sosial.",
+          image_berita: news2,
+        },
+        {
+          id_berita: 3,
+          judul: "Sebelum Memulai Bisnis Food Truck, Simak Estimasi Biayanya",
+          isi_berita:
+            "Bisnis berjualan makanan dengan desain food truck kini tengah menjangkit di sejumlah tempat. Bisnis ini disebut cukup.",
+          image_berita: news3,
+        },
+      ],
+    };
+  }
   render() {
     return (
       <div>
@@ -593,90 +622,39 @@ export class IndexHome extends Component {
 
         <div className="container col-xxl-10 px-4 py-1">
           <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
-            <div className="col">
-              <div
-                className="card border-0 h-100"
-                style={{ boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)" }}
-              >
-                <img src={news1} className="card-img-top" alt="..." />
-                <div className="card-body text-start d-flex flex-column">
-                  <h5 className="card-title fw-bold text-color">
-                    Van Day, Ajang Kumpul Modifikasi Mobil Keluarga di Indonesia
-                  </h5>
-                  <p className="flex-grow-1 text-secondary">
-                    <small>APRIL 15, 2021 NO COMMENTS</small>
-                  </p>
-                  <p className="card-text flex-grow-1">
-                    <small>
-                      Tak hanya mobil bergenre city car, sedan, hatchback, atau
-                      SUV, modifikasi di segmen mobil keluarga alias multi
-                      purpose vehicle.
-                    </small>
-                  </p>
-                  <p>
-                    <small style={{ color: "#003D92" }}>
-                      <b>Read More →</b>
-                    </small>{" "}
-                  </p>
+            {this.state.newsData.map((news) => (
+              <div className="col" key={news.id_berita}>
+                <div
+                  className="card border-0 h-100"
+                  style={{ boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)" }}
+                >
+                  <img
+                    src={news.image_berita}
+                    className="card-img-top"
+                    alt={news.judul}
+                  />
+                  <div className="card-body text-start d-flex flex-column">
+                    <h5 className="card-title fw-bold text-color">
+                      {news.judul}
+                    </h5>
+                    <p className="flex-grow-1 text-secondary">
+                      <small>APRIL 15, 2021 NO COMMENTS</small>
+                    </p>
+                    <p className="card-text flex-grow-1">
+                      <small>{news.isi_berita}</small>
+                    </p>
+                    <p>
+                      <Link
+                        to={`/news/${news.id_berita}/detail`}
+                        style={{ color: "#003D92", textDecoration: 'none' }}
+                      >
+                        <b>Read More →</b>
+                      </Link>
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="col">
-              <div
-                className="card border-0 h-100"
-                style={{ boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)" }}
-              >
-                <img src={news2} className="card-img-top" alt="..." />
-                <div className="card-body text-start d-flex flex-column">
-                  <h5 className="card-title fw-bold text-color">
-                    Zebra Espass Mahalan Biaya Modif daripada Harga Mobilnya{" "}
-                  </h5>
-                  <p className="flex-grow-1 text-secondary">
-                    <small>APRIL 15, 2021 NO COMMENTS</small>
-                  </p>
-                  <p className="card-text flex-grow-1">
-                    <small>
-                      Daihatsu Zebra Espass merupakan mobil pintu geser yang
-                      cukup legendaris di Indonesia. Seorang pensiunan Dinas
-                      Sosial.
-                    </small>
-                  </p>
-                  <p>
-                    <small style={{ color: "#003D92" }}>
-                      <b>Read More →</b>
-                    </small>{" "}
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="col">
-              <div
-                className="card border-0 h-100"
-                style={{ boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)" }}
-              >
-                <img src={news3} className="card-img-top" alt="..." />
-                <div className="card-body text-start d-flex flex-column">
-                  <h5 className="card-title fw-bold text-color">
-                    Sebelum Memulai Bisnis Food Truck, Simak Estimasi Biayanya{" "}
-                  </h5>
-                  <p className="flex-grow-1 text-secondary">
-                    <small>APRIL 15, 2021 NO COMMENTS</small>
-                  </p>
-                  <p className="card-text flex-grow-1">
-                    <small>
-                      Bisnis berjualan makanan dengan desain food truck kini
-                      tengah menjangkit di sejumlah tempat. Bisnis ini disebut
-                      cukup.
-                    </small>
-                  </p>
-                  <p>
-                    <small style={{ color: "#003D92" }}>
-                      <b>Read More →</b>
-                    </small>{" "}
-                  </p>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>
