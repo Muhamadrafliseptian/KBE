@@ -15,7 +15,7 @@ import product2 from "../../assets/images/product-2.png";
 import product3 from "../../assets/images/product-3.png";
 import product4 from "../../assets/images/product-4.png";
 import product5 from "../../assets/images/product-5.png";
-import produk from '../../assets/images/layanan.png'
+import produk from "../../assets/images/layanan.png";
 import {
   FaPhone,
   FaArrowRight,
@@ -100,9 +100,9 @@ export class IndexProduct extends Component {
               Satu solusi untuk Karoseri{" "}
             </h1>
             <p className="text-muted">
-              Id et diam diam sem donec duis id feugiat tempus leo ut ac amet
-              cras ac sapien enim platea mauris. Vel non aliquam mattis aliquet
-              fames mauris.{" "}
+              Dengan Kapabilitas tenaga ahli dan peralatan yang memadai untuk
+              menjawab segala tantangan dan memberikan solusi bagi kebutuhan
+              modifikasi karoseri.{" "}
             </p>
           </div>
 
@@ -335,9 +335,9 @@ export class IndexProduct extends Component {
               Kerjasama mudah dalam 3 Langkah{" "}
             </h1>
             <p className="text-light">
-              Pellentesque nec nam aliquam sem et tortor consequat. Amet
-              venenatis urna cursus eget nunc scelerisque viverra mauris. Tellus
-              in hac habitasse platea dictumst.
+              Dengan Kapabilitas tenaga ahli dan peralatan yang memadai untuk
+              menjawab segala tantangan dan memberikan solusi bagi kebutuhan
+              modifikasi karoseri
             </p>
           </div>
 
@@ -360,8 +360,8 @@ export class IndexProduct extends Component {
                   <h5 className="text-light">Choose Our Service</h5>
                   <p className="text-light flex-grow-1">
                     <small>
-                      Liquam ultrices sagittis orci a scelerisque purus semper
-                      eget duis. Augue ut lectus arcu.
+                      Pilih layanan sesuai dengan kebutuhan anda dan dapat
+                      konsultasikan kepada kami.
                     </small>
                   </p>
                 </div>
@@ -384,8 +384,8 @@ export class IndexProduct extends Component {
                   <h5 className="text-light">Schedule Date & Time</h5>
                   <p className="text-light flex-grow-1">
                     <small>
-                      Liquam ultrices sagittis orci a scelerisque purus semper
-                      eget duis. Augue ut lectus arcu.
+                      Diskusikan waktu proses pengerjaan terhadap keinginan anda
+                      dengan tenaga ahli
                     </small>
                   </p>
                 </div>
@@ -408,8 +408,8 @@ export class IndexProduct extends Component {
                   <h5 className="text-light">Sit Back & Wait for Us</h5>
                   <p className="text-light flex-grow-1">
                     <small>
-                      Liquam ultrices sagittis orci a scelerisque purus semper
-                      eget duis. Augue ut lectus arcu.
+                      Custom Karoseri akan datang ke anda sesuai jadwal dan
+                      waktu yang ditentukan.
                     </small>
                   </p>
                 </div>
@@ -438,9 +438,9 @@ export class IndexProduct extends Component {
                 Dapatkan Informasi & Promo
               </h1>
               <p>
-                Diam diam sem donec duis id feugiat tempus leo ut ac amet cras
-                ac sapien enim platea maurisel non aliquam mattis aliquet fames
-                mauris diam diam sem donec duis.
+                Daftar menjadi mailing list kami dan dapatkan informasi terbaru
+                terkait layanan yang ada dan informasi seputar custom karoseri
+                di Karya Baja Estetika serta dapatkan info promo menarik.
               </p>
               <form>
                 <div className="row g-3">

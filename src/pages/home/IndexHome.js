@@ -334,7 +334,7 @@ export class IndexHome extends Component {
 
         <div className="container col-xxl-10 px-4 py-1">
           <div className="row flex-lg-row-reverse align-items-center g-3 py-5">
-            <div className="col-12 col-sm-6 col-lg-2 text-center">
+            <div className="col-10 col-sm-6 col-lg-2 text-center">
               <button
                 type="button"
                 className="btn btn-lg px-5 text-light"
@@ -353,7 +353,7 @@ export class IndexHome extends Component {
               <p>
                 <small>
                   Dengan Kapabilitas tenaga ahli dan peralatan yang memadai
-                  untuk menjawab <br className="d-none d-sm-block" />
+                  untuk untuk menjawab <br className="d-none d-sm-block" />
                   segala tantangan dan memberikan solusi bagi kebutuhan
                   modifikasi karoseri.
                 </small>
@@ -362,7 +362,7 @@ export class IndexHome extends Component {
           </div>
         </div>
 
-        <div className="container px-4">
+        <div className="container col-xxl-10 px-4">
           <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
             <div className="col">
               <div
@@ -646,7 +646,7 @@ export class IndexHome extends Component {
                     <p>
                       <Link
                         to={`/news/${news.id_berita}/detail`}
-                        style={{ color: "#003D92", textDecoration: 'none' }}
+                        style={{ color: "#003D92", textDecoration: "none" }}
                       >
                         <b>Read More →</b>
                       </Link>

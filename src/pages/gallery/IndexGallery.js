@@ -92,9 +92,7 @@ export class IndexGallery extends Component {
               Karya Baja Estetika Gallery
             </h1>
             <p className="text-muted">
-              Id et diam diam sem donec duis id feugiat tempus leo ut ac amet
-              cras ac sapien enim platea mauris. Vel non aliquam mattis aliquet
-              fames mauris.{" "}
+            Eksplorasi Trend dan hasil karya kami secara up to date untuk dapat memberikan gambaran terkait customisasi karoseri yang anda butuhkan.{" "}
             </p>
           </div>
 

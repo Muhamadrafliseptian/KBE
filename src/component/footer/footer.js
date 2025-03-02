@@ -66,11 +66,6 @@ export class Footer extends Component {
                       Galeri
                     </a>
                   </li>
-                  <li className="nav-item mb-2">
-                    <a href="#" className="nav-link p-0 text-light">
-                      Blog
-                    </a>
-                  </li>
                 </ul>
               </div>
 
@@ -143,11 +138,14 @@ export class Footer extends Component {
             </div>
 
             {/* Footer Bawah */}
-            <div className="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-              <p className="text-light">
+            <div className="d-flex flex-column flex-sm-row justify-content-between align-items-center py-4 my-4 border-top">
+              <p className="text-light mb-2 mb-sm-0">
                 &copy; Copyright 2025 Karya Baja Estetika. All Rights Reserved.
               </p>
-              <ul className="list-unstyled d-flex"></ul>
+
+              <p className="text-light mb-2 mb-sm-0">
+                Special Vehicle Purpose Manufacture
+              </p>
             </div>
           </footer>
         </div>

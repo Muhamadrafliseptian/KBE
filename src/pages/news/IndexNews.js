@@ -93,7 +93,7 @@ export class IndexNews extends Component {
                 <img src={news9} className="card-img-top" alt="Berita" />
                 <div className="card-body text-start">
                   <h4 className="card-title text-color">
-                    Design is as much an act of spacing as an act of marking
+                  Zebra Espass  Mahalan Biaya Modif daripada Harga Mobilnya
                   </h4>
                   <p className="card-text" style={{ color: "#5C6776" }}>
                     <small>
