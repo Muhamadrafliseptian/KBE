@@ -12,6 +12,9 @@ import {
   FaMailBulk
 
 } from "react-icons/fa";
+import phone from '../../assets/images/phone.png'
+import location from '../../assets/images/location.png'
+import email from '../../assets/images/email.png'
 
 export class Navbar extends Component {
   render() {
@@ -20,17 +23,17 @@ export class Navbar extends Component {
         <div className="bg-dark py-2 topbar">
           <div className="container-fluid d-none d-lg-flex justify-content-between align-items-center text-light">
             <p className="mb-0 d-flex align-items-center">
-              <FaMapPin size={18} className="me-2" />
+              <img src={location} className="me-2" />
               Selamat datang di Karya Baja Estetika
             </p>
 
             <p className="mb-0 d-flex align-items-center">
               <span className="me-3">
-                <FaPhone size={18} className="me-2" />
+                <img src={phone} className="me-2" />
                 0812-3456-7890
               </span>
               <span className="me-5">
-                <FaMailBulk size={18} className="me-2" />
+                <img src={email} className="me-2" />
                 kbe@gmail.com
               </span>
               <span className="me-5">
