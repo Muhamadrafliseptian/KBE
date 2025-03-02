@@ -29,6 +29,7 @@ export class IndexProduct extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      activeIndex: 0, // Slide pertama aktif
       testimonials: [
         {
           name: "Budi Santoso",
@@ -54,8 +55,19 @@ export class IndexProduct extends Component {
       ],
     };
   }
+
+  componentDidMount() {
+    const carouselElement = document.getElementById(
+      "carouselExampleIndicators"
+    );
+    if (carouselElement) {
+      carouselElement.addEventListener("slid.bs.carousel", (event) => {
+        this.setState({ activeIndex: event.to }); // Update activeIndex saat slide berubah
+      });
+    }
+  }
   render() {
-    const { testimonials } = this.state;
+    const { testimonials, activeIndex } = this.state;
     return (
       <div>
         <div
@@ -502,17 +514,43 @@ export class IndexProduct extends Component {
                 biasa.
               </p>
 
-              {/* Carousel Testimoni */}
               <div
-                id="testimonialCarousel"
+                id="carouselExampleIndicators"
                 className="carousel slide"
                 data-bs-ride="carousel"
+                data-bs-interval="3000" // Auto-slide setiap 3 detik
               >
+                {/* Indicator */}
+                <div className="carousel-indicators">
+                  {testimonials.map((_, index) => (
+                    <button
+                      key={index}
+                      type="button"
+                      data-bs-target="#carouselExampleIndicators"
+                      data-bs-slide-to={index}
+                      className={index === activeIndex ? "active" : ""}
+                      aria-current={index === activeIndex ? "true" : "false"}
+                      aria-label={`Slide ${index + 1}`}
+                      style={{
+                        backgroundColor:
+                          index === activeIndex ? "#003D92" : "gray",
+                        width: "10px",
+                        height: "10px",
+                        borderRadius: "50%",
+                        opacity: 1,
+                      }}
+                    ></button>
+                  ))}
+                </div>
+
+                {/* Inner Carousel */}
                 <div className="carousel-inner">
                   {testimonials.map((testimonial, index) => (
                     <div
                       key={index}
-                      className={`carousel-item ${index === 0 ? "active" : ""}`}
+                      className={`carousel-item ${
+                        index === activeIndex ? "active" : ""
+                      }`}
                     >
                       <div className="card border-0 shadow-sm p-4">
                         <FaQuoteLeft
@@ -542,10 +580,12 @@ export class IndexProduct extends Component {
                     </div>
                   ))}
                 </div>
+
+                {/* Navigasi */}
                 <button
                   className="carousel-control-prev"
                   type="button"
-                  data-bs-target="#testimonialCarousel"
+                  data-bs-target="#carouselExampleIndicators"
                   data-bs-slide="prev"
                 >
                   <span
@@ -556,7 +596,7 @@ export class IndexProduct extends Component {
                 <button
                   className="carousel-control-next"
                   type="button"
-                  data-bs-target="#testimonialCarousel"
+                  data-bs-target="#carouselExampleIndicators"
                   data-bs-slide="next"
                 >
                   <span
