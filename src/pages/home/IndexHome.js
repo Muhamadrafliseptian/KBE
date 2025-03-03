@@ -334,7 +334,7 @@ export class IndexHome extends Component {
 
         <div className="container col-xxl-10 px-4 py-1">
           <div className="row flex-lg-row-reverse align-items-center g-3 py-5">
-            <div className="col-10 col-sm-6 col-lg-2 text-center">
+            <div className="col-10 col-sm-6 col-lg-2 text-start">
               <button
                 type="button"
                 className="btn btn-lg px-5 text-light"
@@ -345,7 +345,7 @@ export class IndexHome extends Component {
                 </div>
               </button>
             </div>
-            <div className="col-lg-10 text-center text-lg-start">
+            <div className="col-lg-10 text-start text-lg-start">
               <p style={{ color: "#003D92" }}>kenapa memilih kami</p>
               <h1 className="display-5 fw-bold lh-1 mb-3">
                 Satu solusi untuk Karoseri
@@ -592,9 +592,9 @@ export class IndexHome extends Component {
           </div>
         </div>
 
-        <div className="container col-xxl-10 px-4 py-1">
-          <div className="row flex-lg-row-reverse align-items-center g-3 py-5 text-center text-lg-start">
-            <div className="col-12 col-sm-6 col-lg-2 d-flex justify-content-center justify-content-lg-start">
+        {/* <div className="container col-xxl-10 px-4 py-1">
+          <div className="row flex-lg-row-reverse align-items-center g-3 py-5 text-start text-lg-start">
+            <div className="col-12 col-sm-6 col-lg-2 text-start d-flex justify-content-center justify-content-lg-start">
               <button
                 type="button"
                 className="btn btn-lg px-5 text-light"
@@ -606,6 +606,34 @@ export class IndexHome extends Component {
               </button>
             </div>
             <div className="col-12 col-lg-10">
+              <p style={{ color: "#003D92" }}>Blog perusahaan</p>
+              <h1 className="display-5 fw-bold lh-1 mb-3">
+                Berita & Artikel Terbaru
+              </h1>
+              <p>
+                <small>
+                  Dapatkan informasi terkait aktifitas kami dan trend di dunia
+                  modifikasi, karoseri dan mobil secara up to date.{" "}
+                </small>
+              </p>
+            </div>
+          </div>
+        </div> */}
+
+        <div className="container col-xxl-10 px-4 py-1">
+          <div className="row flex-lg-row-reverse align-items-center g-3 py-5">
+            <div className="col-10 col-sm-6 col-lg-2 text-start">
+              <button
+                type="button"
+                className="btn btn-lg px-5 text-light"
+                style={{ backgroundColor: "#003D92" }}
+              >
+                <div className="text-center">
+                  <small>Selengkapnya</small>
+                </div>
+              </button>
+            </div>
+            <div className="col-lg-10 text-start text-lg-start">
               <p style={{ color: "#003D92" }}>Blog perusahaan</p>
               <h1 className="display-5 fw-bold lh-1 mb-3">
                 Berita & Artikel Terbaru

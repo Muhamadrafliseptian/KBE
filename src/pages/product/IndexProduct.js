@@ -462,30 +462,29 @@ export class IndexProduct extends Component {
                     <input
                       type="text"
                       className="form-control"
-                      placeholder="Masukkan nama"
+                      placeholder="Name"
                     />
                   </div>
                   <div className="col-md-4">
                     <input
                       type="email"
                       className="form-control"
-                      placeholder="Masukkan email"
+                      placeholder="Email Address"
                     />
                   </div>
                   <div className="col-md-4">
                     <input
-                      type="email"
+                      type='number'
                       className="form-control"
-                      placeholder="Masukkan email"
+                      placeholder="Phone"
                     />
                   </div>
                 </div>
                 <div className="mt-3">
-                  <label className="form-label">Pesan</label>
                   <textarea
                     className="form-control"
                     rows="4"
-                    placeholder="Tulis pesan Anda"
+                    placeholder="Message"
                   ></textarea>
                 </div>
                 <button
