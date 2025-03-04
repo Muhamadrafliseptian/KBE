@@ -67,6 +67,14 @@ export class IndexHome extends Component {
       ],
     };
   }
+  handleWhatsAppRedirect = () => {
+    window.location.href =
+      "https://wa.me/6285892818888?text=Halo Karya Baja Estetika, Saya tertarik dengan layanan anda. dan ingin mendiskusikan nya";
+  };
+
+  navigateAbout = () => {
+    window.location.href = "/about-us"; // Ganti dengan URL tujuan
+  };
   render() {
     return (
       <div>
@@ -117,14 +125,15 @@ export class IndexHome extends Component {
                         Micro, Medium Bus
                       </h1>
                       <p className="text-light">
-                        Nec duis placerat sit id porta nunc amet consectetur
-                        aliquam magna donec ut tellus nisi justo semper
-                        vulputate nec enim odio donec.
+                        Merancang dan memproduksi bus berukuran medium dengan
+                        desain ergonomis dan fitur lengkap, ideal untuk
+                        transportasi penumpang dalam kota maupun antar kota.
                       </p>
                       <div className="d-grid gap-2 d-md-flex justify-content-md-start">
                         <button
                           type="button"
                           className="btn btn-outline-light btn-sm px-4"
+                          onClick={this.handleWhatsAppRedirect}
                         >
                           Selengkapnya
                         </button>
@@ -162,7 +171,7 @@ export class IndexHome extends Component {
           </button>
         </div>
 
-        <div className="container col-xxl-12 py-1 mt-4 shadow-sm rounded-5">
+        {/* <div className="container col-xxl-12 py-1 mt-4 shadow-sm rounded-5">
           <h5 className="fw-bold mb-2" style={{ color: "#003F98" }}>
             PARTNER VENDOR:
           </h5>
@@ -188,7 +197,7 @@ export class IndexHome extends Component {
               )
             )}
           </div>
-        </div>
+        </div> */}
 
         <div class="container col-xxl-10 px-4 py-1">
           <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
@@ -218,6 +227,7 @@ export class IndexHome extends Component {
               </p>
               <div class="d-grid gap-2 d-md-flex justify-content-center justify-content-lg-start">
                 <button
+                  onClick={this.navigateAbout}
                   type="button"
                   class="btn btn-sm px-4"
                   style={{ backgroundColor: "#003D92", color: "white" }}
@@ -340,8 +350,13 @@ export class IndexHome extends Component {
                 className="btn btn-lg px-5 text-light"
                 style={{ backgroundColor: "#003D92" }}
               >
-                <div className="text-center">
-                  <small>Selengkapnya</small>
+                <div className="">
+                  <a
+                    href="/product"
+                    style={{ textDecoration: "none", color: "white" }}
+                  >
+                    <small>Selengkapnya</small>
+                  </a>
                 </div>
               </button>
             </div>
@@ -378,7 +393,7 @@ export class IndexHome extends Component {
                       kebutuhan, buat interior dan exterior anda lebih menawan.
                     </small>
                   </p>
-                  <p>
+                  <p onClick={this.handleWhatsAppRedirect}>
                     <small style={{ color: "#003D92" }}>
                       <b>Detail</b>
                     </small>{" "}
@@ -401,7 +416,7 @@ export class IndexHome extends Component {
                       presisi serta fungsionalitas yang memadai.
                     </small>
                   </p>
-                  <p>
+                  <p onClick={this.handleWhatsAppRedirect}>
                     <small style={{ color: "#003D92" }}>
                       <b>Detail</b>
                     </small>{" "}
@@ -424,7 +439,7 @@ export class IndexHome extends Component {
                       disesuaikan oleh pengguna untuk segala kebutuhan.
                     </small>
                   </p>
-                  <p>
+                  <p onClick={this.handleWhatsAppRedirect}>
                     <small style={{ color: "#003D92" }}>
                       <b>Detail</b>
                     </small>{" "}
@@ -448,7 +463,7 @@ export class IndexHome extends Component {
                       dengan style dan kebutuhan.
                     </small>
                   </p>
-                  <p>
+                  <p onClick={this.handleWhatsAppRedirect}>
                     <small style={{ color: "#003D92" }}>
                       <b>Detail</b>
                     </small>{" "}
@@ -471,7 +486,7 @@ export class IndexHome extends Component {
                       yang dapat disesuaikan dengan kebutuhan.
                     </small>
                   </p>
-                  <p>
+                  <p onClick={this.handleWhatsAppRedirect}>
                     <small style={{ color: "#003D92" }}>
                       <b>Detail</b>
                     </small>{" "}
@@ -494,7 +509,7 @@ export class IndexHome extends Component {
                       dengan build quality yang terjamin.
                     </small>
                   </p>
-                  <p>
+                  <p onClick={this.handleWhatsAppRedirect}>
                     <small style={{ color: "#003D92" }}>
                       <b>Detail</b>
                     </small>{" "}
@@ -628,7 +643,12 @@ export class IndexHome extends Component {
                 className="btn btn-lg px-5 text-light"
                 style={{ backgroundColor: "#003D92" }}
               >
-                <div className="text-center">
+                <div
+                  className="text-center"
+                  onClick={() => {
+                    window.location.href = "/news"; // Ganti dengan URL tujuan
+                  }}
+                >
                   <small>Selengkapnya</small>
                 </div>
               </button>
@@ -671,13 +691,20 @@ export class IndexHome extends Component {
                     <p className="card-text flex-grow-1">
                       <small>{news.isi_berita}</small>
                     </p>
-                    <p>
-                      <Link
-                        to={`/news/${news.id_berita}/detail`}
+                    <p
+                      style={{ color: "#003D92" }}
+                      onClick={() => {
+                        window.location.href = "/news"; // Ganti dengan URL tujuan
+                      }}
+                    >
+                      <b>Read More →</b>
+
+                      {/* <Link
+                        // to={`/news/${news.id_berita}/detail`}
+                        to={"/news"}
                         style={{ color: "#003D92", textDecoration: "none" }}
                       >
-                        <b>Read More →</b>
-                      </Link>
+                      </Link> */}
                     </p>
                   </div>
                 </div>

@@ -58,7 +58,9 @@ export class IndexNews extends Component {
               Karya Baja Estetika Berita & Update
             </h1>
             <p className="text-muted">
-            Berita dan update informasi terkait layanan, promo dan informasi terbaru            </p>
+              Berita dan update informasi terkait layanan, promo dan informasi
+              terbaru{" "}
+            </p>
           </div>
 
           {/* Grid Berita */}
@@ -70,9 +72,9 @@ export class IndexNews extends Component {
                   <h4 className="card-title text-color">
                     Van Day, Ajang Kumpul Modifikasi Mobil Keluarga di Indonesia{" "}
                   </h4>
-                  <p className="card-text" style={{ color: "#5C6776" }}>
+                  <p className="card-text fw-bold" style={{ color: "#5C6776" }}>
                     <small>
-                      John Doe - January 15, 2021 - 0 Comments - Healthy
+                      John Doe - January 15, 2021 - 0 Comments - Information
                     </small>
                   </p>
                   <p className="card-text text-muted">
@@ -93,11 +95,11 @@ export class IndexNews extends Component {
                 <img src={news9} className="card-img-top" alt="Berita" />
                 <div className="card-body text-start">
                   <h4 className="card-title text-color">
-                  Zebra Espass  Mahalan Biaya Modif daripada Harga Mobilnya
+                    Zebra Espass Mahalan Biaya Modif daripada Harga Mobilnya
                   </h4>
-                  <p className="card-text" style={{ color: "#5C6776" }}>
+                  <p className="card-text fw-bold" style={{ color: "#5C6776" }}>
                     <small>
-                      John Doe - January 15, 2021 - 0 Comments - Healthy
+                      John Doe - January 15, 2021 - 0 Comments - Information
                     </small>
                   </p>
                   <p className="card-text text-muted">
@@ -119,9 +121,9 @@ export class IndexNews extends Component {
                   <h4 className="card-title text-color">
                     Apa Itu Karoseri? Berikut Penjelasannya{" "}
                   </h4>
-                  <p className="card-text" style={{ color: "#5C6776" }}>
+                  <p className="card-text fw-bold" style={{ color: "#5C6776" }}>
                     <small>
-                      John Doe - January 15, 2021 - 0 Comments - Healthy
+                      John Doe - January 15, 2021 - 0 Comments - Otopedia
                     </small>
                   </p>
                   <p className="card-text text-muted">
@@ -143,9 +145,9 @@ export class IndexNews extends Component {
                   <h4 className="card-title text-color">
                     Ini Lima Kelebihan Daihatsu Gran Max Blind Van{" "}
                   </h4>
-                  <p className="card-text" style={{ color: "#5C6776" }}>
+                  <p className="card-text fw-bold" style={{ color: "#5C6776" }}>
                     <small>
-                      John Doe - January 15, 2021 - 0 Comments - Healthy
+                      John Doe - January 15, 2021 - 0 Comments - Otopedia
                     </small>
                   </p>
                   <p className="card-text text-muted">
@@ -168,9 +170,9 @@ export class IndexNews extends Component {
                   <h4 className="card-title text-color">
                     Mengintip Peluang Usaha Food Truck dan Tips Memulainya{" "}
                   </h4>
-                  <p className="card-text" style={{ color: "#5C6776" }}>
+                  <p className="card-text fw-bold" style={{ color: "#5C6776" }}>
                     <small>
-                      John Doe - January 15, 2021 - 0 Comments - Healthy
+                      John Doe - January 15, 2021 - 0 Comments - Information
                     </small>
                   </p>
                   <p className="card-text text-muted">
@@ -192,7 +194,7 @@ export class IndexNews extends Component {
                   <h4 className="card-title text-color">
                     Mobil Siaga Gratis Membantu Pasien yang Membutuhkan{" "}
                   </h4>
-                  <p className="card-text" style={{ color: "#5C6776" }}>
+                  <p className="card-text fw-bold" style={{ color: "#5C6776" }}>
                     <small>
                       John Doe - January 15, 2021 - 0 Comments - Healthy
                     </small>

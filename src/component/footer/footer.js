@@ -42,17 +42,17 @@ export class Footer extends Component {
                 <h5>Perusahaan</h5>
                 <ul className="nav flex-column">
                   <li className="nav-item mb-2">
-                    <a href="#" className="nav-link p-0 text-light">
+                    <a href="/about-us" className="nav-link p-0 text-light">
                       Tentang kami
                     </a>
                   </li>
                   <li className="nav-item mb-2">
-                    <a href="#" className="nav-link p-0 text-light">
+                    <a href="/news" className="nav-link p-0 text-light">
                       Berita & Update
                     </a>
                   </li>
                   <li className="nav-item mb-2">
-                    <a href="#" className="nav-link p-0 text-light">
+                    <a href="/product" className="nav-link p-0 text-light">
                       Layanan
                     </a>
                   </li>
@@ -62,7 +62,7 @@ export class Footer extends Component {
                     </a>
                   </li>
                   <li className="nav-item mb-2">
-                    <a href="#" className="nav-link p-0 text-light">
+                    <a href="/gallery" className="nav-link p-0 text-light">
                       Galeri
                     </a>
                   </li>

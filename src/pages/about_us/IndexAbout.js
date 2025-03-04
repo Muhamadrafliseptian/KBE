@@ -46,6 +46,11 @@ export class IndexAbout extends Component {
     };
   }
 
+  handleWhatsAppRedirect = () => {
+    window.location.href =
+      "https://wa.me/6285892818888?text=Halo Karya Baja Estetika, Saya tertarik dengan layanan anda. dan ingin mendiskusikan nya";
+  };
+
   componentDidMount() {
     const carouselElement = document.getElementById(
       "carouselExampleIndicators"
@@ -153,6 +158,7 @@ export class IndexAbout extends Component {
               {/* Tombol */}
               <div className="d-grid d-md-flex justify-content-md-start">
                 <button
+                onClick={this.handleWhatsAppRedirect}
                   type="button"
                   className="btn btn-sm px-4 py-2 d-flex align-items-center"
                   style={{ backgroundColor: "#003D92", color: "white" }}
@@ -367,6 +373,7 @@ export class IndexAbout extends Component {
 
               <div className="d-grid d-md-flex justify-content-md-start">
                 <button
+                onClick={this.handleWhatsAppRedirect}
                   type="button"
                   className="btn btn-sm px-4 py-2 d-flex align-items-center justify-content-center"
                   style={{ backgroundColor: "#003D92", color: "white" }}

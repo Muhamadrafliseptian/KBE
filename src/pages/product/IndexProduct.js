@@ -68,6 +68,11 @@ export class IndexProduct extends Component {
       });
     }
   }
+
+  handleWhatsAppRedirect = () => {
+    window.location.href =
+      "https://wa.me/6285892818888?text=Halo Karya Baja Estetika, Saya tertarik dengan layanan anda. dan ingin mendiskusikan nya";
+  };
   render() {
     const { testimonials, activeIndex } = this.state;
     return (
@@ -139,6 +144,7 @@ export class IndexProduct extends Component {
                     </p>
                     <div className="d-grid d-md-flex justify-content-md-center">
                       <button
+                        onClick={this.handleWhatsAppRedirect}
                         type="button"
                         className="btn btn-sm px-4 py-1 d-flex align-items-center"
                         style={{ backgroundColor: "#E6F5FC", color: "#1756B5" }}
@@ -170,6 +176,7 @@ export class IndexProduct extends Component {
                     </p>
                     <div className="d-grid d-md-flex justify-content-md-center">
                       <button
+                        onClick={this.handleWhatsAppRedirect}
                         type="button"
                         className="btn btn-sm px-4 py-1 d-flex align-items-center"
                         style={{ backgroundColor: "#E6F5FC", color: "#1756B5" }}
@@ -203,6 +210,7 @@ export class IndexProduct extends Component {
                     </p>
                     <div className="d-grid d-md-flex justify-content-md-center">
                       <button
+                        onClick={this.handleWhatsAppRedirect}
                         type="button"
                         className="btn btn-sm px-4 py-1 d-flex align-items-center"
                         style={{ backgroundColor: "#E6F5FC", color: "#1756B5" }}
@@ -235,6 +243,7 @@ export class IndexProduct extends Component {
                     </p>
                     <div className="d-grid d-md-flex justify-content-md-center">
                       <button
+                        onClick={this.handleWhatsAppRedirect}
                         type="button"
                         className="btn btn-sm px-4 py-1 d-flex align-items-center"
                         style={{ backgroundColor: "#E6F5FC", color: "#1756B5" }}
@@ -266,6 +275,7 @@ export class IndexProduct extends Component {
                     </p>
                     <div className="d-grid d-md-flex justify-content-md-center">
                       <button
+                        onClick={this.handleWhatsAppRedirect}
                         type="button"
                         className="btn btn-sm px-4 py-1 d-flex align-items-center"
                         style={{ backgroundColor: "#E6F5FC", color: "#1756B5" }}
@@ -297,6 +307,8 @@ export class IndexProduct extends Component {
                     </p>
                     <div className="d-grid d-md-flex justify-content-md-center">
                       <button
+                        onClick={this.handleWhatsAppRedirect}
+
                         type="button"
                         className="btn btn-sm px-4 py-1 d-flex align-items-center"
                         style={{ backgroundColor: "#E6F5FC", color: "#1756B5" }}
@@ -315,7 +327,7 @@ export class IndexProduct extends Component {
             </div>
           </div>
         </div>
-        <div className="container col-xxl-10 px-4 py-5">
+        {/* <div className="container col-xxl-10 px-4 py-5">
           <div className="row justify-content-center g-5 px-5 py-1">
             {[brand1, brand2, brand3, brand4, brand5, brand6].map(
               (brand, index) => (
@@ -338,7 +350,7 @@ export class IndexProduct extends Component {
               )
             )}
           </div>
-        </div>
+        </div> */}
 
         <div
           className="container-fluid px-4 py-5"
@@ -474,7 +486,7 @@ export class IndexProduct extends Component {
                   </div>
                   <div className="col-md-4">
                     <input
-                      type='number'
+                      type="number"
                       className="form-control"
                       placeholder="Phone"
                     />
@@ -686,6 +698,7 @@ export class IndexProduct extends Component {
 
               <div className="d-grid d-md-flex justify-content-md-start">
                 <button
+                  onClick={this.handleWhatsAppRedirect}
                   type="button"
                   className="btn btn-sm px-4 py-2"
                   style={{ backgroundColor: "#092043", color: "white" }}
