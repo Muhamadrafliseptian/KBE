@@ -46,6 +46,26 @@
   }
 }
 
+.custom-card {
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.custom-star {
+  color: gold; /* Default warna bintang gold */
+  transition: color 0.3s ease;
+}
+
+.custom-card:hover {
+  background-color: #003F98;
+  transform: translateY(-5px); /* Efek sedikit terangkat */
+}
+
+.custom-card:hover .custom-star {
+  color: white !important; /* Bintang berubah jadi putih saat hover */
+}
+
+
+
 
 .App-header {
   background-color: #282c34;

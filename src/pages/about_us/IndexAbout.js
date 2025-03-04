@@ -10,7 +10,7 @@ import {
   FaCalendarAlt,
   FaCheck,
   FaQuoteLeft,
-  FaStar
+  FaStar,
 } from "react-icons/fa";
 import product4 from "../../assets/images/product-4.png";
 import product5 from "../../assets/images/product-5.png";
@@ -159,7 +159,7 @@ export class IndexAbout extends Component {
               {/* Tombol */}
               <div className="d-grid d-md-flex justify-content-md-start">
                 <button
-                onClick={this.handleWhatsAppRedirect}
+                  onClick={this.handleWhatsAppRedirect}
                   type="button"
                   className="btn btn-sm px-4 py-2 d-flex align-items-center"
                   style={{ backgroundColor: "#003D92", color: "white" }}
@@ -190,112 +190,62 @@ export class IndexAbout extends Component {
         >
           <div className="">
             <h1
-              className=" text-center fw-bold mb-4"
+              className="text-center fw-bold mb-4"
               style={{ color: "#003D92" }}
             >
-              Review Nyata dari User <br></br> Karya Baja Estetika
+              Review Nyata dari User <br /> Karya Baja Estetika
             </h1>
           </div>
           <div className="container col-xxl-10">
             <div className="row row-cols-1 row-cols-sm-3 row-cols-lg-3 g-4">
-              <div className="col">
-                <div className="card border-0 shadow-sm h-100">
-                  <div className="card-body text-start">
-                    <div className="mb-2">
-                      <FaStar size={20} color="gold" />
-                      <FaStar size={20} color="gold" />
-                      <FaStar size={20} color="gold" />
-                      <FaStar size={20} color="gold" />
-                      <FaStar size={20} color="gold" />
+              {[
+                {
+                  name: "Niko - Owner",
+                  review:
+                    "Puas banget dengan pelayanan KBE, sekarang saya sudah ada 3 Unit mobil Food Truck dan awet serta jadi andalan sampai saat ini",
+                  image: ava3,
+                },
+                {
+                  name: "Ananda Lee - Business Man",
+                  review:
+                    "Gak diraguin untuk hasil kerja tim KBE, konsultasi, diskusi menjadi hal yang asyik sampai pada akhirnya mobil caravan ku jadi sesuai ekspektasi. thanks KBE",
+                  image: ava2,
+                },
+                {
+                  name: "Andi Silitonga - Traveller",
+                  review:
+                    "Alhamdulillah, sangat puas dengan pelayanan dan hasil kerja Medium bus yang kami pesan dibuat dengan detail dan presisi sesuai kebutuhan kami.",
+                  image: ava1,
+                },
+              ].map((testimonial, index) => (
+                <div className="col" key={index}>
+                  <div className="card border-0 shadow-sm h-100 custom-card">
+                    <div className="card-body text-start">
+                      <div className="mb-2 star-container">
+                        <FaStar size={20} className="custom-star" />
+                        <FaStar size={20} className="custom-star" />
+                        <FaStar size={20} className="custom-star" />
+                        <FaStar size={20} className="custom-star" />
+                        <FaStar size={20} className="custom-star" />
+                      </div>
+                      <p className="card-text" style={{ color: "#5C6776" }}>
+                        "{testimonial.review}"
+                      </p>
+                      <h5 className="fw-bold">{testimonial.name}</h5>
+                      <img
+                        src={testimonial.image}
+                        alt={testimonial.name}
+                        className="img-fluid rounded mt-2"
+                        style={{
+                          width: "80px",
+                          height: "80px",
+                          objectFit: "cover",
+                        }}
+                      />
                     </div>
-                    <p
-                      className="card-text"
-                      style={{ color: "#5C6776" }}
-                    >
-                      "Puas banget dengan pelayanan KBE, sekarang saya sudah ada
-                      3 Unit mobil Food Truck dan awet serta jadi andalan sampai
-                      saat ini"
-                    </p>
-                    <h5 className="">Niko - Owner</h5>
-                    <img
-                      src={ava3}
-                      alt="Niko"
-                      className="img-fluid rounded-circle mt-2"
-                      style={{
-                        width: "80px",
-                        height: "80px",
-                        objectFit: "cover",
-                      }}
-                    />
                   </div>
                 </div>
-              </div>
-
-              <div className="col">
-                <div className="card border-0 shadow-sm h-100">
-                  <div className="card-body text-start">
-                    <div className="mb-2">
-                      <FaStar size={20} color="gold" />
-                      <FaStar size={20} color="gold" />
-                      <FaStar size={20} color="gold" />
-                      <FaStar size={20} color="gold" />
-                      <FaStar size={20} color="gold" />
-                    </div>
-                    <p
-                      className="card-text"
-                      style={{ color: "#5C6776" }}
-                    >
-                      "Gak diraguin untuk hasil kerja tim KBE, konsultasi,
-                      diskusi menjadi hal yang asyik sampai pada akhirnya mobil
-                      caravan ku jadi sesuai ekspektasi. thanks KBE"
-                    </p>
-                    <h5 className="fw-bold">Ananda Lee - Business Man</h5>
-                    <img
-                      src={ava2}
-                      alt="Ananda Lee"
-                      className="img-fluid rounded-circle mt-2"
-                      style={{
-                        width: "80px",
-                        height: "80px",
-                        objectFit: "cover",
-                      }}
-                    />
-                  </div>
-                </div>
-              </div>
-
-              <div className="col">
-                <div className="card border-0 shadow-sm h-100">
-                  <div className="card-body text-start">
-                    <div className="mb-2">
-                      <FaStar size={20} color="gold" />
-                      <FaStar size={20} color="gold" />
-                      <FaStar size={20} color="gold" />
-                      <FaStar size={20} color="gold" />
-                      <FaStar size={20} color="gold" />
-                    </div>
-                    <p
-                      className="card-text"
-                      style={{ color: "#5C6776" }}
-                    >
-                      "Alhamdulillah, sangat puas dengan pelayanan dan hasil
-                      kerja Medium bus yang kami pesan dibuat dengan detail dan
-                      presisi sesuai kebutuhan kami."
-                    </p>
-                    <h5 className="fw-bold">Andi Silitonga - Traveller</h5>
-                    <img
-                      src={ava1}
-                      alt="Andi Silitonga"
-                      className="img-fluid rounded-circle mt-2"
-                      style={{
-                        width: "80px",
-                        height: "80px",
-                        objectFit: "cover",
-                      }}
-                    />
-                  </div>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>
@@ -367,7 +317,7 @@ export class IndexAbout extends Component {
 
               <div className="d-grid d-md-flex justify-content-md-start">
                 <button
-                onClick={this.handleWhatsAppRedirect}
+                  onClick={this.handleWhatsAppRedirect}
                   type="button"
                   className="btn btn-sm px-4 py-2 d-flex align-items-center justify-content-center"
                   style={{ backgroundColor: "#003D92", color: "white" }}
