@@ -10,6 +10,7 @@ import {
   FaCalendarAlt,
   FaCheck,
   FaQuoteLeft,
+  FaStar
 } from "react-icons/fa";
 import product4 from "../../assets/images/product-4.png";
 import product5 from "../../assets/images/product-5.png";
@@ -187,121 +188,114 @@ export class IndexAbout extends Component {
           className="container-fluid px-4 py-5"
           style={{ backgroundColor: "#F2F7FA" }}
         >
-          <div className="row align-items-center g-4">
-            {/* Konten Testimoni */}
-            <div className="col-12 col-lg-6 text-start">
-              <h2 className="fw-bold mb-4" style={{ color: "#003D92" }}>
-                Apa Kata Client Kami
-              </h2>
-              <p className="text-muted">
-                CV. KARYA BAJA ESTETIKA telah memberikan layanan berkualitas
-                tinggi kepada berbagai pelanggan dengan kepuasan yang luar
-                biasa.
-              </p>
-
-              <div
-                id="carouselExampleIndicators"
-                className="carousel slide"
-                data-bs-ride="carousel"
-                data-bs-interval="3000" // Auto-slide setiap 3 detik
-              >
-                {/* Indicator */}
-                <div className="carousel-indicators">
-                  {testimonials.map((_, index) => (
-                    <button
-                      key={index}
-                      type="button"
-                      data-bs-target="#carouselExampleIndicators"
-                      data-bs-slide-to={index}
-                      className={index === activeIndex ? "active" : ""}
-                      aria-current={index === activeIndex ? "true" : "false"}
-                      aria-label={`Slide ${index + 1}`}
-                      style={{
-                        backgroundColor:
-                          index === activeIndex ? "#003D92" : "gray",
-                        width: "10px",
-                        height: "10px",
-                        borderRadius: "50%",
-                        opacity: 1,
-                      }}
-                    ></button>
-                  ))}
-                </div>
-
-                {/* Inner Carousel */}
-                <div className="carousel-inner">
-                  {testimonials.map((testimonial, index) => (
-                    <div
-                      key={index}
-                      className={`carousel-item ${
-                        index === activeIndex ? "active" : ""
-                      }`}
-                    >
-                      <div className="card border-0 shadow-sm p-4">
-                        <FaQuoteLeft
-                          size={30}
-                          color="#003D92"
-                          className="mb-3"
-                        />
-                        <p className="card-text text-muted">
-                          {testimonial.message}
-                        </p>
-                        <div className="d-flex align-items-center mt-3">
-                          <img
-                            src={testimonial.image}
-                            alt={testimonial.name}
-                            className="rounded-circle me-3"
-                            width="50"
-                            height="50"
-                          />
-                          <div>
-                            <h6 className="mb-0 fw-bold">{testimonial.name}</h6>
-                            <small className="text-muted">
-                              {testimonial.company}
-                            </small>
-                          </div>
-                        </div>
-                      </div>
+          <div className="">
+            <h1
+              className=" text-center fw-bold mb-4"
+              style={{ color: "#003D92" }}
+            >
+              Review Nyata dari User <br></br> Karya Baja Estetika
+            </h1>
+          </div>
+          <div className="container col-xxl-10">
+            <div className="row row-cols-1 row-cols-sm-3 row-cols-lg-3 g-4">
+              <div className="col">
+                <div className="card border-0 shadow-sm h-100">
+                  <div className="card-body text-start">
+                    <div className="mb-2">
+                      <FaStar size={20} color="gold" />
+                      <FaStar size={20} color="gold" />
+                      <FaStar size={20} color="gold" />
+                      <FaStar size={20} color="gold" />
+                      <FaStar size={20} color="gold" />
                     </div>
-                  ))}
+                    <p
+                      className="card-text"
+                      style={{ color: "#5C6776" }}
+                    >
+                      "Puas banget dengan pelayanan KBE, sekarang saya sudah ada
+                      3 Unit mobil Food Truck dan awet serta jadi andalan sampai
+                      saat ini"
+                    </p>
+                    <h5 className="">Niko - Owner</h5>
+                    <img
+                      src={ava3}
+                      alt="Niko"
+                      className="img-fluid rounded-circle mt-2"
+                      style={{
+                        width: "80px",
+                        height: "80px",
+                        objectFit: "cover",
+                      }}
+                    />
+                  </div>
                 </div>
-
-                {/* Navigasi */}
-                <button
-                  className="carousel-control-prev"
-                  type="button"
-                  data-bs-target="#carouselExampleIndicators"
-                  data-bs-slide="prev"
-                >
-                  <span
-                    className="carousel-control-prev-icon"
-                    aria-hidden="true"
-                  ></span>
-                </button>
-                <button
-                  className="carousel-control-next"
-                  type="button"
-                  data-bs-target="#carouselExampleIndicators"
-                  data-bs-slide="next"
-                >
-                  <span
-                    className="carousel-control-next-icon"
-                    aria-hidden="true"
-                  ></span>
-                </button>
               </div>
-            </div>
 
-            {/* Gambar Samping */}
-            <div className="col-12 col-lg-6 text-center">
-              <img
-                src={image6}
-                className="img-fluid rounded shadow"
-                alt="Testimoni"
-                width="600"
-                height="400"
-                loading="lazy"
-              />
+              <div className="col">
+                <div className="card border-0 shadow-sm h-100">
+                  <div className="card-body text-start">
+                    <div className="mb-2">
+                      <FaStar size={20} color="gold" />
+                      <FaStar size={20} color="gold" />
+                      <FaStar size={20} color="gold" />
+                      <FaStar size={20} color="gold" />
+                      <FaStar size={20} color="gold" />
+                    </div>
+                    <p
+                      className="card-text"
+                      style={{ color: "#5C6776" }}
+                    >
+                      "Gak diraguin untuk hasil kerja tim KBE, konsultasi,
+                      diskusi menjadi hal yang asyik sampai pada akhirnya mobil
+                      caravan ku jadi sesuai ekspektasi. thanks KBE"
+                    </p>
+                    <h5 className="fw-bold">Ananda Lee - Business Man</h5>
+                    <img
+                      src={ava2}
+                      alt="Ananda Lee"
+                      className="img-fluid rounded-circle mt-2"
+                      style={{
+                        width: "80px",
+                        height: "80px",
+                        objectFit: "cover",
+                      }}
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div className="col">
+                <div className="card border-0 shadow-sm h-100">
+                  <div className="card-body text-start">
+                    <div className="mb-2">
+                      <FaStar size={20} color="gold" />
+                      <FaStar size={20} color="gold" />
+                      <FaStar size={20} color="gold" />
+                      <FaStar size={20} color="gold" />
+                      <FaStar size={20} color="gold" />
+                    </div>
+                    <p
+                      className="card-text"
+                      style={{ color: "#5C6776" }}
+                    >
+                      "Alhamdulillah, sangat puas dengan pelayanan dan hasil
+                      kerja Medium bus yang kami pesan dibuat dengan detail dan
+                      presisi sesuai kebutuhan kami."
+                    </p>
+                    <h5 className="fw-bold">Andi Silitonga - Traveller</h5>
+                    <img
+                      src={ava1}
+                      alt="Andi Silitonga"
+                      className="img-fluid rounded-circle mt-2"
+                      style={{
+                        width: "80px",
+                        height: "80px",
+                        objectFit: "cover",
+                      }}
+                    />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
