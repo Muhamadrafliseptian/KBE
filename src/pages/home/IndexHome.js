@@ -17,6 +17,7 @@ import news1 from "../../assets/images/news-1.png";
 import news2 from "../../assets/images/news-2.png";
 import news3 from "../../assets/images/news-3.png";
 
+import product from "../../assets/images/product.png";
 import product1 from "../../assets/images/product-1.png";
 import product2 from "../../assets/images/product-2.png";
 import product3 from "../../assets/images/product-3.png";
@@ -387,9 +388,11 @@ export class IndexHome extends Component {
                 className="card border-0 h-100"
                 style={{ boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)" }}
               >
-                <img src={image4} className="card-img-top" alt="..." />
+                <img src={product} className="card-img-top" alt="..." />
                 <div className="card-body text-start d-flex flex-column">
-                  <h5 className="card-title text-color">Bus Services</h5>
+                  <h5 className="card-title text-color">
+                    Bus Medium, Bus Micro
+                  </h5>
                   <p className="card-text flex-grow-1">
                     <small>
                       Kebutuhan aneka Bus yang dapat disesuaikan dengan
@@ -412,11 +415,12 @@ export class IndexHome extends Component {
               >
                 <img src={product1} className="card-img-top" alt="..." />
                 <div className="card-body text-start d-flex flex-column">
-                  <h5 className="card-title text-color">Custom Services</h5>
+                  <h5 className="card-title text-color">Caravan</h5>
                   <p className="card-text flex-grow-1">
                     <small>
-                      Buat kendaraan untuk segala kebutuhan dengan jaminan
-                      presisi serta fungsionalitas yang memadai.
+                      Menyediakan mobil caravan dengan interior nyaman dan
+                      fasilitas lengkap, cocok untuk perjalanan jarak jauh atau
+                      liburan keluarga.
                     </small>
                   </p>
                   <p onClick={this.handleWhatsAppRedirect}>
@@ -435,11 +439,11 @@ export class IndexHome extends Component {
               >
                 <img src={product2} className="card-img-top" alt="..." />
                 <div className="card-body text-start d-flex flex-column">
-                  <h5 className="card-title text-color">Electrical Services</h5>
+                  <h5 className="card-title text-color">Electircal Vehicle</h5>
                   <p className="card-text flex-grow-1">
                     <small>
-                      Modifikasi dan pembuatan kendaraan listrik yang dapat
-                      disesuaikan oleh pengguna untuk segala kebutuhan.
+                      Mengembangkan kendaraan listrik ramah lingkungan dengan
+                      teknologi mutakhir, mendukung mobilitas berkelanjutan.
                     </small>
                   </p>
                   <p onClick={this.handleWhatsAppRedirect}>
@@ -459,11 +463,11 @@ export class IndexHome extends Component {
               >
                 <img src={product3} className="card-img-top" alt="..." />
                 <div className="card-body text-start d-flex flex-column">
-                  <h5 className="card-title text-color">Caravan Services</h5>
+                  <h5 className="card-title text-color">Lube Service Truck</h5>
                   <p className="card-text flex-grow-1">
                     <small>
-                      Buat atau Modifikasi model Caravan yang dapat disesuaikan
-                      dengan style dan kebutuhan.
+                      Layanan karoseri dan perawatan kendaraan, termasuk
+                      pelumasan, untuk menjaga performa kendaraan.
                     </small>
                   </p>
                   <p onClick={this.handleWhatsAppRedirect}>
@@ -482,11 +486,11 @@ export class IndexHome extends Component {
               >
                 <img src={product4} className="card-img-top" alt="..." />
                 <div className="card-body text-start d-flex flex-column">
-                  <h5 className="card-title text-color">Car Services</h5>
+                  <h5 className="card-title text-color">Manhouler</h5>
                   <p className="card-text flex-grow-1">
                     <small>
-                      Bentuk dan Modifikasi kendaraan untuk social atau pribadi
-                      yang dapat disesuaikan dengan kebutuhan.
+                      Merancang kendaraan khusus untuk inspeksi dan perawatan
+                      manhole dilengkapi peralatan pendukung.
                     </small>
                   </p>
                   <p onClick={this.handleWhatsAppRedirect}>
@@ -505,11 +509,13 @@ export class IndexHome extends Component {
               >
                 <img src={product5} className="card-img-top" alt="..." />
                 <div className="card-body text-start d-flex flex-column">
-                  <h5 className="card-title text-color">Lub Services</h5>
+                  <h5 className="card-title text-color">
+                    Mobil Angkut Personil
+                  </h5>
                   <p className="card-text flex-grow-1">
                     <small>
-                      Modifikasi mobil niaga untuk kegiatan pameran, roadshow
-                      dengan build quality yang terjamin.
+                      Kendaraan dirancang khusus untuk mengangkut personil,
+                      cocok untuk keperluan korporat atau proyek.
                     </small>
                   </p>
                   <p onClick={this.handleWhatsAppRedirect}>

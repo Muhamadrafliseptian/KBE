@@ -13,11 +13,21 @@ import brand3 from "../../assets/images/brand-3.png";
 import brand4 from "../../assets/images/brand-4.png";
 import brand5 from "../../assets/images/brand-5.png";
 import brand6 from "../../assets/images/brand-6.png";
+
+import product from "../../assets/images/product.png";
 import product1 from "../../assets/images/product-1.png";
 import product2 from "../../assets/images/product-2.png";
 import product3 from "../../assets/images/product-3.png";
 import product4 from "../../assets/images/product-4.png";
 import product5 from "../../assets/images/product-5.png";
+import product6 from "../../assets/images/product-6.png";
+import product7 from "../../assets/images/product-7.png";
+import product8 from "../../assets/images/product-8.png";
+import product9 from "../../assets/images/product-9.png";
+import product10 from "../../assets/images/product-10.png";
+import product11 from "../../assets/images/product-11.png";
+import product12 from "../../assets/images/product-12.png";
+import product13 from "../../assets/images/product-13.png";
 import produk from "../../assets/images/layanan.png";
 import {
   FaPhone,
@@ -134,14 +144,16 @@ export class IndexProduct extends Component {
                   className="card border-0 h-100"
                   style={{ boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)" }}
                 >
-                  <img src={image4} className="card-img-top" alt="..." />
-                  <div className="card-body text-start d-flex flex-column">
-                    <h5 className="card-title text-color">Bus Services</h5>
+                  <img src={product} className="card-img-top" alt="..." />
+                  <div className="card-body text-center d-flex flex-column">
+                    <h5 className="card-title text-color">
+                      Bus Medium, Bus Micro
+                    </h5>
                     <p className="card-text flex-grow-1">
                       <small>
-                        Kebutuhan aneka Bus yang dapat disesuaikan dengan
-                        kebutuhan, buat interior dan exterior anda lebih
-                        menawan.
+                        Merancang dan memproduksi bus berukuran medium dengan
+                        desain ergonomis dan fitur lengkap, ideal untuk
+                        transportasi penumpang
                       </small>
                     </p>
                     <div className="d-grid d-md-flex justify-content-md-center">
@@ -168,12 +180,13 @@ export class IndexProduct extends Component {
                   style={{ boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)" }}
                 >
                   <img src={product1} className="card-img-top" alt="..." />
-                  <div className="card-body text-start d-flex flex-column">
-                    <h5 className="card-title text-color">Custom Services</h5>
+                  <div className="card-body text-center d-flex flex-column">
+                    <h5 className="card-title text-color">Caravan</h5>
                     <p className="card-text flex-grow-1">
                       <small>
-                        Buat kendaraan untuk segala kebutuhan dengan jaminan
-                        presisi serta fungsionalitas yang memadai.
+                        Menyediakan mobil caravan dengan interior nyaman dan
+                        fasilitas lengkap, cocok untuk perjalanan jarak jauh
+                        atau liburan keluarga.
                       </small>
                     </p>
                     <div className="d-grid d-md-flex justify-content-md-center">
@@ -200,14 +213,14 @@ export class IndexProduct extends Component {
                   style={{ boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)" }}
                 >
                   <img src={product2} className="card-img-top" alt="..." />
-                  <div className="card-body text-start d-flex flex-column">
+                  <div className="card-body text-center d-flex flex-column">
                     <h5 className="card-title text-color">
-                      Electrical Services
+                      Electrical Vehicle
                     </h5>
                     <p className="card-text flex-grow-1">
                       <small>
-                        Modifikasi dan pembuatan kendaraan listrik yang dapat
-                        disesuaikan oleh pengguna untuk segala kebutuhan.
+                        Mengembangkan kendaraan listrik ramah lingkungan dengan
+                        teknologi mutakhir, mendukung mobilitas berkelanjutan.
                       </small>
                     </p>
                     <div className="d-grid d-md-flex justify-content-md-center">
@@ -235,12 +248,15 @@ export class IndexProduct extends Component {
                   style={{ boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)" }}
                 >
                   <img src={product3} className="card-img-top" alt="..." />
-                  <div className="card-body text-start d-flex flex-column">
-                    <h5 className="card-title text-color">Caravan Services</h5>
+                  <div className="card-body text-center d-flex flex-column">
+                    <h5 className="card-title text-color">
+                      Lube Service Truck
+                    </h5>
                     <p className="card-text flex-grow-1">
                       <small>
-                        Buat atau Modifikasi model Caravan yang dapat
-                        disesuaikan dengan style dan kebutuhan.
+                        Layanan karoseri dan perawatan kendaraan, termasuk
+                        pelumasan, untuk menjaga performa dan keawetan
+                        kendaraan.
                       </small>
                     </p>
                     <div className="d-grid d-md-flex justify-content-md-center">
@@ -267,12 +283,13 @@ export class IndexProduct extends Component {
                   style={{ boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)" }}
                 >
                   <img src={product4} className="card-img-top" alt="..." />
-                  <div className="card-body text-start d-flex flex-column">
-                    <h5 className="card-title text-color">Car Services</h5>
+                  <div className="card-body text-center d-flex flex-column">
+                    <h5 className="card-title text-color">Manhouler</h5>
                     <p className="card-text flex-grow-1">
                       <small>
-                        Bentuk dan Modifikasi kendaraan untuk social atau
-                        pribadi yang dapat disesuaikan dengan kebutuhan.
+                        Merancang kendaraan khusus untuk inspeksi dan perawatan
+                        manhole atau akses bawah tanah, dilengkapi peralatan
+                        pendukung.
                       </small>
                     </p>
                     <div className="d-grid d-md-flex justify-content-md-center">
@@ -299,12 +316,285 @@ export class IndexProduct extends Component {
                   style={{ boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)" }}
                 >
                   <img src={product5} className="card-img-top" alt="..." />
-                  <div className="card-body text-start d-flex flex-column">
-                    <h5 className="card-title text-color">Lub Services</h5>
+                  <div className="card-body text-center d-flex flex-column">
+                    <h5 className="card-title text-color">
+                      Mobil Angkut Personil
+                    </h5>
                     <p className="card-text flex-grow-1">
                       <small>
-                        Modifikasi mobil niaga untuk kegiatan pameran, roadshow
-                        dengan build quality yang terjamin.
+                        Kendaraan dirancang khusus untuk mengangkut personil
+                        dengan aman dan nyaman, cocok untuk keperluan korporat
+                        atau proyek.
+                      </small>
+                    </p>
+                    <div className="d-grid d-md-flex justify-content-md-center">
+                      <button
+                        onClick={this.handleWhatsAppRedirect}
+                        type="button"
+                        className="btn btn-sm px-4 py-1 d-flex align-items-center"
+                        style={{ backgroundColor: "#E6F5FC", color: "#1756B5" }}
+                      >
+                        <b>Detail</b>
+                        <FaArrowRight
+                          size={16}
+                          color="#1756B5"
+                          className="ms-1"
+                        />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col">
+                <div
+                  className="card border-0 h-100"
+                  style={{ boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)" }}
+                >
+                  <img src={product6} className="card-img-top" alt="..." />
+                  <div className="card-body text-center d-flex flex-column">
+                    <h5 className="card-title text-color">Mobil Dapur Umum</h5>
+                    <p className="card-text flex-grow-1">
+                      <small>
+                        Mobil dapur umum dengan peralatan memasak lengkap, siap
+                        mendukung acara besar atau kondisi darurat.
+                      </small>
+                    </p>
+                    <div className="d-grid d-md-flex justify-content-md-center">
+                      <button
+                        onClick={this.handleWhatsAppRedirect}
+                        type="button"
+                        className="btn btn-sm px-4 py-1 d-flex align-items-center"
+                        style={{ backgroundColor: "#E6F5FC", color: "#1756B5" }}
+                      >
+                        <b>Detail</b>
+                        <FaArrowRight
+                          size={16}
+                          color="#1756B5"
+                          className="ms-1"
+                        />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col">
+                <div
+                  className="card border-0 h-100"
+                  style={{ boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)" }}
+                >
+                  <img src={product7} className="card-img-top" alt="..." />
+                  <div className="card-body text-center d-flex flex-column">
+                    <h5 className="card-title text-color">Mobil Hobby</h5>
+                    <p className="card-text flex-grow-1">
+                      <small>
+                        Kendaraan khusus untuk kebutuhan hobi, seperti mobil
+                        off-road atau ekspedisi, dengan desain tangguh dan
+                        fungsional.
+                      </small>
+                    </p>
+                    <div className="d-grid d-md-flex justify-content-md-center">
+                      <button
+                        onClick={this.handleWhatsAppRedirect}
+                        type="button"
+                        className="btn btn-sm px-4 py-1 d-flex align-items-center"
+                        style={{ backgroundColor: "#E6F5FC", color: "#1756B5" }}
+                      >
+                        <b>Detail</b>
+                        <FaArrowRight
+                          size={16}
+                          color="#1756B5"
+                          className="ms-1"
+                        />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col">
+                <div
+                  className="card border-0 h-100"
+                  style={{ boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)" }}
+                >
+                  <img src={product8} className="card-img-top" alt="..." />
+                  <div className="card-body text-center d-flex flex-column">
+                    <h5 className="card-title text-color">
+                      Mobil Pelayanan Kesehatan{" "}
+                    </h5>
+                    <p className="card-text flex-grow-1">
+                      <small>
+                        Mobil pelayanan kesehatan dilengkapi peralatan medis,
+                        siap memberikan layanan kesehatan darurat atau mobile
+                        clinic.
+                      </small>
+                    </p>
+                    <div className="d-grid d-md-flex justify-content-md-center">
+                      <button
+                        onClick={this.handleWhatsAppRedirect}
+                        type="button"
+                        className="btn btn-sm px-4 py-1 d-flex align-items-center"
+                        style={{ backgroundColor: "#E6F5FC", color: "#1756B5" }}
+                      >
+                        <b>Detail</b>
+                        <FaArrowRight
+                          size={16}
+                          color="#1756B5"
+                          className="ms-1"
+                        />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col">
+                <div
+                  className="card border-0 h-100"
+                  style={{ boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)" }}
+                >
+                  <img src={product9} className="card-img-top" alt="..." />
+                  <div className="card-body text-center d-flex flex-column">
+                    <h5 className="card-title text-color">
+                      Mobil Pelayanan Masyarakat
+                    </h5>
+                    <p className="card-text flex-grow-1">
+                      <small>
+                        Kendaraan dirancang untuk layanan masyarakat, seperti
+                        mobil perpustakaan keliling atau layanan sosial,
+                        mendukung program komunitas.
+                      </small>
+                    </p>
+                    <div className="d-grid d-md-flex justify-content-md-center">
+                      <button
+                        onClick={this.handleWhatsAppRedirect}
+                        type="button"
+                        className="btn btn-sm px-4 py-1 d-flex align-items-center"
+                        style={{ backgroundColor: "#E6F5FC", color: "#1756B5" }}
+                      >
+                        <b>Detail</b>
+                        <FaArrowRight
+                          size={16}
+                          color="#1756B5"
+                          className="ms-1"
+                        />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col">
+                <div
+                  className="card border-0 h-100"
+                  style={{ boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)" }}
+                >
+                  <img src={product10} className="card-img-top" alt="..." />
+                  <div className="card-body text-center d-flex flex-column">
+                    <h5 className="card-title text-color">
+                      Mobil Pelayanan Niaga
+                    </h5>
+                    <p className="card-text flex-grow-1">
+                      <small>
+                        Mobil niaga dengan desain khusus untuk keperluan bisnis,
+                        seperti mobil toko keliling atau promosi produk.
+                      </small>
+                    </p>
+                    <div className="d-grid d-md-flex justify-content-md-center">
+                      <button
+                        onClick={this.handleWhatsAppRedirect}
+                        type="button"
+                        className="btn btn-sm px-4 py-1 d-flex align-items-center"
+                        style={{ backgroundColor: "#E6F5FC", color: "#1756B5" }}
+                      >
+                        <b>Detail</b>
+                        <FaArrowRight
+                          size={16}
+                          color="#1756B5"
+                          className="ms-1"
+                        />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col">
+                <div
+                  className="card border-0 h-100"
+                  style={{ boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)" }}
+                >
+                  <img src={product11} className="card-img-top" alt="..." />
+                  <div className="card-body text-center d-flex flex-column">
+                    <h5 className="card-title text-color">Mobil TNI/Polri </h5>
+                    <p className="card-text flex-grow-1">
+                      <small>
+                        Kendaraan operasional khusus untuk kebutuhan TNI/Polri,
+                        dirancang dengan spesifikasi tinggi dan ketahanan
+                        ekstra.
+                      </small>
+                    </p>
+                    <div className="d-grid d-md-flex justify-content-md-center">
+                      <button
+                        onClick={this.handleWhatsAppRedirect}
+                        type="button"
+                        className="btn btn-sm px-4 py-1 d-flex align-items-center"
+                        style={{ backgroundColor: "#E6F5FC", color: "#1756B5" }}
+                      >
+                        <b>Detail</b>
+                        <FaArrowRight
+                          size={16}
+                          color="#1756B5"
+                          className="ms-1"
+                        />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col">
+                <div
+                  className="card border-0 h-100"
+                  style={{ boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)" }}
+                >
+                  <img src={product12} className="card-img-top" alt="..." />
+                  <div className="card-body text-center d-flex flex-column">
+                    <h5 className="card-title text-color">Mobil Toilet</h5>
+                    <p className="card-text flex-grow-1">
+                      <small>
+                        Mobil toilet dengan fasilitas sanitasi lengkap, ideal
+                        untuk acara outdoor atau lokasi terpencil, yang dapat
+                        dikustom sesuai kebutuhan.
+                      </small>
+                    </p>
+                    <div className="d-grid d-md-flex justify-content-md-center">
+                      <button
+                        onClick={this.handleWhatsAppRedirect}
+                        type="button"
+                        className="btn btn-sm px-4 py-1 d-flex align-items-center"
+                        style={{ backgroundColor: "#E6F5FC", color: "#1756B5" }}
+                      >
+                        <b>Detail</b>
+                        <FaArrowRight
+                          size={16}
+                          color="#1756B5"
+                          className="ms-1"
+                        />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col">
+                <div
+                  className="card border-0 h-100"
+                  style={{ boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)" }}
+                >
+                  <img src={product13} className="card-img-top" alt="..." />
+                  <div className="card-body text-center d-flex flex-column">
+                    <h5 className="card-title text-color">Mobil Moko</h5>
+                    <p className="card-text flex-grow-1">
+                      <small>
+                        Kendaraan komersial serbaguna untuk angkutan barang atau
+                        penumpang, dengan desain praktis dan efisien.
                       </small>
                     </p>
                     <div className="d-grid d-md-flex justify-content-md-center">
@@ -328,30 +618,6 @@ export class IndexProduct extends Component {
             </div>
           </div>
         </div>
-        {/* <div className="container col-xxl-10 px-4 py-5">
-          <div className="row justify-content-center g-5 px-5 py-1">
-            {[brand1, brand2, brand3, brand4, brand5, brand6].map(
-              (brand, index) => (
-                <div
-                  className="col-4 col-md-4 col-lg-2 d-flex justify-content-center"
-                  key={index}
-                >
-                  <div
-                    className="card border-0 overflow-hidden d-flex align-items-center justify-content-center"
-                    style={{ width: "100px", height: "100px" }}
-                  >
-                    <img
-                      src={brand}
-                      className="card-img-top img-fluid"
-                      style={{ objectFit: "contain", maxHeight: "100px" }}
-                      alt={`brand-${index}`}
-                    />
-                  </div>
-                </div>
-              )
-            )}
-          </div>
-        </div> */}
 
         <div
           className="container-fluid px-4 py-5"
@@ -517,7 +783,7 @@ export class IndexProduct extends Component {
           style={{ backgroundColor: "#F2F7FA" }}
         >
           <div className="">
-          <p className="text-center mb-3" style={{ color: "#003D92" }}>
+            <p className="text-center mb-3" style={{ color: "#003D92" }}>
               TESTIMONIALS
             </p>
             <h1
