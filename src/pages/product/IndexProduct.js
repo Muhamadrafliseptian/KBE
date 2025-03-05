@@ -517,6 +517,9 @@ export class IndexProduct extends Component {
           style={{ backgroundColor: "#F2F7FA" }}
         >
           <div className="">
+          <p className="text-center mb-3" style={{ color: "#003D92" }}>
+              TESTIMONIALS
+            </p>
             <h1
               className="text-center fw-bold mb-4"
               style={{ color: "#003D92" }}

@@ -29,13 +29,16 @@ import icon3 from "../../assets/images/icon-3.png";
 import icon4 from "../../assets/images/icon-4.png";
 
 import ava1 from "../../assets/images/ava-1.png";
-
+import ava2 from "../../assets/images/ava2.jpeg";
+import ava3 from "../../assets/images/ava4.jpeg";
+import ava5 from "../../assets/images/ava5.png";
 import {
   FaCalendar,
   FaCommentDollar,
   FaHeadphones,
   FaBox,
   FaArrowRight,
+  FaStar,
 } from "react-icons/fa";
 
 export class IndexHome extends Component {
@@ -378,7 +381,7 @@ export class IndexHome extends Component {
         </div>
 
         <div className="container col-xxl-10 px-4">
-          <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+          <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 pb-5">
             <div className="col">
               <div
                 className="card border-0 h-100"
@@ -521,88 +524,73 @@ export class IndexHome extends Component {
           </div>
         </div>
 
-        <div className="container-fluid pt-4">
-          <div className="row p-0 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3">
-            {/* Image Section */}
-            <div className="col-12 col-lg-6 text-center text-lg-start mb-4 mb-lg-0 p-0">
-              <img
-                className="img-fluid w-100"
-                src={image5}
-                alt=""
-                style={{ height: "100%", objectFit: "cover", display: "block" }}
-              />
-            </div>
-
-            {/* Testimonial Section */}
-            <div className="col-12 col-lg-6 p-3 p-lg-5 pt-lg-3 text-start text-lg-start">
-              <p style={{ color: "#003D92" }}>Testimonials</p>
-
-              <h1 className="display-5 fw-bold lh-1 text-body-emphasis">
-                Apa kata Client Kami
-              </h1>
-
-              <p className="text-muted">
-                <small>
-                  Kami senantiasa melakukan terobosan dan inovasi dalam
-                  menghadapi setiap tantangan baru, mendengarkan keluhan dan
-                  memberikan solusi yang cepat dan tepat untuk menjaga standar
-                  pelayanan kami kepada pelanggan.
-                </small>
-              </p>
-
-              {/* Testimonial 1 */}
-              <div className="bg-light p-3 rounded-4 shadow-sm mb-3">
-                <p className="text-muted mb-3">
-                  <small>
-                    "Puas banget dengan pelayanan KBE, sekarang saya sudah ada 3
-                    Unit mobil Food Truck dan awet serta jadi andalan sampai
-                    saat ini."
-                  </small>
-                </p>
-
-                <div className="d-flex align-items-center">
-                  <img
-                    src={ava1}
-                    className="rounded-circle me-3"
-                    width="50"
-                    height="50"
-                    alt="Dian"
-                  />
-                  <div>
-                    <h6 className="fw-bold mb-0">Dian</h6>
-                    <p className="mb-0" style={{ color: "#003D92" }}>
-                      <small>Owner | Food Truck</small>
-                    </p>
+        <div
+          className="container-fluid px-4 py-5"
+          style={{ backgroundColor: "#F2F7FA" }}
+        >
+          <div className="">
+            <p className="text-center mb-3" style={{ color: "#003D92" }}>
+              TESTIMONIALS
+            </p>
+            <h1
+              className="text-center fw-bold mb-4"
+              style={{ color: "#003D92" }}
+            >
+              Review Nyata dari User <br /> Karya Baja Estetika
+            </h1>
+          </div>
+          <div className="container col-xxl-10">
+            <div className="row row-cols-1 row-cols-sm-3 row-cols-lg-3 g-4">
+              {[
+                {
+                  name: "Niko - Owner",
+                  review:
+                    "Puas banget dengan pelayanan KBE, sekarang saya sudah ada 3 Unit mobil Food Truck dan awet serta jadi andalan sampai saat ini",
+                  image: ava3,
+                },
+                {
+                  name: "Ananda Lee - Business Man",
+                  review:
+                    "Gak diraguin untuk hasil kerja tim KBE, konsultasi, diskusi menjadi hal yang asyik sampai pada akhirnya mobil caravan ku jadi sesuai ekspektasi. thanks KBE",
+                  image: ava5,
+                },
+                {
+                  name: "Andi Silitonga - Traveller",
+                  review:
+                    "Alhamdulillah, sangat puas dengan pelayanan dan hasil kerja Medium bus yang kami pesan dibuat dengan detail dan presisi sesuai kebutuhan kami.",
+                  image: ava1,
+                },
+              ].map((testimonial, index) => (
+                <div className="col" key={index}>
+                  <div className="card border-0 shadow-sm h-100 custom-card">
+                    <div className="card-body text-start">
+                      <div className="pb-5 star-container">
+                        <FaStar size={20} className="custom-star" />
+                        <FaStar size={20} className="custom-star" />
+                        <FaStar size={20} className="custom-star" />
+                        <FaStar size={20} className="custom-star" />
+                        <FaStar size={20} className="custom-star" />
+                      </div>
+                      <p className="card-text custom-text pb-3">
+                        "{testimonial.review}"
+                      </p>
+                      <h5 className="fw-bold custom-text pb-2">
+                        {testimonial.name}
+                      </h5>
+                      <img
+                        src={testimonial.image}
+                        alt={testimonial.name}
+                        className="img-fluid rounded mt-2"
+                        style={{
+                          width: "80px",
+                          height: "80px",
+                          objectFit: "cover",
+                        }}
+                      />
+                    </div>
                   </div>
                 </div>
-              </div>
-
-              {/* Testimonial 2 */}
-              <div className="bg-light p-3 rounded-4 shadow-sm">
-                <p className="text-muted mb-3">
-                  <small>
-                    "Gak diraguin untuk hasil kerja tim KBE, konsultasi, diskusi
-                    menjadi hal yang asyik sampai pada akhirnya mobil caravan ku
-                    jadi sesuai ekspektasi. Thanks KBE!"
-                  </small>
-                </p>
-
-                <div className="d-flex align-items-center">
-                  <img
-                    src={ava1}
-                    className="rounded-circle me-3"
-                    width="50"
-                    height="50"
-                    alt="Ananda Lee"
-                  />
-                  <div>
-                    <h6 className="fw-bold mb-0">Ananda Lee</h6>
-                    <p className="mb-0" style={{ color: "#003D92" }}>
-                      <small>Content Creator | Public Figure</small>
-                    </p>
-                  </div>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>
