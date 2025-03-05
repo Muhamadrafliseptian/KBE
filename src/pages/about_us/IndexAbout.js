@@ -4,6 +4,7 @@ import image5 from "../../assets/images/image-5.png";
 import image6 from "../../assets/images/image-5.jpg";
 import ava2 from "../../assets/images/ava2.jpeg";
 import ava3 from "../../assets/images/ava4.jpeg";
+import ava5 from "../../assets/images/ava5.png";
 import {
   FaPhone,
   FaCalendar,
@@ -209,7 +210,7 @@ export class IndexAbout extends Component {
                   name: "Ananda Lee - Business Man",
                   review:
                     "Gak diraguin untuk hasil kerja tim KBE, konsultasi, diskusi menjadi hal yang asyik sampai pada akhirnya mobil caravan ku jadi sesuai ekspektasi. thanks KBE",
-                  image: ava2,
+                  image: ava5,
                 },
                 {
                   name: "Andi Silitonga - Traveller",
@@ -221,17 +222,19 @@ export class IndexAbout extends Component {
                 <div className="col" key={index}>
                   <div className="card border-0 shadow-sm h-100 custom-card">
                     <div className="card-body text-start">
-                      <div className="mb-2 star-container">
+                      <div className="pb-5 star-container">
                         <FaStar size={20} className="custom-star" />
                         <FaStar size={20} className="custom-star" />
                         <FaStar size={20} className="custom-star" />
                         <FaStar size={20} className="custom-star" />
                         <FaStar size={20} className="custom-star" />
                       </div>
-                      <p className="card-text" style={{ color: "#5C6776" }}>
+                      <p className="card-text custom-text pb-3">
                         "{testimonial.review}"
                       </p>
-                      <h5 className="fw-bold">{testimonial.name}</h5>
+                      <h5 className="fw-bold custom-text pb-2">
+                        {testimonial.name}
+                      </h5>
                       <img
                         src={testimonial.image}
                         alt={testimonial.name}

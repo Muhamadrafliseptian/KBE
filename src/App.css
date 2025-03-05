@@ -47,6 +47,7 @@
 }
 
 .custom-card {
+  border-radius: 20px;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
@@ -55,15 +56,22 @@
   transition: color 0.3s ease;
 }
 
+.custom-text {
+  color: #092043;
+}
+
 .custom-card:hover {
   background-color: #003F98;
   transform: translateY(-5px); /* Efek sedikit terangkat */
 }
 
-.custom-card:hover .custom-star {
+.custom-card:hover .custom-star{
   color: white !important; /* Bintang berubah jadi putih saat hover */
 }
 
+.custom-card:hover .custom-text{
+  color: white !important; /* Bintang berubah jadi putih saat hover */
+}
 
 
 
